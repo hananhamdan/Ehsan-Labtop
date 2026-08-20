@@ -1,0 +1,256 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #000000;
+  --color-PrimaryContainer: #131b2e;
+
+  --color-Secondary: #0058be;
+  --color-SecondaryContainer: #2170e4;
+
+  --color-Surface: #f7f9fb;
+  --color-SurfaceLowest: #ffffff;
+
+  --color-Success: #00201d;
+  --color-Error: #ba1a1a;
+
+  --font-primary: "Cairo";
+  --font-Secondary: "Inter";
+
+  --breakpoint-xs: 400px;
+}
+
+
+/* ================= BASE ================= */
+
+@layer base {
+
+  body {
+    font-family: var(--font-primary);
+    background-color: var(--color-Surface);
+    color: var(--color-primary);
+  }
+
+
+  /* ================= HEADINGS ================= */
+
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+
+    @variant sm {
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+    }
+
+    @variant md {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+
+    @variant lg {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+
+    @variant xl {
+      font-size: 3.5rem;
+      line-height: 4rem;
+    }
+
+    @variant 2xl {
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
+  }
+
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+
+    @variant sm {
+      font-size: 1.75rem;
+      line-height: 2.25rem;
+    }
+
+    @variant md {
+      font-size: 2rem;
+      line-height: 2.625rem;
+    }
+
+    @variant lg {
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+    }
+
+    @variant xl {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+
+    @variant 2xl {
+      font-size: 3rem;
+      line-height: 3.5rem;
+    }
+  }
+
+
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+
+    @variant sm {
+      font-size: 1.375rem;
+      line-height: 2rem;
+    }
+
+    @variant md {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    @variant lg {
+      font-size: 1.75rem;
+      line-height: 2.25rem;
+    }
+
+    @variant xl {
+      font-size: 2rem;
+      line-height: 2.5rem;
+    }
+
+    @variant 2xl {
+      font-size: 2.25rem;
+      line-height: 2.75rem;
+    }
+  }
+
+
+  h4 {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    font-weight: 600;
+
+    @variant sm {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+
+    @variant md {
+      font-size: 1.375rem;
+      line-height: 2rem;
+    }
+
+    @variant lg {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    @variant xl {
+      font-size: 1.625rem;
+      line-height: 2.25rem;
+    }
+
+    @variant 2xl {
+      font-size: 1.875rem;
+      line-height: 2.5rem;
+    }
+  }
+
+
+  h5 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+
+    @variant sm {
+      font-size: 1.125rem;
+      line-height: 1.625rem;
+    }
+
+    @variant md {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+
+    @variant lg {
+      font-size: 1.375rem;
+      line-height: 2rem;
+    }
+
+    @variant xl {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
+    @variant 2xl {
+      font-size: 1.625rem;
+      line-height: 2.25rem;
+    }
+  }
+
+
+  h6 {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+
+    @variant sm {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+    @variant md {
+      font-size: 1.125rem;
+      line-height: 1.625rem;
+    }
+
+    @variant lg {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+
+    @variant xl {
+      font-size: 1.375rem;
+      line-height: 2rem;
+    }
+
+    @variant 2xl {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+
+
+  /* ================= CONTAINER ================= */
+
+  .container {
+    @apply mx-auto my-2 px-4 lg:my-0;
+  }
+}
+
+
+/* ================= CUSTOM UTILITIES ================= */
+
+
+/* Row */
+
+@utility row {
+  @apply flex items-center;
+}
+
+
+/* Navbar Links */
+
+@utility nav-link {
+  @apply inline-block
+    text-[12px]
+    lg:text-[16px]
+    transition-all
+    duration-500
+    hover:text-SecondaryContainer
+    hover:scale-125;
+}
