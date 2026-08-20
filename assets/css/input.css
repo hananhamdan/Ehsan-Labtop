@@ -221,3 +221,12 @@
     @apply text-SecondaryContainer scale-125;
   }
 }
+@layer components{
+  .button{
+    @apply mt-6 inline-flex items-center gap-2 rounded-md bg-Secondary px-7 py-3 text-sm font-bold text-white transition duration-300 hover:bg-SecondaryContainer
+  }
+  .photoCard{
+    @apply flex-1 rounded-2xl  w-full
+    
+  }
+}
