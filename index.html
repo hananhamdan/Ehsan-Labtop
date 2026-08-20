@@ -8,20 +8,29 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!--  GOOGLE FONT -->
+
+  <!-- ================= GOOGLE FONT ================= -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
   <link
     href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"
+  >
 
 
-  <!--  TAILWIND  -->
+  <!-- ================= TAILWIND ================= -->
 
-  <link href="./assets/css/output.css" rel="stylesheet">
+  <link
+    href="./assets/css/output.css"
+    rel="stylesheet"
+  >
 
 
   <title>إحسان لابتوب</title>
@@ -29,181 +38,295 @@
 </head>
 
 
-<body class="text-sm leading-normal lg:text-[1.125rem] lg:leading-7">
+<body>
 
 
-  <header class="w-full bg-white">
 
-  <div class="container mx-auto">
-
-    <nav class="h-13.75 flex items-center justify-between gap-5 px-3">
-
-      <!-- Right: Logo -->
-      <div class="shrink-0">
-        <a href="#">
-          <img
-            src="./assets/img/logo.svg"
-            alt="Laptop Store"
-            class="w-8 h-8 object-contain"
-          >
-        </a>
-      </div>
+  <header class=" bg-white">
 
 
-      <!-- Navigation -->
-      <ul class="hidden md:flex items-center gap-5 text-[11px] text-gray-600">
+    <!-- ================= NAVBAR ================= -->
 
-        <!-- Home -->
-        <li>
-          <a
-            href="#"
-            class="relative flex items-center h-[55px] text-blue-700 font-bold
-                   after:absolute after:bottom-0 after:right-0
-                   after:w-full after:h-[2px] after:bg-blue-700"
-          >
-            الرئيسية
-          </a>
-        </li>
+    <div class="container mx-auto">
 
-        <!-- Laptops -->
-        <li>
-          <a
-            href="#"
-            class="hover:text-blue-700 transition-colors duration-200"
-          >
-            اللابتوبات
-          </a>
-        </li>
-
-        <!-- Brands -->
-        <li>
-          <a
-            href="#"
-            class="hover:text-blue-700 transition-colors duration-200"
-          >
-            ماركات
-          </a>
-        </li>
-
-        <!-- Accessories -->
-        <li>
-          <a
-            href="#"
-            class="hover:text-blue-700 transition-colors duration-200"
-          >
-            إكسسوارات
-          </a>
-        </li>
-
-        <!-- Offers -->
-        <li>
-          <a
-            href="#"
-            class="hover:text-blue-700 transition-colors duration-200"
-          >
-            عروض
-          </a>
-        </li>
-
-      </ul>
-
-
-      <!-- Search -->
-      <div
-        class="hidden sm:flex items-center
-               w-[180px] md:w-[230px]
-               h-[30px]
-               rounded-full
-               bg-gray-50
-               border border-gray-100
-               px-3"
+      <nav
+        class="h-13.75  row justify-between gap-5 px-3"
       >
 
-        <input
-          type="text"
-          placeholder="ابحث عن منتجاتنا..."
-          class="w-full bg-transparent outline-none
-                 text-[10px]
-                 text-gray-700
-                 placeholder:text-gray-400"
+
+        <!-- ================= LOGO ================= -->
+
+        <div class="shrink-0">
+
+          <a href="./index.html">
+
+            <img
+              src="./assets/img/brand.png"
+              alt="إlogo"
+              class="w-l  object-contain h-l"
+            >
+
+          </a>
+
+        </div>
+          <!-- ================= SEARCH ================= -->
+
+        <div
+          class="hidden sm:flex
+                 items-center
+                 w-[180px]
+                 md:w-[230px]
+                 h-[30px]
+                 rounded-full
+                 bg-gray-50
+                 border
+                 border-gray-100
+                 px-3"
         >
 
-        <button
-          type="button"
-          class="shrink-0"
+
+          <input
+            type="text"
+            placeholder="ابحث عن منتجاتنا..."
+            class="w-full
+                   bg-transparent
+                   outline-none
+                   body-sm
+                   text-gray-700
+                   placeholder:text-gray-400"
+          >
+
+
+          <button
+            type="button"
+            class="shrink-0"
+          >
+
+            <img
+              src="./assets/icons/search.svg"
+              alt="بحث"
+              class="w-[15px] h-[15px]"
+            >
+
+          </button>
+
+
+        </div>
+
+
+
+       
+
+        <ul
+          class="hidden md:row gap-5  text-gray-600"
         >
-          <img
-            src="./assets/icons/search.svg"
-            alt="بحث"
-            class="w-[15px] h-[15px]"
-          >
-        </button>
 
-      </div>
+          <li>
+
+            <a
+              href="#"
+              class="relative flex items-center h-13.75
+                     text-blue-700 font-bold
+                     after:absolute
+                     after:bottom-0
+                     after:right-0
+                     after:w-full
+                     after:h-0.5
+                     after:bg-blue-700"
+            >
+              الرئيسية
+            </a>
+
+          </li>
+
+          <li>
+
+            <a
+              href="#"
+              class="hover:text-blue-700
+                     transition-colors
+                     duration-200"
+            >
+              اللابتوبات
+            </a>
+
+          </li>
 
 
-      <!-- Left Icons -->
-      <div class="flex items-center gap-4 shrink-0">
+          <li>
 
-        <!-- Cart -->
-        <a
-          href="#"
-          class="relative flex items-center justify-center"
+            <a
+              href="#"
+              class="hover:text-blue-700
+                     transition-colors
+                     duration-200"
+            >
+              ماركات
+            </a>
+
+          </li>
+
+          <li>
+
+            <a
+              href="#"
+              class="hover:text-blue-700
+                     transition-colors
+                     duration-200"
+            >
+              إكسسوارات
+            </a>
+
+          </li>
+
+          <li>
+
+            <a
+              href="#"
+              class="hover:text-blue-700
+                     transition-colors
+                     duration-200"
+            >
+              عروض
+            </a>
+
+          </li>
+
+        </ul>
+
+
+      
+
+        <!-- ================= ICONS ================= -->
+
+        <div
+          class="flex items-center gap-4 shrink-0"
         >
-          <img
-            src="./assets/icons/cart.svg"
-            alt="السلة"
-            class="w-[18px] h-[18px]"
+
+
+          <!-- Cart -->
+
+          <a
+            href="#"
+            class="relative
+                   flex
+                   items-center
+                   justify-center"
           >
 
-          <span
-            class="absolute -top-[7px] -right-[7px]
-                   flex items-center justify-center
-                   w-[14px] h-[14px]
-                   rounded-full
-                   bg-blue-700
-                   text-white
-                   text-[8px]"
+            <img
+              src="./assets/icons/carage.svg"
+              alt="السلة">
+        
+
+
+            <span
+              class="absolute    -top-[70px]
+                     -right-[7px]
+                     row
+                     justify-center
+                     w-[14px]
+                     h-[14px]
+                     rounded-full
+                     bg-blue-700
+                     text-white
+                     text-[8px]"
+            >
+              0
+            </span>
+
+          </a>
+
+
+          <!-- Favorites -->
+
+          <a
+            href="#"
+            class="flex
+                   items-center
+                   justify-center"
           >
-            0
-          </span>
-        </a>
+
+            <img
+              src="./assets/icons/heart.svg"
+              alt="المفضلة"
+              class="w-[17px] h-[17px]"
+            >
+
+          </a>
 
 
-        <!-- Favorites -->
-        <a
-          href="#"
-          class="flex items-center justify-center"
-        >
-          <img
-            src="./assets/icons/heart.svg"
-            alt="المفضلة"
-            class="w-[17px] h-[17px]"
+          <!-- Account -->
+
+          <a
+            href="#"
+            class="flex
+                   items-center
+                   justify-center"
           >
-        </a>
+
+            <img
+              src="./assets/icons/avatar.svg"
+              alt="الحساب"
+              class="w-[19px] h-[19px]"
+            >
+
+          </a>
 
 
-        <!-- Account -->
-        <a
-          href="#"
-          class="flex items-center justify-center"
-        >
-          <img
-            src="./assets/icons/avatar.svg"
-            alt="الحساب"
-            class="w-[19px] h-[19px]"
-          >
-        </a>
+        </div>
 
-      </div>
 
-    </nav>
+      </nav>
+
+    </div>
+
+
+  </header>
+<section
+  class="relative h-125 bg-[url('../img/hero.png')] bg-cover bg-center rounded-br-[48px] rounded-bl-[48px]">
+
+  <div class="absolute inset-0 "></div>
+
+  <div
+    class="relative z-10 flex h-full flex-col items-start justify-center px-5 text-center text-white">
+<div  class="bg-Error  rounded-2xl px-4 py-1"> <h5>أحدث الإصدارات</h5></div>
+    <h1>
+    
+قوة لا تُقهر مع</h1>
+<h1>
+ASUS ROG Strix G16
+    </h1>
+
+    <p class="mt-4  max-w-lg text-sm leading-7 md:text-base">
+     
+استمتع بتجربة لعب استثنائية مع معالج 
+Intel Core i9 وبطاقة رسومات RTX 4070.
+الأداء الذي تبحث عنه، الآن بين يديك.
+عرض المواصفات.
+    </p>
+
+   <di class="row gap-4"> <a
+      href="#"
+      class="mt-6 inline-flex items-center gap-2 rounded-md bg-Secondary px-7 py-3 text-sm font-bold text-white transition duration-300 hover:bg-SecondaryContainer">
+
+      تسوق الآن
+      <span>←</span>
+
+    </a>
+    
+    <a
+      href="#"
+      class="mt-6 inline-flex items-center gap-2 rounded-md border border-PrimaryContainer  bg-[#C3C6D64D]/30 px-7 py-3 text-sm font-bold text-white transition duration-300 hover:bg-SecondaryContainer">
+
+عرض المواصفات     
+
+    </a></di>
+
 
   </div>
 
-</header>
-
-
+</section>
 </body>
 
 </html>
