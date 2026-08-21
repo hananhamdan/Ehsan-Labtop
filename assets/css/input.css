@@ -39,7 +39,7 @@
   .hero-heading {
     font-size: 2.25rem;        /* 36px */
     line-height: 3rem;         /* 48px */
-    font-weight: 700;
+    font-weight: 600;
 
     @variant lg {
       font-size: 3rem;         /* 48px */
@@ -91,7 +91,7 @@
   h3 {
     font-size: 1.25rem;        /* 20px */
     line-height: 1.75rem;      /* 28px */
-    font-weight: 600;
+    font-weight: 500;
 
     @variant md {
       font-size: 1.3125rem;    /* 21px */
@@ -110,7 +110,7 @@
   h4 {
     font-size: 1.125rem;       /* 18px */
     line-height: 1.625rem;     /* 26px */
-    font-weight: 600;
+    font-weight: 400;
 
     @variant md {
       font-size: 1.1875rem;    /* 19px */
@@ -129,7 +129,7 @@
   h5 {
     font-size: 1rem;           /* 16px */
     line-height: 1.5rem;       /* 24px */
-    font-weight: 600;
+    font-weight: 300;
 
     @variant md {
       font-size: 1.0625rem;    /* 17px */
@@ -148,7 +148,7 @@
   h6 {
     font-size: 0.875rem;       /* 14px */
     line-height: 1.25rem;      /* 20px */
-    font-weight: 500;
+    font-weight: 300;
 
     @variant md {
       font-size: 0.9375rem;    /* 15px */
@@ -211,22 +211,37 @@
 
 /* Navbar Links */
 @utility nav-link {
-  @apply inline-block text-[12px] transition-all duration-500;
+  @apply inline-block text-[12px] transition-all duration-500 ;
   
   @variant lg {
     @apply text-[16px];
   }
 
   @variant hover {
-    @apply text-SecondaryContainer scale-125;
+    @apply text-SecondaryContainer scale-125 ;
   }
 }
 @layer components{
   .button{
-    @apply mt-6 inline-flex items-center gap-2 rounded-md bg-Secondary px-7 py-3 text-sm font-bold text-white transition duration-300 hover:bg-SecondaryContainer
+    @apply mt-6 inline-flex items-center gap-2 rounded-md bg-Secondary px-7 py-3 text-sm font-bold text-white transition duration-300 hover:bg-SecondaryContainer;
   }
-  .photoCard{
-    @apply flex-1 rounded-2xl  w-full
-    
+ 
+  .search{
+   @apply hidden h-7.5 w-45 items-center
+                 rounded-full border border-gray-100
+                 bg-gray-50 px-3 sm:flex md:w-57.5;
   }
+  /*=======================cards Top sellin=====================*/
+  .cards{
+    @apply grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 ;
+  }
+  
+.Specifications{
+  @apply  bg-SurfaceContainer rounded-lg  py-1
+                         px-2 text-center max-w-fit text-sm;
 }
+
+}
+
+ 
+
