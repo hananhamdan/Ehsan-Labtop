@@ -1,49 +1,77 @@
 @import "tailwindcss";
+
+
+/* =========================================================
+   THEME
+   ========================================================= */
+
 @theme {
-  /* Primary */
+
+  /* ================= PRIMARY ================= */
+
   --color-PrimaryBlue: #003d9b;
   --color-PrimaryContainer: #0052cc;
 
-  /* Secondary */
+
+  /* ================= SECONDARY ================= */
+
   --color-Secondary: #0058be;
   --color-SecondaryContainer: #2170e4;
 
-  /* Surface */
+
+  /* ================= SURFACE ================= */
+
   --color-Surface: #fbf9f8;
   --color-SurfaceLowest: #ffffff;
   --color-SurfaceContainer: #f0eded;
   --color-SurfaceHighest: #e4e2e1;
 
-  /* Dark */
+
+  /* ================= DARK ================= */
+
   --color-DarkNavy: #001848;
 
-  /* Success */
+
+  /* ================= SUCCESS ================= */
+
   --color-Success: #146c2e;
   --color-CustomSuccess: #146c2e;
 
-  /* Error */
+
+  /* ================= ERROR ================= */
+
   --color-Error: #ba1a1a;
   --color-ErrorContainer: #ffd6d6;
-  /*font*/
+
+
+  /* ================= FONTS ================= */
 
   --font-cairo: "Cairo", sans-serif;
   --font-inter: "Inter", sans-serif;
 
 
-  /*screen*/
+  /* ================= BREAKPOINTS ================= */
 
   --breakpoint-xs: 400px;
 }
 
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
 @layer base {
+
+  /* ================= HERO HEADING ================= */
+
   .hero-heading {
-    font-size: 2.25rem;        /* 36px */
-    line-height: 3rem;         /* 48px */
+    font-size: 2.25rem;
+    line-height: 3rem;
     font-weight: 600;
 
     @variant lg {
-      font-size: 3rem;         /* 48px */
-      line-height: 4rem;       /* 64px */
+      font-size: 3rem;
+      line-height: 4rem;
     }
   }
 
@@ -51,18 +79,18 @@
   /* ================= H1 ================= */
 
   h1 {
-    font-size: 1.75rem;        /* 28px */
-    line-height: 2.375rem;     /* 38px */
+    font-size: 1.75rem;
+    line-height: 2.375rem;
     font-weight: 700;
 
     @variant md {
-      font-size: 2rem;         /* 32px */
-      line-height: 2.625rem;   /* 42px */
+      font-size: 2rem;
+      line-height: 2.625rem;
     }
 
     @variant lg {
-      font-size: 2.25rem;      /* 36px */
-      line-height: 3rem;       /* 48px */
+      font-size: 2.25rem;
+      line-height: 3rem;
     }
   }
 
@@ -70,18 +98,18 @@
   /* ================= H2 ================= */
 
   h2 {
-    font-size: 1.5rem;         /* 24px */
-    line-height: 2rem;         /* 32px */
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 600;
 
     @variant md {
-      font-size: 1.625rem;     /* 26px */
-      line-height: 2.25rem;    /* 36px */
+      font-size: 1.625rem;
+      line-height: 2.25rem;
     }
 
     @variant lg {
-      font-size: 1.75rem;      /* 28px */
-      line-height: 2.375rem;   /* 38px */
+      font-size: 1.75rem;
+      line-height: 2.375rem;
     }
   }
 
@@ -89,18 +117,18 @@
   /* ================= H3 ================= */
 
   h3 {
-    font-size: 1.25rem;        /* 20px */
-    line-height: 1.75rem;      /* 28px */
+    font-size: 1.25rem;
+    line-height: 1.75rem;
     font-weight: 500;
 
     @variant md {
-      font-size: 1.3125rem;    /* 21px */
-      line-height: 1.875rem;   /* 30px */
+      font-size: 1.3125rem;
+      line-height: 1.875rem;
     }
 
     @variant lg {
-      font-size: 1.375rem;     /* 22px */
-      line-height: 2rem;       /* 32px */
+      font-size: 1.375rem;
+      line-height: 2rem;
     }
   }
 
@@ -108,18 +136,18 @@
   /* ================= H4 ================= */
 
   h4 {
-    font-size: 1.125rem;       /* 18px */
-    line-height: 1.625rem;     /* 26px */
+    font-size: 1.125rem;
+    line-height: 1.625rem;
     font-weight: 400;
 
     @variant md {
-      font-size: 1.1875rem;    /* 19px */
-      line-height: 1.75rem;    /* 28px */
+      font-size: 1.1875rem;
+      line-height: 1.75rem;
     }
 
     @variant lg {
-      font-size: 1.25rem;      /* 20px */
-      line-height: 1.75rem;    /* 28px */
+      font-size: 1.25rem;
+      line-height: 1.75rem;
     }
   }
 
@@ -127,18 +155,18 @@
   /* ================= H5 ================= */
 
   h5 {
-    font-size: 1rem;           /* 16px */
-    line-height: 1.5rem;       /* 24px */
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 300;
 
     @variant md {
-      font-size: 1.0625rem;    /* 17px */
-      line-height: 1.5rem;     /* 24px */
+      font-size: 1.0625rem;
+      line-height: 1.5rem;
     }
 
     @variant lg {
-      font-size: 1.125rem;     /* 18px */
-      line-height: 1.5rem;     /* 24px */
+      font-size: 1.125rem;
+      line-height: 1.5rem;
     }
   }
 
@@ -146,41 +174,39 @@
   /* ================= H6 ================= */
 
   h6 {
-    font-size: 0.875rem;       /* 14px */
-    line-height: 1.25rem;      /* 20px */
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     font-weight: 300;
 
     @variant md {
-      font-size: 0.9375rem;    /* 15px */
-      line-height: 1.375rem;   /* 22px */
+      font-size: 0.9375rem;
+      line-height: 1.375rem;
     }
 
     @variant lg {
-      font-size: 1rem;         /* 16px */
-      line-height: 1.5rem;     /* 24px */
+      font-size: 1rem;
+      line-height: 1.5rem;
     }
   }
 
 
-  /* ================= BODY TYPOGRAPHY ================= */
+  /* ================= BODY ================= */
 
   .body-lg {
-    font-size: 1.125rem;       /* 18px */
-    line-height: 1.75rem;      /* 28px */
+    font-size: 1.125rem;
+    line-height: 1.75rem;
     font-weight: 400;
   }
-
 
   .body-reg {
-    font-size: 1rem;           /* 16px */
-    line-height: 1.5rem;       /* 24px */
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 400;
   }
 
-
   .body-sm {
-    font-size: 0.875rem;       /* 14px */
-    line-height: 1.25rem;      /* 20px */
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     font-weight: 400;
   }
 
@@ -188,60 +214,148 @@
   /* ================= PRICE ================= */
 
   .price-lg {
-    font-size: 1.5rem;         /* 24px */
-    line-height: 2rem;         /* 32px */
+    font-size: 1.5rem;
+    line-height: 2rem;
     font-weight: 700;
   }
-  .containers {
-    @apply container mx-auto 
-  }
 
+
+  /* ================= CONTAINER ================= */
+
+  .containers {
+    @apply container mx-auto;
+  }
 }
 
 
-/*  UTILITIES */
+/* =========================================================
+   UTILITIES
+   ========================================================= */
 
 
-/* Row */
+/* ================= ROW ================= */
 
 @utility row {
   @apply flex items-center;
 }
 
 
-/* Navbar Links */
+/* ================= NAV LINK ================= */
+
 @utility nav-link {
-  @apply inline-block text-[12px] transition-all duration-500 ;
-  
+  @apply inline-block text-[12px] transition-all duration-500;
+
   @variant lg {
     @apply text-[16px];
   }
 
   @variant hover {
-    @apply text-SecondaryContainer scale-125 ;
+    @apply text-SecondaryContainer scale-125;
   }
 }
-@layer components{
-  .button{
-    @apply mt-6 inline-flex items-center gap-2 rounded-md bg-Secondary px-7 py-3 text-sm font-bold text-white transition duration-300 hover:bg-SecondaryContainer;
+
+
+/* =========================================================
+   COMPONENTS
+   ========================================================= */
+
+@layer components {
+
+
+  /* ================= BUTTON ================= */
+
+  .button {
+    @apply mt-6 inline-flex items-center gap-2
+           rounded-md
+           bg-Secondary
+           px-7 py-3
+           text-sm font-bold text-white
+           transition duration-300
+           hover:bg-SecondaryContainer;
   }
- 
-  .search{
-   @apply hidden h-7.5 w-45 items-center
-                 rounded-full border border-gray-100
-                 bg-gray-50 px-3 sm:flex md:w-57.5;
+
+
+  /* ================= SEARCH ================= */
+
+  .search {
+    @apply hidden h-7.5 w-45 items-center
+           rounded-full
+           border border-gray-100
+           bg-gray-50
+           px-3
+           sm:flex
+           md:w-57.5;
   }
-  /*=======================cards Top sellin=====================*/
-  .cards{
-    @apply grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 ;
+
+
+  /* ================= PRODUCT CARDS GRID ================= */
+
+  .gridCard {
+    @apply grid grid-cols-1 gap-6
+           sm:grid-cols-2
+           lg:grid-cols-4
+            backdrop-blur-3xl
+           box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05)
   }
-  
-.Specifications{
-  @apply  bg-SurfaceContainer rounded-lg  py-1
-                         px-2 text-center max-w-fit text-sm;
-}
+
+
+  /* ================= PRODUCT SPECIFICATIONS ================= */
+
+  .background {
+    @apply max-w-fit
+           rounded-lg
+           bg-SurfaceContainer
+          
+
+
+
+           px-2 py-1
+           text-center
+           text-[10px]
+           leading-3;
+  }
+
+
+  /* ================= PRODUCT BADGE ================= */
+
+  .overlay {
+    @apply max-w-fit
+           rounded-lg
+           bg-Error/10
+           px-2 py-1
+           text-center
+           text-[10px]
+           leading-3;
+  }
+
+
+  /* ================= PRICE SECTION ================= */
+
+  .price {
+    @apply row
+           mt-7
+           justify-between
+           border-t-2
+           border-t-[#C3C6D633]
+           pt-7;
+  }
+
+
+  /* ================= FAVORITE CIRCLE ================= */
+
+  .cercle {
+    @apply h-8 w-8
+           rounded-full
+           bg-[#F6F3F2];
+  }
+
+
+  /* ================= CART BUTTON ================= */
+
+  .sequer {
+    @apply h-9 w-9
+           rounded-lg
+           bg-PrimaryBlue;
+  }
 
 }
-
- 
-
