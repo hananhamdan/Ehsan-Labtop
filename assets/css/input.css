@@ -295,7 +295,7 @@
            sm:grid-cols-2
            lg:grid-cols-4
             backdrop-blur-3xl
-           box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05)
+           ;
   }
 
 
@@ -357,5 +357,14 @@
            rounded-lg
            bg-PrimaryBlue;
   }
-
+  .minboxs{
+    @apply max-w-fit
+           rounded-lg py-4 px-4 bg-[#F6F3F2];
+  }
+  
+.centers {
+  @apply w-auto
+         p-2;
 }
+  }
+
