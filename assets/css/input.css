@@ -366,5 +366,15 @@
   @apply w-auto
          p-2;
 }
+/*================email====================*/
+.email{
+  @apply mt-6 inline-flex items-center gap-2
+           rounded-md
+           bg-[#ffff]
+           px-7 py-3
+           text-sm font-bold text-black
+           transition duration-300
+           hover:bg-[#C3C6D6];
+}
   }
 
