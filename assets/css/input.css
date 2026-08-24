@@ -260,7 +260,6 @@
 
 @layer components {
 
-
   /* ================= BUTTON ================= */
 
   .button {
@@ -296,6 +295,9 @@
             backdrop-blur-3xl
            ;
   }
+  .boxOfCard{
+    @apply overflow-hidden rounded-lg bg-Surface;
+  }
 
 
   /* ================= PRODUCT SPECIFICATIONS ================= */
@@ -304,16 +306,23 @@
     @apply max-w-fit
            rounded-lg
            bg-SurfaceContainer
-          
-
-
-
-           px-2 py-1
+           py-2  px-4                
            text-center
            text-[10px]
            leading-3;
   }
-
+  .background-blue{@apply
+   max-w-fit
+           rounded-lg
+           bg-PrimaryBlue
+           py-2  px-4                
+           text-center
+           text-[10px]
+           leading-3;
+          }
+.boxWhite{
+  @apply bg-SurfaceLowest p-4 rounded-3xl w-full 
+}
 
   /* ================= PRODUCT BADGE ================= */
 
