@@ -384,5 +384,8 @@
            transition duration-300
            hover:bg-[#C3C6D6];
 }
+.list{
+  @apply w-4 h-4  col-span-1 rounded-sm 
+}
   }
 
