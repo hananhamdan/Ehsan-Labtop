@@ -1,0 +1,279 @@
+<!doctype html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind -->
+  <link href="./assets/css/output.css" rel="stylesheet">
+
+  <title>إحسان لابتوب</title>
+
+</head>
+
+
+<body class="bg-[#FBF9F8]">
+
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="bg-SurfaceLowest rounded-2xl mb-12">
+
+    <div class="container">
+
+      <nav class="row h-13.75 justify-between gap-5 px-3">
+
+        <!-- Logo -->
+        <div class="shrink-0">
+
+          <a href="./index.html">
+
+            <img src="./assets/img/brand.png" alt="إحسان لابتوب" class="h-10 w-auto object-contain">
+
+          </a>
+
+        </div>
+
+
+        <!-- Search -->
+        <div class="search">
+
+          <input type="text" placeholder="ابحث عن منتجاتنا..." class="w-full bg-transparent text-sm text-gray-700
+                   outline-none placeholder:text-gray-400">
+
+          <button type="button" class="shrink-0">
+
+            <img src="./assets/icons/search.svg" alt="بحث" class="h-[15px] w-[15px]">
+
+          </button>
+
+        </div>
+
+
+        <!-- Navigation -->
+        <ul class="hidden items-center gap-5 text-gray-600 md:flex">
+
+          <li>
+
+            <a href="index.html" class="relative flex h-13.75 items-center
+                     font-bold text-blue-700
+                     after:absolute after:bottom-0 after:right-0
+                     after:h-0.5 after:w-full after:bg-blue-700">
+              الرئيسية
+            </a>
+
+          </li>
+
+          <li>
+
+            <a href="AllDevice.html" class="transition-colors duration-200 hover:text-blue-700">
+              اللابتوبات
+            </a>
+
+          </li>
+
+          <li>
+
+            <a href="#" class="transition-colors duration-200 hover:text-blue-700">
+              ماركات
+            </a>
+
+          </li>
+
+          <li>
+
+            <a href="#" class="transition-colors duration-200 hover:text-blue-700">
+              إكسسوارات
+            </a>
+
+          </li>
+
+          <li>
+
+            <a href="#" class="transition-colors duration-200 hover:text-blue-700">
+              عروض
+            </a>
+
+          </li>
+
+        </ul>
+
+
+        <!-- Actions -->
+        <div class="row shrink-0 gap-4">
+
+          <!-- Cart -->
+          <a href="#" class="relative flex items-center justify-center">
+
+            <img src="./assets/icons/carageblack.svg" alt="السلة" class="h-5 w-5">
+
+            <span class="absolute -right-2 -top-2 row h-[14px] w-[14px]
+                     justify-center rounded-full bg-Secondary
+                     text-[8px] text-white">
+              0
+            </span>
+
+          </a>
+
+
+          <!-- Favorites -->
+          <a href="#" class="flex items-center justify-center">
+
+            <img src="./assets/icons/heart.svg" alt="المفضلة" class="h-[17px] w-[17px]">
+
+          </a>
+
+
+          <!-- Account -->
+          <a href="#" class="flex items-center justify-center">
+
+            <img src="./assets/icons/avatar.svg" alt="الحساب" class="h-[19px] w-[19px]">
+
+          </a>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+  <section class="container row">
+
+  <!--===================== يمين ===========================-->
+  <div class="row  flex-col">
+
+    <div class="relative ">
+      <img 
+        src="./assets/detailsImage/main.webp" 
+        alt="main" 
+        class="w-auto  "
+      />
+
+      <!-- علامة جديد -->
+      <div class="absolute top-0 left-0 bg-Error rounded-3xl text-[#e6e9ef] px-3 py-1">
+        خصم 15%
+      </div>
+    </div>
+    <div class="row gap-4">
+        <img src="./assets/detailsImage/1.webp"/>
+                <img src="./assets/detailsImage/2.webp"/>
+
+                        <img src="./assets/detailsImage/3.webp"/>
+
+
+                               <div class="relative"><img src="./assets/detailsImage/3.webp"/ > <div class="absolute bg-[#FBF9F8]/50  inset-0 h-full w-full object-cover z-10">
+                                <div class="absolute z-20    top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 
+         rounded-full 
+           flex items-center justify-center
+" ><img src="./assets/icons/play.svg"/></div>
+                               </div> </div> 
+
+
+    </div>
+
+  </div>
+
+  <!--==================== يسار ===========================-->
+
+</section>
+
+  <footer class="bg-SurfaceContainer text-sm">
+
+    <!-- الجزء العلوي -->
+    <div class="container flex flex-wrap justify-between gap-8 py-10">
+
+
+      <div>
+
+        <h3>نشرتنا الإخبارية</h3>
+
+        <h5 class="mt-2">
+          احصل على أحدث العروض والخصومات مباشرة
+          في بريدك
+        </h5>
+
+        <form class="row mt-5 gap-3">
+
+          <input type="email" placeholder="أدخل بريدك الإلكتروني" class=" email">
+
+          <button type="submit" class="button">
+            اشترك الآن
+          </button>
+
+        </form>
+
+      </div>
+
+
+
+      <div>
+        <ul>
+          <li ><a href="#" ><h3> المتجر</h3></a>
+           
+          </li>
+           <li ><a href="./AllDevice.html">جميع الأجهزة</a></li>
+           <li ><a href="#">أجهزة الألعاب</a></li>
+        <li ><a href="#">أجهزة الأعمال</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul>
+           <li ><a href="#">
+           <h3> الدعم</h3></a>
+          </li>
+         <li ><a href="#">مركز المساعدة </a></li>
+          <li ><a href="#">تتبع الطلب</a></li>
+           <li ><a href="#">الاسترجاع</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul >
+          <li >
+           <h3> الشركة</h3>
+          </li>
+          <li ><a href="#">عن لابتوبي</a></li>
+          <li ><a href="#">الفروع</a></li>
+          <li ><a href="#">اتصل بنا</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <div class="border-t border-gray-300"></div>
+
+    <!-- الجزء السفلي -->
+    <div class="container flex items-center  justify-between py-4">
+
+      <p>جميع الحقوق محفوظة</p>
+
+      <div class="row gap-3">
+        <img src="./assets/icons/copy.svg" alt="viza" />
+        <img src="./assets/icons/earth.svg" alt="global" />
+
+        <img src="./assets/icons/chare.svg" alt="share" />
+
+
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
