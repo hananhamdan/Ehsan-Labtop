@@ -50,7 +50,7 @@
   --font-inter: "Inter", sans-serif;
 
 
-  /* ================= BREAKPOINTS ================= */
+  /* ================= BREAKPOINT ================= */
 
   --breakpoint-xs: 400px;
 }
@@ -62,17 +62,8 @@
 
 @layer base {
 
-  /* ================= HERO HEADING ================= */
-
-  .hero-heading {
-    font-size: 2.25rem;
-    line-height: 3rem;
-    font-weight: 600;
-
-    @variant lg {
-      font-size: 3rem;
-      line-height: 4rem;
-    }
+  body {
+    font-family: var(--font-cairo);
   }
 
 
@@ -219,7 +210,6 @@
     font-weight: 700;
   }
 
-
 }
 
 
@@ -228,29 +218,35 @@
    ========================================================= */
 
 
-  /* ================= CONTAINER ================= */
+/* ================= CONTAINER ================= */
+
 @utility container {
-  @apply mx-auto;
+  width: 100%;
+  max-width: 1280px;
+  margin-inline: auto;
+
+  @variant sm {
+    max-width: 640px;
+  }
+
+  @variant md {
+    max-width: 768px;
+  }
+
+  @variant lg {
+    max-width: 1024px;
+  }
+
+  @variant xl {
+    max-width: 1280px;
+  }
 }
+
+
 /* ================= ROW ================= */
 
 @utility row {
-  @apply flex items-center;
-}
-
-
-/* ================= NAV LINK ================= */
-
-@utility nav-link {
-  @apply inline-block text-[12px] transition-all duration-500;
-
-  @variant lg {
-    @apply text-[16px];
-  }
-
-  @variant hover {
-    @apply text-SecondaryContainer scale-125;
-  }
+  @apply flex flex-wrap items-center;
 }
 
 
@@ -260,14 +256,15 @@
 
 @layer components {
 
+
   /* ================= BUTTON ================= */
 
   .button {
-    @apply mt-6 inline-flex items-center gap-2
+    @apply inline-flex items-center justify-center gap-2
            rounded-md
            bg-Secondary
-           px-7 py-3
-           text-sm font-bold text-white
+           px-5 py-2
+           text-sm font-semibold text-white
            transition duration-300
            hover:bg-SecondaryContainer;
   }
@@ -286,17 +283,17 @@
   }
 
 
-  /* ================= PRODUCT CARDS GRID ================= */
+  /* ================= PRODUCT CARD ================= */
 
-  .gridCard {
-    @apply grid grid-cols-1 gap-6
-           sm:grid-cols-2
-           lg:grid-cols-4
-            backdrop-blur-3xl
-           ;
+  .boxOfCard {
+    @apply w-full overflow-hidden rounded-lg bg-Surface;
   }
-  .boxOfCard{
-    @apply overflow-hidden rounded-lg bg-Surface;
+
+
+  /* ================= WHITE BOX ================= */
+
+  .boxWhite {
+    @apply w-full rounded-3xl bg-SurfaceLowest p-4;
   }
 
 
@@ -306,86 +303,123 @@
     @apply max-w-fit
            rounded-lg
            bg-SurfaceContainer
-           py-2  px-4                
+           px-3 py-2
            text-center
            text-[10px]
            leading-3;
   }
-  .background-blue{@apply
-   max-w-fit
+
+
+  .background-blue {
+    @apply max-w-fit
            rounded-lg
            bg-PrimaryBlue
-           py-2  px-4                
+           px-3 py-2
            text-center
            text-[10px]
            leading-3;
-          }
-.boxWhite{
-  @apply bg-SurfaceLowest p-4 rounded-3xl w-full 
-}
+  }
+
 
   /* ================= PRODUCT BADGE ================= */
 
   .overlay {
     @apply max-w-fit
            rounded-lg
-           bg-Error/10
            px-2 py-1
            text-center
-           text-[10px]
+           text-[8px]
            leading-3;
+
+    @variant md {
+      @apply text-[10px];
+    }
   }
 
 
-  /* ================= PRICE SECTION ================= */
+  /* ================= PRICE ================= */
 
   .price {
-    @apply row
-           mt-7
+    @apply mt-6 flex
+           items-center
            justify-between
            border-t-2
            border-t-[#C3C6D633]
-           pt-7;
+           pt-5;
+
+    @variant md {
+      @apply mt-7 pt-7;
+    }
   }
 
 
-  /* ================= FAVORITE CIRCLE ================= */
+  /* ================= FAVORITE / CIRCLE ================= */
 
   .cercle {
-    @apply h-8 w-8
+    @apply flex
+           h-6 w-6
+           items-center
+           justify-center
            rounded-full
            bg-[#F6F3F2];
+
+    @variant md {
+      @apply h-8 w-8;
+    }
   }
 
 
-  /* ================= CART BUTTON ================= */
+  /* ================= PAGINATION ================= */
 
   .sequer {
-    @apply h-9 w-9
+    @apply flex
+           h-8 w-8
+           items-center
+           justify-center
            rounded-lg
-           bg-PrimaryBlue;
-  }
-  .minboxs{
-    @apply max-w-fit
-           rounded-lg py-4 px-4 bg-[#F6F3F2];
-  }
-  
-.centers {
-  @apply w-auto
-         p-2;
-}
-/*================email====================*/
-.email{
-  @apply mt-6 inline-flex items-center gap-2
-           rounded-md
-           bg-[#ffff]
-           px-7 py-3
-           text-sm font-bold text-black
-           transition duration-300
-           hover:bg-[#C3C6D6];
-}
-.list{
-  @apply w-4 h-4  col-span-1 rounded-sm 
-}
+           bg-PrimaryBlue
+           text-sm;
+
+    @variant md {
+      @apply h-9 w-9;
+    }
   }
 
+
+  /* ================= CENTER ICON ================= */
+
+  .centers {
+    @apply h-full w-full p-2;
+  }
+
+
+  /* ================= EMAIL ================= */
+
+  .email {
+    @apply inline-flex
+           h-10
+           items-center
+           rounded-md
+           bg-white
+           px-3.5
+           text-sm
+           text-black
+           outline-none
+           transition
+           duration-300
+           hover:bg-[#C3C6D6];
+
+    @variant md {
+      @apply h-12 px-7 font-bold;
+    }
+  }
+
+
+  /* ================= CHECKBOX ================= */
+
+  .list {
+    @apply h-4 w-4
+           rounded-sm;
+  }
+
+}
