@@ -267,9 +267,7 @@
            text-sm font-semibold text-white
            transition duration-300
            hover:bg-SecondaryContainer;
-            @variant lg {
-      @apply 
-           ;
+            
   }
 
 
@@ -427,6 +425,4 @@
   .list {
     @apply h-4 w-4
            rounded-sm;
-  }
-
-}
+  }}

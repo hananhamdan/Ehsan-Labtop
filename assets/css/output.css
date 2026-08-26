@@ -385,6 +385,9 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-1 {
+    height: var(--spacing);
+  }
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
@@ -547,6 +550,21 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
+  .gap-36 {
+    gap: calc(var(--spacing) * 36);
+  }
+  .gap-36\.25 {
+    gap: calc(var(--spacing) * 36.25);
+  }
+  .gap-\[40px\] {
+    gap: 40px;
+  }
+  .gap-\[145px\] {
+    gap: 145px;
+  }
   :where(.space-y-2 > :not(:last-child)) {
     --tw-space-y-reverse: 0;
     margin-block-start: calc(calc(var(--spacing) * 2) * var(--tw-space-y-reverse));
@@ -595,6 +613,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-1 {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
@@ -613,6 +635,9 @@
   .border-\[\#767676\] {
     border-color: #767676;
   }
+  .border-gray-50 {
+    border-color: var(--color-gray-50);
+  }
   .border-gray-100 {
     border-color: var(--color-gray-100);
   }
@@ -621,6 +646,12 @@
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
+  }
+  .border-gray-500 {
+    border-color: var(--color-gray-500);
+  }
+  .border-gray-700 {
+    border-color: var(--color-gray-700);
   }
   .border-white {
     border-color: var(--color-white);
@@ -824,6 +855,9 @@
   .text-\[8px\] {
     font-size: 8px;
   }
+  .text-\[14px\] {
+    font-size: 14px;
+  }
   .leading-6 {
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
@@ -860,6 +894,9 @@
   .text-Secondary {
     color: var(--color-Secondary);
   }
+  .text-\[\#1B1C1C\] {
+    color: #1B1C1C;
+  }
   .text-\[\#485980\] {
     color: #485980;
   }
@@ -868,6 +905,15 @@
   }
   .text-\[\#FFB800\] {
     color: #FFB800;
+  }
+  .text-\[\#\] {
+    color: #;
+  }
+  .text-\[1\] {
+    color: 1;
+  }
+  .text-\[14\] {
+    color: 14;
   }
   .text-blue-700 {
     color: var(--color-blue-700);
@@ -1175,6 +1221,11 @@
     .md\:mb-12 {
       margin-bottom: calc(var(--spacing) * 12);
     }
+    .md\:row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
     .md\:block {
       display: block;
     }
@@ -1189,9 +1240,6 @@
     }
     .md\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    .md\:flex-row {
-      flex-direction: row;
     }
     .md\:gap-5 {
       gap: calc(var(--spacing) * 5);
