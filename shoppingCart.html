@@ -7,132 +7,171 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
+  <!-- ================= GOOGLE FONT ================= -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com " crossorigin >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
 
   <link
     href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"
+  >
 
-  <!-- Tailwind -->
-  <link href="./assets/css/output.css" rel="stylesheet">
+  <!-- ================= TAILWIND ================= -->
 
-  <title> إحسان لابتوب </title>
+  <link
+    href="./assets/css/output.css"
+    rel="stylesheet"
+  >
+
+  <title>إحسان لابتوب</title>
 
 </head>
 
 
+<body class="bg-Surface container max-sm:mx-2">
 
 
-<body class="bg-Surface">
-
-
-  <!-- ================= HEADER ================= -->
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
 
   <header class="mb-8 rounded-2xl bg-SurfaceLowest md:mb-12">
 
     <div class="container">
 
-      <nav class="row min-h-13.75 justify-between gap-3 px-3 md:gap-5">
+      <nav
+        class="row min-h-13.75 justify-between gap-3 px-3 md:gap-5"
+      >
 
-        <!-- Logo -->
+        <!-- ================= LOGO ================= -->
 
         <div class="shrink-0">
 
           <a href="./index.html">
 
-            <img src="./assets/img/brand.png" alt="إحسان لابتوب" class="h-8 w-auto object-contain sm:h-9 md:h-10">
+            <img
+              src="./assets/img/brand.png"
+              alt="إحسان لابتوب"
+              class="h-8 w-auto object-contain sm:h-9 md:h-10"
+            >
 
           </a>
 
         </div>
 
 
-        <!-- Search -->
+        <!-- ================= SEARCH ================= -->
 
         <div class="search">
 
-          <input type="text" placeholder="ابحث عن منتجاتنا..." class="w-full bg-transparent text-sm text-gray-700
-                   outline-none placeholder:text-gray-400">
+          <input
+            type="text"
+            placeholder="ابحث عن منتجاتنا..."
+            class="w-full bg-transparent text-sm text-gray-700
+                   outline-none placeholder:text-gray-400"
+          >
 
-          <button type="button" class="shrink-0">
+          <button
+            type="button"
+            class="shrink-0"
+          >
 
-            <img src="./assets/icons/search.svg" alt="بحث" class="h-3.75 w-[15px]">
+            <img
+              src="./assets/icons/search.svg"
+              alt="بحث"
+              class="h-3.75 w-[15px]"
+            >
 
           </button>
 
         </div>
 
 
-        <!-- Navigation -->
+        <!-- ================= NAVIGATION ================= -->
 
-        <ul class="hidden items-center gap-5 text-gray-600 md:flex">
+        <ul
+          class="hidden items-center gap-5 text-gray-600 md:flex"
+        >
 
           <li>
-
-            <a href="./index.html" class="transition-colors duration-200 hover:text-blue-700">
+            <a
+              href="./index.html"
+              class="transition-colors duration-200 hover:text-blue-700"
+            >
               الرئيسية
             </a>
-
           </li>
 
-
           <li>
-
-            <a href="./AllDevice.html" class="transition-colors duration-200 hover:text-blue-700">
+            <a
+              href="./AllDevice.html"
+              class="transition-colors duration-200 hover:text-blue-700"
+            >
               اللابتوبات
             </a>
-
           </li>
 
-
           <li>
-
-            <a href="#" class="transition-colors duration-200 hover:text-blue-700">
+            <a
+              href="#"
+              class="transition-colors duration-200 hover:text-blue-700"
+            >
               ماركات
             </a>
-
           </li>
 
-
           <li>
-
-            <a href="#" class="transition-colors duration-200 hover:text-blue-700">
+            <a
+              href="#"
+              class="transition-colors duration-200 hover:text-blue-700"
+            >
               إكسسوارات
             </a>
-
           </li>
 
-
           <li>
-
-            <a href="./body.html" class="transition-colors duration-200 hover:text-blue-700">
+            <a
+              href="./body.html"
+              class="transition-colors duration-200 hover:text-blue-700"
+            >
               من نحن
             </a>
-
           </li>
 
         </ul>
 
 
-        <!-- Actions -->
+        <!-- ================= ACTIONS ================= -->
 
         <div class="row shrink-0 gap-3 sm:gap-4">
 
           <!-- Cart -->
 
-          <a href="#" class="relative flex items-center justify-center">
+          <a
+            href="#"
+            class="relative flex items-center justify-center"
+          >
 
-            <img src="./assets/icons/shoppingCart.svg" alt="السلة" class="h-4 w-4 sm:h-5 sm:w-5">
+            <img
+              src="./assets/icons/shoppingCart.svg"
+              alt="السلة"
+              class="h-4 w-4 sm:h-5 sm:w-5"
+            >
 
-            <span class="absolute -right-2 -top-2 row
+            <span
+              class="absolute -right-2 -top-2 row
                      h-3.5 w-3.5
                      justify-center
                      rounded-full
                      bg-Secondary
                      text-[8px]
-                     text-white">
+                     text-white"
+            >
               0
             </span>
 
@@ -141,18 +180,32 @@
 
           <!-- Favorites -->
 
-          <a href="#" class="flex items-center justify-center">
+          <a
+            href="#"
+            class="flex items-center justify-center"
+          >
 
-            <img src="./assets/icons/heart.svg" alt="المفضلة" class="h-4 w-4 sm:h-[17px] sm:w-[17px]">
+            <img
+              src="./assets/icons/heart.svg"
+              alt="المفضلة"
+              class="h-4 w-4 sm:h-[17px] sm:w-[17px]"
+            >
 
           </a>
 
 
           <!-- Account -->
 
-          <a href="#" class="flex items-center justify-center">
+          <a
+            href="#"
+            class="flex items-center justify-center"
+          >
 
-            <img src="./assets/icons/avatar.svg" alt="الحساب" class="h-4 w-4 sm:h-[19px] sm:w-[19px]">
+            <img
+              src="./assets/icons/avatar.svg"
+              alt="الحساب"
+              class="h-4 w-4 sm:h-[19px] sm:w-[19px]"
+            >
 
           </a>
 
@@ -163,181 +216,420 @@
     </div>
 
   </header>
-  <!-- Page Title -->
+
+
+
+  <!-- =====================================================
+       PAGE CONTENT
+  ====================================================== -->
 
   <section class="container">
-    <h1>
-      عربة التسوق </h1>
 
+    <!-- ================= PAGE TITLE ================= -->
+
+    <h1>
+      عربة التسوق
+    </h1>
 
     <h6>
-
       لديك 2 منتجات في سلتك.
     </h6>
-    <div class="md:row   gap-10">
-      <!--=======================right=============================-->
-      <div class="boxWhite flex flex-col gap-4 md:flex-1  ">
-        <h4>ملخص الطلب</h4>
+
+
+    <!-- ================= CART CONTENT ================= -->
+
+    <div class="gap-10 md:row">
+
+
+      <!-- =================================================
+           ORDER SUMMARY
+      ================================================== -->
+
+      <div
+        class="boxWhite flex flex-col gap-4 md:flex-1"
+      >
+
+        <h4>
+          ملخص الطلب
+        </h4>
+
+
+        <!-- ================= SUMMARY DETAILS ================= -->
+
         <div>
+
+          <!-- Subtotal -->
+
           <div class="row justify-between">
-            <p>المجموع الفرعي</p>
-            <p>605 JOD</p>
+
+            <p>
+              المجموع الفرعي
+            </p>
+
+            <p>
+              605 JOD
+            </p>
+
           </div>
+
+
+          <!-- Delivery -->
+
           <div class="row justify-between">
-            <p>رسوم التوصيل</p>
-            <h4 class="text-PrimaryBlue">توصيل مجاني</h4>
+
+            <p>
+              رسوم التوصيل
+            </p>
+
+            <h4 class="text-PrimaryBlue">
+              توصيل مجاني
+            </h4>
+
           </div>
+
+
+          <!-- Discount -->
+
           <div class="row justify-between">
-            <h6>الخصم</h6>
-            <h6>- 0 JOD</h6>
+
+            <h6>
+              الخصم
+            </h6>
+
+            <h6>
+              - 0 JOD
+            </h6>
+
           </div>
+
         </div>
-        <!--============================line====================-->
-        <div class=" border border-gray-500 w-full  "></div>
+
+
+        <!-- ================= DIVIDER ================= -->
+
+        <div class="w-full border border-gray-500"></div>
+
+
+        <!-- ================= TOTAL ================= -->
+
         <div class="row justify-between">
-          <p>الإجمالي</p>
-          </span>
-          <h4 class="text-PrimaryBlue"><span class="text-[#1B1C1C] ">jd</span>605</h4>
+
+          <p>
+            الإجمالي
+          </p>
+
+          <h4 class="text-PrimaryBlue">
+
+            <span class="text-sm text-[#1B1C1C]">
+              jd
+            </span>
+
+            605
+
+          </h4>
+
         </div>
 
 
-        <div>
-          <p class="text-[14px]">كود الخصم
-          <p>
-            <input type="text" placeholder="أدخل كود الخصم" class="email  border border-gray-500 w-full sm:w-auto">
+        <!-- ================= COUPON ================= -->
 
-            <button type="submit" class="button mt-0 whitespace-nowrap">
+        <div>
+
+          <p class="text-[14px]">
+            كود الخصم
+          </p>
+
+          <div class="mt-2 flex gap-2">
+
+            <input
+              type="text"
+              placeholder="أدخل كود الخصم"
+              class="email w-full border border-gray-500 sm:w-auto"
+            >
+
+            <button
+              type="submit"
+              class="button mt-0 whitespace-nowrap"
+            >
               تطبيق
             </button>
 
+          </div>
+
         </div>
-         <button type="submit" class="button mt-0 whitespace-nowrap">
-              اتمام الشراء
-            </button>
+
+
+        <!-- ================= CHECKOUT ================= -->
+
+        <button
+          type="submit"
+          class="button mt-0 whitespace-nowrap"
+        >
+          إتمام الشراء
+        </button>
 
       </div>
-      <!--======================left=============================-->
-      <div class="md:flex-2 row  gap-4">
-        <div class=" w-full rounded-3xl bg-SurfaceLowest p-2 row">
-        <div class=" md:flex-1">
-          <!--===============produce1==================-->
-          <!--===============imag==================-->
-          <div  >
-            <h4 class="text-PrimaryBlue align-middle "><span class="text-[#1B1C1C] text-sm ">jd</span>285</h4>
-            <div class="flex  ">
 
-              <a class=" rounded-l-none sequer  bg-Surface">-</a>
-              <a class=" rounded-none sequer bg-Surface">1</a>
-              <a class="  rounded-r-none sequer bg-Surface">+</a>
+
+
+      <!-- =================================================
+           PRODUCTS
+      ================================================== -->
+
+      <div class="gap-4 md:flex-2">
+
+
+        <!-- =================================================
+             PRODUCT 1
+        ================================================== -->
+
+        <div
+          class="row mb-4 w-full rounded-3xl bg-SurfaceLowest p-2"
+        >
+
+          <!-- ================= PRICE + QUANTITY ================= -->
+
+          <div class="md:flex-1">
+
+            <div>
+
+              <h4 class="align-middle text-PrimaryBlue">
+
+                <span class="text-sm text-[#1B1C1C]">
+                  jd
+                </span>
+
+                285
+
+              </h4>
+
+
+              <!-- Quantity -->
+
+              <div class="flex">
+
+                <a
+                  href="#"
+                  class="sequer rounded-l-none bg-Surface"
+                >
+                  -
+                </a>
+
+                <a
+                  href="#"
+                  class="sequer rounded-none bg-Surface"
+                >
+                  1
+                </a>
+
+                <a
+                  href="#"
+                  class="sequer rounded-r-none bg-Surface"
+                >
+                  +
+                </a>
+
+              </div>
+
             </div>
-          </div>
-        </div>
-        <!--===============ditails==================-->
-        <div class="px-4 py-4 sm:py-5 md:flex-2">
-
-          <h4>
-Lenovo ThinkPad T14 Gen 2          </h4>
-
-          <h6>
-           Ryzen 5 PRO 5650U, 16GB RAM, 256GB SSD, 14" IPS </h6>
-
-
-          <div class="mt-3 flex flex-wrap gap-1">
-
-            <div class="background">
-              R5 PRO </div>
-
-            <div class="background">
-              i7-1185G7
-            </div>
-
-
-
-          </div>
-
-
-
-
-
-        </div>
-        <div class="relative hidden md:block" />
-          <img src="./assets/img/dellIcon.svg"   class="w-20 h-20 ">
-          <div class="absolute top-2 right-2 z-10  bg-[#f185a0]  px-2 rounded-2xl text-xs " >شبه جديد</div>
-        </div>
-      </div>
-      <div class=" w-full rounded-3xl bg-SurfaceLowest p-2 row">
-        <div class=" md:flex-1">
-          <!--===============produce1==================-->
-          
-          <div  >
-            <h4 class="text-PrimaryBlue align-middle "><span class="text-[#1B1C1C] text-sm ">jd</span>320</h4>
-            <div class="flex  ">
-
-              <a class=" rounded-l-none sequer  bg-Surface">-</a>
-              <a class=" rounded-none sequer bg-Surface">1</a>
-              <a class="  rounded-r-none sequer bg-Surface">+</a>
-            </div>
-          </div>
-        </div>
-        <!--===============ditails==================-->
-        <div class="px-4 py-4 sm:py-5 md:flex-2">
-
-          <h4>
-            Dell Latitude 7420
-          </h4>
-
-          <h6>
-            Core i7 11th Gen, 16GB RAM, 512GB SSD NVMe, 14" FHD </h6>
-
-
-          <div class="mt-3 flex flex-wrap gap-1">
-
-            <div class="background">
-              R5 PRO </div>
-
-            <div class="background">
-              i7-1185G7
-            </div>
-
-
 
           </div>
 
 
+          <!-- ================= PRODUCT DETAILS ================= -->
+
+          <div
+            class="px-4 py-4 sm:py-5 md:flex-2"
+          >
+
+            <h4>
+              Lenovo ThinkPad T14 Gen 2
+            </h4>
+
+            <h6>
+              Ryzen 5 PRO 5650U, 16GB RAM, 256GB SSD, 14" IPS
+            </h6>
 
 
+            <!-- Specifications -->
+
+            <div class="mt-3 flex flex-wrap gap-1">
+
+              <div class="background">
+                R5 PRO
+              </div>
+
+              <div class="background">
+                i7-1185G7
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- ================= PRODUCT IMAGE ================= -->
+
+          <div class="relative hidden md:block">
+
+            <img
+              src="./assets/img/dellIcon.svg"
+              alt="Lenovo ThinkPad T14 Gen 2"
+              class="h-20 w-20"
+            >
+
+            <div
+              class="absolute right-2 top-2 z-10
+                     rounded-2xl bg-[#f185a0]
+                     px-2 text-xs"
+            >
+              شبه جديد
+            </div>
+
+          </div>
 
         </div>
-        <!--===================image===============-->
-        <div class="relative hidden md:block" >
-          <img src="./assets/img/dellIcon.svg"   class="w-20 h-20 ">
-          <div class="absolute top-2 right-2 z-10  bg-[#D1FAE5]  px-2 rounded-2xl text-xs " >ممتاز</div>
+
+
+
+        <!-- =================================================
+             PRODUCT 2
+        ================================================== -->
+
+        <div
+          class="row w-full rounded-3xl bg-SurfaceLowest p-2"
+        >
+
+          <!-- ================= PRICE + QUANTITY ================= -->
+
+          <div class="md:flex-1">
+
+            <div>
+
+              <h4 class="align-middle text-PrimaryBlue">
+
+                <span class="text-sm text-[#1B1C1C]">
+                  jd
+                </span>
+
+                320
+
+              </h4>
+
+
+              <!-- Quantity -->
+
+              <div class="flex">
+
+                <a
+                  href="#"
+                  class="sequer rounded-l-none bg-Surface"
+                >
+                  -
+                </a>
+
+                <a
+                  href="#"
+                  class="sequer rounded-none bg-Surface"
+                >
+                  1
+                </a>
+
+                <a
+                  href="#"
+                  class="sequer rounded-r-none bg-Surface"
+                >
+                  +
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- ================= PRODUCT DETAILS ================= -->
+
+          <div
+            class="px-4 py-4 sm:py-5 md:flex-2"
+          >
+
+            <h4>
+              Dell Latitude 7420
+            </h4>
+
+            <h6>
+              Core i7 11th Gen, 16GB RAM, 512GB SSD NVMe, 14" FHD
+            </h6>
+
+
+            <!-- Specifications -->
+
+            <div class="mt-3 flex flex-wrap gap-1">
+
+              <div class="background">
+                R5 PRO
+              </div>
+
+              <div class="background">
+                i7-1185G7
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- ================= PRODUCT IMAGE ================= -->
+
+          <div class="relative hidden md:block">
+
+            <img
+              src="./assets/img/dellIcon.svg"
+              alt="Dell Latitude 7420"
+              class="h-20 w-20"
+            >
+
+            <div
+              class="absolute right-2 top-2 z-10
+                     rounded-2xl bg-[#D1FAE5]
+                     px-2 text-xs"
+            >
+              ممتاز
+            </div>
+
+          </div>
+
         </div>
+
       </div>
-      </div>
-      
+
     </div>
-    </div>
-    </div>
-
 
   </section>
+
 
 
   <!-- =====================================================
        FOOTER
   ====================================================== -->
-  <footer class="mt-12 bg-SurfaceContainer text-sm sm:mt-16 c">
+
+  <footer
+    class="mt-12 bg-SurfaceContainer text-sm sm:mt-16"
+  >
 
 
-    <!-- Footer Top -->
+    <!-- ================= FOOTER TOP ================= -->
 
-    <div class="container grid grid-cols-1 gap-8 px-4 py-8
+    <div
+      class="container grid grid-cols-1 gap-8 px-4 py-8
              sm:grid-cols-2
-             lg:grid-cols-4 lg:gap-10 lg:py-10">
+             lg:grid-cols-4 lg:gap-10 lg:py-10"
+    >
 
 
-      <!-- Newsletter -->
+      <!-- ================= NEWSLETTER ================= -->
 
       <div>
 
@@ -351,11 +643,20 @@ Lenovo ThinkPad T14 Gen 2          </h4>
         </h5>
 
 
-        <form class="mt-4 flex flex-col gap-3 xl:flex-row">
+        <form
+          class="mt-4 flex flex-col gap-3 xl:flex-row"
+        >
 
-          <input type="email" placeholder="أدخل بريدك الإلكتروني" class="email w-full sm:w-auto">
+          <input
+            type="email"
+            placeholder="أدخل بريدك الإلكتروني"
+            class="email w-full sm:w-auto"
+          >
 
-          <button type="submit" class="button mt-0 whitespace-nowrap">
+          <button
+            type="submit"
+            class="button mt-0 whitespace-nowrap"
+          >
             اشترك الآن
           </button>
 
@@ -365,7 +666,7 @@ Lenovo ThinkPad T14 Gen 2          </h4>
 
 
 
-      <!-- Store -->
+      <!-- ================= STORE ================= -->
 
       <div>
 
@@ -407,7 +708,7 @@ Lenovo ThinkPad T14 Gen 2          </h4>
 
 
 
-      <!-- Support -->
+      <!-- ================= SUPPORT ================= -->
 
       <div>
 
@@ -449,7 +750,7 @@ Lenovo ThinkPad T14 Gen 2          </h4>
 
 
 
-      <!-- Company -->
+      <!-- ================= COMPANY ================= -->
 
       <div>
 
@@ -489,17 +790,19 @@ Lenovo ThinkPad T14 Gen 2          </h4>
 
 
 
-    <!-- Divider -->
+    <!-- ================= DIVIDER ================= -->
 
     <div class="border-t border-gray-300"></div>
 
 
 
-    <!-- Footer Bottom -->
+    <!-- ================= FOOTER BOTTOM ================= -->
 
-    <div class="container flex flex-col items-center justify-between
+    <div
+      class="container flex flex-col items-center justify-between
              gap-3 px-4 py-4 text-center
-             sm:flex-row sm:text-right">
+             sm:flex-row sm:text-right"
+    >
 
       <p>
         جميع الحقوق محفوظة
@@ -508,19 +811,26 @@ Lenovo ThinkPad T14 Gen 2          </h4>
 
       <div class="flex items-center gap-3">
 
-        <img src="./assets/icons/copy.svg" alt="viza">
+        <img
+          src="./assets/icons/copy.svg"
+          alt="viza"
+        >
 
-        <img src="./assets/icons/earth.svg" alt="global">
+        <img
+          src="./assets/icons/earth.svg"
+          alt="global"
+        >
 
-        <img src="./assets/icons/chare.svg" alt="share">
+        <img
+          src="./assets/icons/chare.svg"
+          alt="share"
+        >
 
       </div>
 
     </div>
 
   </footer>
-
-
 
 </body>
 
