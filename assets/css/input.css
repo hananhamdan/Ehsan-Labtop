@@ -267,6 +267,9 @@
            text-sm font-semibold text-white
            transition duration-300
            hover:bg-SecondaryContainer;
+            @variant lg {
+      @apply 
+           ;
   }
 
 
@@ -294,6 +297,10 @@
 
   .boxWhite {
     @apply w-full rounded-3xl bg-SurfaceLowest p-4;
+  }
+  .minboxs{
+     @apply  rounded-3xl bg-SurfaceLowest px-4 py-2;
+
   }
 
 

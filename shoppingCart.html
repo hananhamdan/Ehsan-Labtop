@@ -5,33 +5,19 @@
 <head>
 
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <!-- ================= GOOGLE FONT ================= -->
-
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet"
   >
 
-  <!-- ================= TAILWIND ================= -->
-
-  <link
-    href="./assets/css/output.css"
-    rel="stylesheet"
-  >
+  <!-- Tailwind -->
+  <link href="./assets/css/output.css" rel="stylesheet">
 
   <title>إحسان لابتوب</title>
 
@@ -41,17 +27,13 @@
 <body class="bg-Surface">
 
 
-  <!-- =====================================================
-       HEADER
-  ====================================================== -->
+  <!-- ================= HEADER ================= -->
 
-  <header class="mb-6 rounded-2xl bg-SurfaceLowest sm:mb-8 lg:mb-12">
+  <header class="mb-8 rounded-2xl bg-SurfaceLowest md:mb-12">
 
-    <div class="container px-3">
+    <div class="container">
 
-      <nav
-        class="flex min-h-14 items-center justify-between gap-3 sm:gap-5"
-      >
+      <nav class="row min-h-13.75 justify-between gap-3 px-3 md:gap-5">
 
         <!-- Logo -->
 
@@ -62,7 +44,7 @@
             <img
               src="./assets/img/brand.png"
               alt="إحسان لابتوب"
-              class="h-8 w-auto object-contain sm:h-10"
+              class="h-8 w-auto object-contain sm:h-9 md:h-10"
             >
 
           </a>
@@ -77,7 +59,8 @@
           <input
             type="text"
             placeholder="ابحث عن منتجاتنا..."
-            class="w-full bg-transparent text-sm text-gray-700 outline-none placeholder:text-gray-400"
+            class="w-full bg-transparent text-sm text-gray-700
+                   outline-none placeholder:text-gray-400"
           >
 
           <button
@@ -88,7 +71,7 @@
             <img
               src="./assets/icons/search.svg"
               alt="بحث"
-              class="h-[15px] w-[15px]"
+              class="h-3.75 w-[15px]"
             >
 
           </button>
@@ -99,7 +82,7 @@
         <!-- Navigation -->
 
         <ul
-          class="hidden items-center gap-4 text-gray-600 lg:flex lg:gap-5"
+          class="hidden items-center gap-5 text-gray-600 md:flex"
         >
 
           <li>
@@ -117,14 +100,13 @@
           <li>
 
             <a
-              href="#"
+              href="./AllDevice.html"
               class="transition-colors duration-200 hover:text-blue-700"
             >
               اللابتوبات
             </a>
 
           </li>
-
 
 
           <li>
@@ -145,20 +127,17 @@
               href="#"
               class="transition-colors duration-200 hover:text-blue-700"
             >
-              اكسسوارات
+              إكسسوارات
             </a>
 
           </li>
 
- <li>
+
+          <li>
 
             <a
-              href="./index.html"
-              class="relative flex h-14 items-center
-                     font-bold text-blue-700
-                     after:absolute after:bottom-0 after:right-0
-                     after:h-0.5 after:w-full
-                     after:bg-blue-700"
+              href="./body.html"
+              class="transition-colors duration-200 hover:text-blue-700"
             >
               من نحن
             </a>
@@ -170,7 +149,7 @@
 
         <!-- Actions -->
 
-        <div class="flex shrink-0 items-center gap-3 sm:gap-4">
+        <div class="row shrink-0 gap-3 sm:gap-4">
 
           <!-- Cart -->
 
@@ -180,15 +159,19 @@
           >
 
             <img
-              src="./assets/icons/shoppingCart.svg"
+              src="./assets/icons/carageblack.svg"
               alt="السلة"
-              class="h-5 w-5"
+              class="h-4 w-4 sm:h-5 sm:w-5"
             >
 
             <span
-              class="absolute -right-2 -top-2 flex h-[14px] w-[14px]
-                     items-center justify-center rounded-full bg-Secondary
-                     text-[8px] text-white"
+              class="absolute -right-2 -top-2 row
+                     h-[14px] w-[14px]
+                     justify-center
+                     rounded-full
+                     bg-Secondary
+                     text-[8px]
+                     text-white"
             >
               0
             </span>
@@ -206,7 +189,7 @@
             <img
               src="./assets/icons/heart.svg"
               alt="المفضلة"
-              class="h-[17px] w-[17px]"
+              class="h-4 w-4 sm:h-[17px] sm:w-[17px]"
             >
 
           </a>
@@ -222,7 +205,7 @@
             <img
               src="./assets/icons/avatar.svg"
               alt="الحساب"
-              class="h-[19px] w-[19px]"
+              class="h-4 w-4 sm:h-[19px] sm:w-[19px]"
             >
 
           </a>
@@ -234,66 +217,8 @@
     </div>
 
   </header>
-  <section class="container">
-  <div class=" text-center  md:my-8 my-4 boxWhite">
-    <h2 class="text-PrimaryBlue  ">قصة لابتوبي</h2>
-    <p>نحن أكثر من مجرد متجر لبيع أجهزة الكمبيوتر المحمولة. نحن وجهتك الأولى للتقنية المتقدمة، نهدف إلى تمكين الأفراد والشركات
-من خلال توفير أفضل الحلول التقنية المصممة خصيصًا لتلبية احتياجاتهم.</p>
-  </div>
-  <div class="row md:my-8 my-4 gap-4">
-    <div class="md:flex-1 boxWhite">
-        <h2>
-رحلتنا نحو الابتكار
-        </h2>
-        <h6>تأسست لابتوبي برؤية واضحة: جعل التكنولوجيا عالية الجودة في متناول الجميع. بدأنا كمتجر صغير، ومع مرور
-الوقت، وبفضل ثقة عملائنا، نمونا لنصبح أحد أبرز مزودي الأجهزة التقنية في المنطقة..
-        </h6>
-        <h6>
-           نحن نؤمن بأن التكنولوجيا يجب أن تسهل الحياة وتزيد من الإنتاجية. لذلك، نحرص على اختيار كل جهاز نعرضه
-بعناية فائقة، لضمان أعلى مستويات الأداء والموثوقية لعملائنا، سواء كانوا طلابًا، محترفين، أو عشاق للألعاب.       </h6>
-    </div>
-    <div class="md:flex-1">
-        <img src="./assets/img/aboutUs.png">
-    </div>
-  </div>
-  <div class=" my-4 row gap-4 md:my-8 ">
-    <div class=" md:flex-1 boxWhite">
-        <img src="./assets/img/flag.png " class="block">
-        <h4>مهمتنا</h4>
-        <h6>توفير أحدث التقنيات وأفضل الأجهزة بأسعار تنافسية، مع التركيز التام على تقديم خدمة عملاء استثنائية
-تجعل تجربة التسوق لدينا لا تُنسى.</h6>
-    </div>
-     <div  class="md:flex-1 boxWhite">
-        <img src="./assets/img/ayes.png " class="block">
-        <h4>رؤيتنا</h4>
-<h6>أن نكون الوجهة الأولى والموثوقة لكل ما يتعلق بأجهزة الكمبيوتر المحمولة وملحقاتها، وقيادة التحول
-الرقمي من خلال توفير أدوات التمكين التقني.</h6>
-    </div>
-  </div>
-
-
-  </section>
-  <section class="container">
-     <div class=" text-center  boxWhite">
-    <h2 class="text-PrimaryBlue  ">تواصل معنا</h2></div>
-    <div class="row gap-4 md:my-8 my-4 ">
-        <div  class="flex-1 boxWhite">
-        <img src="./assets/icons/earth.svg " class="block">
-        <h4>facebook</h4>
-<h6>www.facebook.com</h6>
-    </div>
-     <div  class="flex-1 boxWhite">
-        <img src="./assets/icons/copy.svg " class="block">
-        <h4>linkedin</h4>
-<h6>www.linkedin.com</h6>
-    </div>
-     <div  class="flex-1 boxWhite">
-        <img src="./assets/icons/chare.svg " class="block">
-        <h4>whatsapp</h4>
-<h6>www.whatsapp.com</h6>
-    </div>
-    </div>
-  </section>
+  
+  
   <!-- =====================================================
        FOOTER
   ====================================================== -->
@@ -327,7 +252,7 @@
 
 
         <form
-          class="mt-4 flex flex-col gap-3 xl:flex-row"
+          class="mt-4 flex flex-col gap-3 sm:flex-row"
         >
 
           <input
@@ -448,7 +373,7 @@
           </li>
 
           <li>
-            <a href="./body.html">
+            <a href="./detals.html">
               عن لابتوبي
             </a>
           </li>
@@ -514,6 +439,7 @@
     </div>
 
   </footer>
+
 
 </body>
 
