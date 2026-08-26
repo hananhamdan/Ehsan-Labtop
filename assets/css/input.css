@@ -89,8 +89,8 @@
   /* ================= H2 ================= */
 
   h2 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 1.2rem;
+    line-height: 1.75rem;
     font-weight: 600;
 
     @variant md {
