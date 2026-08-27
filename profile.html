@@ -149,34 +149,238 @@
         </div>
 
     </header>
-    <section class="row justify-between gap-6">
-        <div>
+
+  <div class="container  lg:px-4">
+    
+    <section class="   max-lg:px-2 row justify-between gap-6 "> 
+         <!-- ===================left====================== -->
+        <div class="md:flex-1">
 
 
         <ul>
 
-            <li>
-                <h4>حسابي</h4>
+            <li class="mb-6">
+                <h3>حسابي</h3>
             </li>
-            <li class="row gap-3">
+            <li class="row mb-4 gap-3">
                 <img src="./assets/icons/avatar.svg">
                 <a src="./profile.html">معلومات حسابي</a>
             </li>
-            <li class="row gap-3">
+            <li class="row mb-4 gap-3">
                 <img src="./assets/imagMyProfile/talabaty.svg">
                 <a src="#">طلباتي</a>
             </li>
-            <li class="row gap-3">
+            <li class=" mb-4 row gap-3">
                 <img src="./assets/imagMyProfile/delevary.svg">
                 <a src="#">عناوين التوصيل</a>
             </li>
         </ul>
         </div>
-        <div>
-            <h5>معلومات الحساب </h5>
+        <div class="md:flex-3 min-h-82.5">
+            <h3>معلومات الحساب </h3>
             <h6>قم بإدارة معلوماتك الشخصية وتفضيلاتك.</h6>
-            <div class="row ">
-                <div
+           <!--==================================================================================================================-->
+ <div class="row  md:h-75 lg:h-82.5"  >       
+
+<div class="w-full h-full max-w-md rounded-xl border-2 border-[#C3C6D6] bg-SurfaceLowest p-4 md:flex-1">
+
+  
+  <div class="flex items-center justify-between">
+
+    <h3 class="text-base font-bold text-Primary">
+      البيانات الشخصية
+    </h3>
+
+    <button type="button">
+      <img
+        src="./assets/imagMyProfile/pen.svg"
+        alt="تعديل البيانات"
+        class="h-4 w-4"
+      >
+    </button>
+
+  </div>
+
+
+ 
+  <div class="mt-5 flex items-center gap-3">
+
+   
+    <div class="h-10 w-10 shrink-0 overflow-hidden rounded-full border border-Secondary">
+      <img
+        src="./assets/imagMyProfile/person.png"
+        alt="أحمد محمد"
+        class="h-full w-full object-cover"
+      >
+    </div>
+
+
+   
+    <div class="flex flex-col">
+
+      <h4 class="text-sm font-semibold">
+        أحمد محمد
+      </h4>
+
+      <span class="mt-1 w-fit rounded-full bg-[#DDE7FF] px-2 py-0.5 text-[7px] text-Secondary">
+        عضو مميز
+      </span>
+
+    </div>
+
+  </div>
+
+
+ 
+  <div class="my-4 border-t border-[#E4E2E1]"></div>
+
+
+
+  <div class="flex items-center justify-between">
+
+    <div class="text-right">
+
+      <p class="text-[9px] text-gray-500">
+        البريد الإلكتروني
+      </p>
+
+      <p class="text-[10px] text-gray-800">
+        ahmed.m@example.com
+      </p>
+
+    </div>
+
+    <img
+      src="./assets/imagMyProfile/ltter.svg"
+      alt="البريد الإلكتروني"
+      class="h-4 w-4"
+    >
+
+  </div>
+
+
+  
+  <div class="mt-3 flex items-center justify-between">
+
+    <div class="text-right">
+
+      <p class="text-[9px] text-gray-500">
+        رقم الهاتف
+      </p>
+
+      <p class="text-[10px] text-gray-800" dir="ltr">
+        +966 50 123 4567
+      </p>
+
+    </div>
+
+    <img
+      src="./assets/imagMyProfile/phone.svg"
+      alt="رقم الهاتف"
+      class="h-4 w-4"
+    >
+
+  </div>
+
+</div>
+
+
+<div class="w-full  h-full max-w-md rounded-xl border-2 border-[#C3C6D6] bg-SurfaceLowest p-4 md:flex-1 ">
+
+  
+  <div class="flex items-center justify-between">
+
+    <h3 class="text-base font-bold">
+      ملخص الطلبات الأخيرة
+    </h3>
+
+    <a
+      href="#"
+      class="text-[10px] font-semibold text-Secondary"
+    >
+      عرض الكل
+    </a>
+
+  </div>
+
+
+ 
+  <div class="mt-5 flex items-center justify-between gap-3">
+
+   
+    <div class="flex items-center gap-2">
+
+      <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-[#DDE7FF]">
+        <img
+          src="./assets/imagMyProfile/labtop.svg"
+          alt="لابتوب"
+          class="h-4 w-4"
+        >
+      </div>
+
+      <div class="flex flex-col">
+
+        <p class="text-[9px] font-bold">
+          طلب #10245
+        </p>
+
+        <p class="text-[8px] text-gray-500">
+          تم التوصيل • 20 مايو 2024
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- السعر -->
+    <p class="shrink-0 text-[11px] font-bold">
+      4,500 ر.س
+    </p>
+
+  </div>
+
+
+  <!-- الطلب الثاني -->
+  <div class="mt-5 flex items-center justify-between gap-3">
+
+    <!-- معلومات الطلب -->
+    <div class="flex items-center gap-2">
+
+      <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-[#DDE7FF]">
+        <img
+          src="./assets/imagMyProfile/mouse.svg"
+          alt="ماوس"
+          class="h-4 w-4"
+        >
+      </div>
+
+      <div class="flex flex-col">
+
+        <p class="text-[9px] font-bold">
+          طلب #10238
+        </p>
+
+        <p class="text-[8px] text-gray-500">
+          جاري الشحن
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- السعر -->
+    <p class="shrink-0 text-[11px] font-bold">
+      250 ر.س
+    </p>
+
+  </div>
+
+</div>
+</div>
+                      
+
             </div>
 
 
@@ -184,6 +388,8 @@
 
     </section>
 
+
+  </div>
 
 
         <!-- ==================== FOOTER=================================
