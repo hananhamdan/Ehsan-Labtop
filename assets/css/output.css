@@ -1675,6 +1675,39 @@
     width: calc(var(--spacing) * 4);
     border-radius: var(--radius-sm);
   }
+  .selact {
+    position: relative;
+    display: flex;
+    height: calc(var(--spacing) * 14);
+    align-items: center;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-blue-700);
+    &::after {
+      content: var(--tw-content);
+      position: absolute;
+    }
+    &::after {
+      content: var(--tw-content);
+      right: 0px;
+    }
+    &::after {
+      content: var(--tw-content);
+      bottom: 0px;
+    }
+    &::after {
+      content: var(--tw-content);
+      height: calc(var(--spacing) * 0.5);
+    }
+    &::after {
+      content: var(--tw-content);
+      width: 100%;
+    }
+    &::after {
+      content: var(--tw-content);
+      background-color: var(--color-blue-700);
+    }
+  }
 }
 @property --tw-translate-x {
   syntax: "*";
