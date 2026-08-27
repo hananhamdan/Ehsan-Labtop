@@ -266,7 +266,8 @@
            px-5 py-2
            text-sm font-semibold text-white
            transition duration-300
-           hover:bg-SecondaryContainer;
+           hover:bg-SecondaryContainer
+           max-sm:w-full;
             
   }
 
@@ -401,18 +402,11 @@
   /* ================= EMAIL ================= */
 
   .email {
-    @apply inline-flex
-           h-10
-           items-center
-           rounded-md
-           bg-white
-           px-3.5
-           text-sm
-           text-black
-           outline-none
-           transition
-           duration-300
-           hover:bg-[#C3C6D6];
+    @apply h-11 w-full rounded-md border border-[#C3C6D6]
+                       bg-Surface px-10 text-center text-sm
+                       outline-none transition
+                       placeholder:text-gray-400
+                       focus:border-PrimaryBlue;
 
     @variant md {
       @apply h-12 px-7 font-bold;
