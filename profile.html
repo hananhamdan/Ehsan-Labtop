@@ -26,236 +26,363 @@
 
 
 <body class="bg-Surface container ">
-<saction>
-    <!--===============left==================-->
-    
+
+    <!-- ===================HEADER====================== -->
+
+    <header class="mb-8 rounded-2xl bg-SurfaceLowest md:mb-12">
+
+        <div class="container">
+
+            <nav class="row min-h-13.75 justify-between gap-3 px-3 md:gap-5">
+
+                <!-- ================= LOGO ================= -->
+
+                <div class="shrink-0">
+
+                    <a href="./index.html">
+
+                        <img src="./assets/img/brand.png" alt="إحسان لابتوب"
+                            class="h-8 w-auto object-contain sm:h-9 md:h-10">
+
+                    </a>
+
+                </div>
 
 
+                <!-- ================= SEARCH ================= -->
 
-    <!--================right=================-->
-    <div class="row justify-between" >
-        <div >
-            <h4>لوحة تحكم المستخدم</h4>
+                <div class="search">
+
+                    <input type="text" placeholder="ابحث عن منتجاتنا..." class="w-full bg-transparent text-sm text-gray-700
+                   outline-none placeholder:text-gray-400">
+
+                    <button type="button" class="shrink-0">
+
+                        <img src="./assets/icons/search.svg" alt="بحث" class="h-3.75 w-[15px]">
+
+                    </button>
+
+                </div>
+
+
+                <!-- ================= NAVIGATION ================= -->
+
+                <ul class="hidden items-center gap-5 text-gray-600 md:flex">
+
+                    <li>
+                        <a href="./index.html" class="transition-colors duration-200 hover:text-blue-700">
+                            الرئيسية
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./AllDevice.html" class="transition-colors duration-200 hover:text-blue-700">
+                            اللابتوبات
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="transition-colors duration-200 hover:text-blue-700">
+                            ماركات
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="transition-colors duration-200 hover:text-blue-700">
+                            إكسسوارات
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./body.html" class="transition-colors duration-200 hover:text-blue-700">
+                            من نحن
+                        </a>
+                    </li>
+
+                </ul>
+
+
+                <!-- ================= ACTIONS ================= -->
+
+                <div class="row shrink-0 gap-3 sm:gap-4">
+
+                    <!-- Cart -->
+
+                    <a href="./shoppingCart.html" class="relative flex items-center justify-center">
+
+                        <img src="./assets/icons/shoppingCart.svg" alt="السلة" class="h-4 w-4 sm:h-5 sm:w-5">
+
+                        <span class="absolute -right-2 -top-2 row
+                     h-3.5 w-3.5
+                     justify-center
+                     rounded-full
+                     bg-Secondary
+                     text-[8px]
+                     text-white">
+                            0
+                        </span>
+
+                    </a>
+
+
+                    <!-- Favorites -->
+
+                    <a href="#" class="flex items-center justify-center">
+
+                        <img src="./assets/icons/heart.svg" alt="المفضلة" class="h-4 w-4 sm:h-[17px] sm:w-[17px]">
+
+                    </a>
+
+
+                    <!-- Account -->
+
+                    <a href="./login.html" class="flex items-center justify-center">
+
+                        <img src="./assets/icons/avatar.svg" alt="الحساب" class="h-4 w-4 sm:h-[19px] sm:w-[19px]">
+
+                    </a>
+
+                </div>
+
+            </nav>
+
         </div>
 
-        <div class="flex shrink-0 items-center gap-3 sm:gap-4">
-
-            <a href="./shoppingCart.html" class="relative flex items-center justify-center">
-                <img src="./assets/icons/shoppingCart.svg" alt="السلة" class="h-5 w-5">
-
-                <span class="absolute -right-2 -top-2 flex h-[14px] w-[14px]
-                     items-center justify-center rounded-full
-                     bg-Secondary text-[8px] text-white">
-                    0
-                </span>
-            </a>
+    </header>
+    <section class="row justify-between gap-6">
+        <div>
 
 
+        <ul>
 
-            <a href="./login.html" class="flex items-center justify-center">
-                <img src="./assets/icons/avatar.svg" alt="الحساب" class="h-[19px] w-[19px]">
-            </a>
+            <li>
+                <h4>حسابي</h4>
+            </li>
+            <li class="row gap-3">
+                <img src="./assets/icons/avatar.svg">
+                <a src="./profile.html">معلومات حسابي</a>
+            </li>
+            <li class="row gap-3">
+                <img src="./assets/imagMyProfile/talabaty.svg">
+                <a src="#">طلباتي</a>
+            </li>
+            <li class="row gap-3">
+                <img src="./assets/imagMyProfile/delevary.svg">
+                <a src="#">عناوين التوصيل</a>
+            </li>
+        </ul>
         </div>
-    </div>
-</saction>
+        <div>
+            <h5>معلومات الحساب </h5>
+            <h6>قم بإدارة معلوماتك الشخصية وتفضيلاتك.</h6>
+            <div class="row ">
+                <div
+            </div>
 
-    <!-- ==================== FOOTER=================================
+
+        </div>
+
+    </section>
+
+
+
+        <!-- ==================== FOOTER=================================
       
    -->
 
-    <footer class="mt-12 bg-SurfaceContainer text-sm sm:mt-16">
+        <footer class="mt-12 bg-SurfaceContainer text-sm sm:mt-16">
 
 
-        <!-- Footer Top -->
+            <!-- Footer Top -->
 
-        <div class="container grid grid-cols-1 gap-8 px-4 py-8
+            <div class="container grid grid-cols-1 gap-8 px-4 py-8
              sm:grid-cols-2
              lg:grid-cols-4 lg:gap-10 lg:py-10">
 
 
-            <!-- Newsletter -->
+                <!-- Newsletter -->
 
-            <div>
+                <div>
 
-                <h3>
-                    نشرتنا الإخبارية
-                </h3>
+                    <h3>
+                        نشرتنا الإخبارية
+                    </h3>
 
-                <h5 class="mt-2">
-                    احصل على أحدث العروض والخصومات مباشرة
-                    في بريدك
-                </h5>
-
-
-                <form class="mt-4 flex flex-col gap-3 xl:flex-row">
-
-                    <input type="email" placeholder="أدخل بريدك الإلكتروني" class="email w-full sm:w-auto">
-
-                    <button type="submit" class="button mt-0 whitespace-nowrap">
-                        اشترك الآن
-                    </button>
-
-                </form>
-
-            </div>
+                    <h5 class="mt-2">
+                        احصل على أحدث العروض والخصومات مباشرة
+                        في بريدك
+                    </h5>
 
 
+                    <form class="mt-4 flex flex-col gap-3 xl:flex-row">
 
-            <!-- Store -->
+                        <input type="email" placeholder="أدخل بريدك الإلكتروني" class="email w-full sm:w-auto">
 
-            <div>
+                        <button type="submit" class="button mt-0 whitespace-nowrap">
+                            اشترك الآن
+                        </button>
 
-                <ul class="space-y-2">
+                    </form>
 
-                    <li>
-
-                        <a href="#">
-
-                            <h3>
-                                المتجر
-                            </h3>
-
-                        </a>
-
-                    </li>
-
-                    <li>
-                        <a href="./AllDevice.html">
-                            جميع الأجهزة
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            أجهزة الألعاب
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            أجهزة الأعمال
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
+                </div>
 
 
 
-            <!-- Support -->
+                <!-- Store -->
 
-            <div>
+                <div>
 
-                <ul class="space-y-2">
+                    <ul class="space-y-2">
 
-                    <li>
+                        <li>
 
-                        <a href="#">
+                            <a href="#">
 
-                            <h3>
-                                الدعم
-                            </h3>
+                                <h3>
+                                    المتجر
+                                </h3>
 
-                        </a>
+                            </a>
 
-                    </li>
+                        </li>
 
-                    <li>
-                        <a href="#">
-                            مركز المساعدة
-                        </a>
-                    </li>
+                        <li>
+                            <a href="./AllDevice.html">
+                                جميع الأجهزة
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="./shoppingCart.html/8
+                        <li>
+                            <a href="#">
+                                أجهزة الألعاب
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                أجهزة الأعمال
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- Support -->
+
+                <div>
+
+                    <ul class="space-y-2">
+
+                        <li>
+
+                            <a href="#">
+
+                                <h3>
+                                    الدعم
+                                </h3>
+
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                مركز المساعدة
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./shoppingCart.html/8
             '">
-                            تتبع الطلب
-                        </a>
-                    </li>
+                                تتبع الطلب
+                            </a>
+                        </li>
 
-                    <li>
-                        <a href="#">
-                            الاسترجاع
-                        </a>
-                    </li>
+                        <li>
+                            <a href="#">
+                                الاسترجاع
+                            </a>
+                        </li>
 
-                </ul>
+                    </ul>
+
+                </div>
+
+
+
+                <!-- Company -->
+
+                <div>
+
+                    <ul class="space-y-2">
+
+                        <li>
+
+                            <h3>
+                                الشركة
+                            </h3>
+
+                        </li>
+
+                        <li>
+                            <a href="./body.html">
+                                عن لابتوبي
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                الفروع
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./body.html">
+                                اتصل بنا
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
 
             </div>
 
 
 
-            <!-- Company -->
+            <!-- Divider -->
 
-            <div>
-
-                <ul class="space-y-2">
-
-                    <li>
-
-                        <h3>
-                            الشركة
-                        </h3>
-
-                    </li>
-
-                    <li>
-                        <a href="./body.html">
-                            عن لابتوبي
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            الفروع
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="./body.html">
-                            اتصل بنا
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </div>
+            <div class="border-t border-gray-300"></div>
 
 
 
-        <!-- Divider -->
+            <!-- Footer Bottom -->
 
-        <div class="border-t border-gray-300"></div>
-
-
-
-        <!-- Footer Bottom -->
-
-        <div class="container flex flex-col items-center justify-between
+            <div class="container flex flex-col items-center justify-between
              gap-3 px-4 py-4 text-center
              sm:flex-row sm:text-right">
 
-            <p>
-                جميع الحقوق محفوظة
-            </p>
+                <p>
+                    جميع الحقوق محفوظة
+                </p>
 
 
-            <div class="flex items-center gap-3">
+                <div class="flex items-center gap-3">
 
-                <img src="./assets/icons/copy.svg" alt="viza">
+                    <img src="./assets/icons/copy.svg" alt="viza">
 
-                <img src="./assets/icons/earth.svg" alt="global">
+                    <img src="./assets/icons/earth.svg" alt="global">
 
-                <img src="./assets/icons/chare.svg" alt="share">
+                    <img src="./assets/icons/chare.svg" alt="share">
+
+                </div>
 
             </div>
 
-        </div>
-
-    </footer>
+        </footer>
 
 
 </body>
