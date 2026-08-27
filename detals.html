@@ -1,9 +1,7 @@
 <!doctype html>
-
 <html lang="ar" dir="rtl">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -20,42 +18,28 @@
   <link href="./assets/css/output.css" rel="stylesheet">
 
   <title>إحسان لابتوب</title>
-
 </head>
 
-
 <body class="bg-Surface max-sm:mx-2">
-
 
   <!-- ================= HEADER ================= -->
 
   <header class="mb-8 rounded-2xl bg-SurfaceLowest md:mb-12">
-
     <div class="container">
 
       <nav class="row min-h-13.75 justify-between gap-3 px-3 md:gap-5">
 
-        <!-- Logo -->
-
         <div class="shrink-0">
-
           <a href="./index.html">
-
             <img
               src="./assets/img/brand.png"
               alt="إحسان لابتوب"
               class="h-8 w-auto object-contain sm:h-9 md:h-10"
             >
-
           </a>
-
         </div>
 
-
-        <!-- Search -->
-
         <div class="search">
-
           <input
             type="text"
             placeholder="ابحث عن منتجاتنا..."
@@ -67,97 +51,67 @@
             type="button"
             class="shrink-0"
           >
-
             <img
               src="./assets/icons/search.svg"
               alt="بحث"
               class="h-3.75 w-[15px]"
             >
-
           </button>
-
         </div>
 
-
-        <!-- Navigation -->
-
-        <ul
-          class="hidden items-center gap-5 text-gray-600 md:flex"
-        >
-
+        <ul class="hidden items-center gap-5 text-gray-600 md:flex">
           <li>
-
             <a
               href="./index.html"
               class="transition-colors duration-200 hover:text-blue-700"
             >
               الرئيسية
             </a>
-
           </li>
 
-
           <li>
-
             <a
               href="./AllDevice.html"
               class="transition-colors duration-200 hover:text-blue-700"
             >
               اللابتوبات
             </a>
-
           </li>
 
-
           <li>
-
             <a
               href="#"
               class="transition-colors duration-200 hover:text-blue-700"
             >
               ماركات
             </a>
-
           </li>
 
-
           <li>
-
             <a
               href="#"
               class="transition-colors duration-200 hover:text-blue-700"
             >
               إكسسوارات
             </a>
-
           </li>
 
-
           <li>
-
             <a
               href="./body.html"
               class="transition-colors duration-200 hover:text-blue-700"
             >
               من نحن
             </a>
-
           </li>
-
         </ul>
 
-
-        <!-- Actions -->
-
         <div class="row shrink-0 gap-3 sm:gap-4">
-
-          <!-- Cart -->
 
           <a
             href="./shoppingCart.html"
             class="relative flex items-center justify-center"
           >
-
             <img
               src="./assets/icons/shoppingCart.svg"
               alt="السلة"
@@ -167,55 +121,39 @@
             <span
               class="absolute -right-2 -top-2 row
                      h-[14px] w-[14px]
-                     justify-center
-                     rounded-full
-                     bg-Secondary
-                     text-[8px]
-                     text-white"
+                     justify-center rounded-full
+                     bg-Secondary text-[8px] text-white"
             >
               0
             </span>
-
           </a>
-
-
-          <!-- Favorites -->
 
           <a
             href="#"
             class="flex items-center justify-center"
           >
-
             <img
               src="./assets/icons/heart.svg"
               alt="المفضلة"
               class="h-4 w-4 sm:h-[17px] sm:w-[17px]"
             >
-
           </a>
-
-
-          <!-- Account -->
 
           <a
             href="./login.html"
             class="flex items-center justify-center"
           >
-
             <img
               src="./assets/icons/avatar.svg"
               alt="الحساب"
               class="h-4 w-4 sm:h-[19px] sm:w-[19px]"
             >
-
           </a>
 
         </div>
 
       </nav>
-
     </div>
-
   </header>
 
 
@@ -223,10 +161,7 @@
 
   <main class="container px-4 md:px-6 lg:px-0">
 
-    <!-- Breadcrumb -->
-
     <div class="mb-6 flex flex-wrap items-center gap-2 text-sm text-gray-500">
-
       <a
         href="./index.html"
         class="transition hover:text-Secondary"
@@ -248,182 +183,119 @@
       <span class="text-gray-700">
         تفاصيل المنتج
       </span>
-
     </div>
 
 
-    <!-- Product Layout -->
-
-    <section
-      class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12"
-    >
-
-      <!-- ================= RIGHT / IMAGES ================= -->
+    <section class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
 
       <div class="min-w-0">
-
-        <!-- Main Image -->
 
         <div
           class="relative overflow-hidden rounded-3xl bg-SurfaceLowest p-4 sm:p-6"
         >
-
           <img
             src="./assets/detailsImage/main.webp"
             alt="Laptop"
             class="mx-auto aspect-square w-full max-w-2xl object-contain"
           >
 
-          <!-- Discount -->
-
           <div
             class="absolute left-4 top-4
-                   rounded-full
-                   bg-Error
+                   rounded-full bg-Error
                    px-3 py-1.5
-                   text-xs font-semibold
-                   text-white
+                   text-xs font-semibold text-white
                    sm:left-6 sm:top-6 sm:text-sm"
           >
             خصم 15%
           </div>
-
         </div>
 
-
-        <!-- Thumbnail Images -->
-
-        <div
-          class="mt-4 grid grid-cols-4 gap-2 sm:gap-4"
-        >
-
-          <!-- Image 1 -->
+        <div class="mt-4 grid grid-cols-4 gap-2 sm:gap-4">
 
           <button
             type="button"
             class="overflow-hidden rounded-2xl
                    border-2 border-Secondary
-                   bg-SurfaceLowest
-                   p-1 sm:p-2"
+                   bg-SurfaceLowest p-1 sm:p-2"
           >
-
             <img
               src="./assets/detailsImage/main.webp"
               alt="صورة المنتج الرئيسية"
               class="aspect-square w-full object-contain"
             >
-
           </button>
-
-
-          <!-- Image 2 -->
 
           <button
             type="button"
             class="overflow-hidden rounded-2xl
                    border border-gray-200
-                   bg-SurfaceLowest
-                   p-1 sm:p-2"
+                   bg-SurfaceLowest p-1 sm:p-2"
           >
-
             <img
               src="./assets/detailsImage/1.webp"
               alt="صورة المنتج"
               class="aspect-square w-full object-contain"
             >
-
           </button>
-
-
-          <!-- Image 3 -->
 
           <button
             type="button"
             class="overflow-hidden rounded-2xl
                    border border-gray-200
-                   bg-SurfaceLowest
-                   p-1 sm:p-2"
+                   bg-SurfaceLowest p-1 sm:p-2"
           >
-
             <img
               src="./assets/detailsImage/2.webp"
               alt="صورة المنتج"
               class="aspect-square w-full object-contain"
             >
-
           </button>
-
-
-          <!-- Video -->
 
           <button
             type="button"
             class="relative overflow-hidden rounded-2xl
                    border border-gray-200
-                   bg-SurfaceLowest
-                   p-1 sm:p-2"
+                   bg-SurfaceLowest p-1 sm:p-2"
           >
-
             <img
               src="./assets/detailsImage/3.webp"
               alt="فيديو المنتج"
               class="aspect-square w-full object-cover"
             >
 
-            <!-- Overlay -->
-
             <div
-              class="absolute inset-0
-                     flex items-center justify-center
+              class="absolute inset-0 flex items-center justify-center
                      bg-black/30"
             >
-
               <div
                 class="flex h-8 w-8 items-center justify-center
-                       rounded-full
-                       bg-white/90
+                       rounded-full bg-white/90
                        sm:h-10 sm:w-10"
               >
-
                 <img
                   src="./assets/icons/play.svg"
                   alt="تشغيل الفيديو"
                   class="h-4 w-4 sm:h-5 sm:w-5"
                 >
-
               </div>
-
             </div>
-
           </button>
 
         </div>
-
       </div>
 
 
-      <!-- ================= LEFT / PRODUCT INFO ================= -->
-
       <div class="flex flex-col justify-center">
-
-        <!-- Brand -->
 
         <p class="mb-2 text-sm font-semibold text-Secondary">
           LENOVO
         </p>
 
-
-        <!-- Product Title -->
-
         <h1 class="text-2xl font-bold leading-10 md:text-3xl">
           Lenovo Legion Pro 5i Gen 8
         </h1>
 
-
-        <!-- Rating -->
-
         <div class="row mt-4 gap-1">
-
           <span class="text-[#FFB800]">★</span>
           <span class="text-[#FFB800]">★</span>
           <span class="text-[#FFB800]">★</span>
@@ -433,14 +305,9 @@
           <span class="mr-2 text-sm text-gray-500">
             (342 تقييم)
           </span>
-
         </div>
 
-
-        <!-- Price -->
-
         <div class="mt-6">
-
           <h2 class="text-2xl font-bold text-PrimaryBlue md:text-3xl">
             ١٣٩٩ د.أ
           </h2>
@@ -448,11 +315,7 @@
           <p class="mt-1 text-sm text-gray-400 line-through">
             ١٦٥٠ د.أ
           </p>
-
         </div>
-
-
-        <!-- Description -->
 
         <p class="mt-6 text-sm leading-7 text-gray-600 md:text-base">
           جهاز قوي ومناسب للألعاب والأعمال الثقيلة،
@@ -460,17 +323,12 @@
           عالية تلبي احتياجات المستخدمين.
         </p>
 
-
-        <!-- Specifications -->
-
         <div class="mt-6">
-
           <h3 class="mb-4 font-semibold">
             المواصفات
           </h3>
 
           <div class="grid grid-cols-2 gap-2 sm:grid-cols-3">
-
             <div class="background">
               Intel i7-1355U
             </div>
@@ -494,28 +352,20 @@
             <div class="background">
               Windows 11
             </div>
-
           </div>
-
         </div>
 
-
-        <!-- Quantity -->
-
         <div class="mt-6">
-
           <h3 class="mb-3 font-semibold">
             الكمية
           </h3>
 
           <div
             class="flex w-fit items-center
-                   overflow-hidden
-                   rounded-xl
+                   overflow-hidden rounded-xl
                    border border-gray-200
                    bg-SurfaceLowest"
           >
-
             <button
               type="button"
               class="h-10 w-10 text-lg transition hover:bg-SurfaceContainer"
@@ -523,9 +373,7 @@
               -
             </button>
 
-            <span
-              class="flex h-10 w-10 items-center justify-center"
-            >
+            <span class="flex h-10 w-10 items-center justify-center">
               1
             </span>
 
@@ -535,18 +383,10 @@
             >
               +
             </button>
-
           </div>
-
         </div>
 
-
-        <!-- Buttons -->
-
-        <div
-          class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2"
-        >
-
+        <div class="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
           <button
             type="button"
             class="button mt-0 w-full justify-center"
@@ -554,129 +394,88 @@
             أضف إلى السلة
           </button>
 
-
           <button
             type="button"
             class="flex w-full items-center justify-center
-                   rounded-md
-                   border border-Secondary
+                   rounded-md border border-Secondary
                    px-6 py-3
-                   text-sm font-bold
-                   text-Secondary
-                   transition
-                   duration-300
-                   hover:bg-Secondary
-                   hover:text-white"
+                   text-sm font-bold text-Secondary
+                   transition duration-300
+                   hover:bg-Secondary hover:text-white"
           >
             شراء الآن
           </button>
-
         </div>
-
-
-        <!-- Product Features -->
 
         <div
           class="mt-6 grid grid-cols-1 gap-3
-                 border-t border-gray-200
-                 pt-6
+                 border-t border-gray-200 pt-6
                  sm:grid-cols-3"
         >
-
-          <!-- Delivery -->
-
           <div class="flex items-center gap-2">
-
             <div
               class="sequer flex items-center justify-center bg-[#DDE7FF]"
             >
-
               <img
                 src="./assets/icons/copy.svg"
                 alt=""
                 class="h-full w-full p-2"
               >
-
             </div>
 
             <span class="text-xs">
               توصيل سريع
             </span>
-
           </div>
 
-
-          <!-- Warranty -->
-
           <div class="flex items-center gap-2">
-
             <div
               class="sequer flex items-center justify-center bg-[#DDE7FF]"
             >
-
               <img
                 src="./assets/icons/shoopingCartWhite.svg"
                 alt=""
                 class="h-full w-full p-2"
               >
-
             </div>
 
             <span class="text-xs">
               ضمان موثوق
             </span>
-
           </div>
 
-
-          <!-- Payment -->
-
           <div class="flex items-center gap-2">
-
             <div
               class="sequer flex items-center justify-center bg-[#DDE7FF]"
             >
-
               <img
                 src="./assets/icons/payment.svg"
                 alt=""
                 class="h-full w-full p-2"
               >
-
             </div>
 
             <span class="text-xs">
               دفع آمن
             </span>
-
           </div>
-
         </div>
 
       </div>
-
     </section>
 
 
     <!-- ================= PRODUCT DESCRIPTION ================= -->
 
-    <section
-      class="mt-10 rounded-3xl bg-SurfaceLowest p-5 sm:p-8"
-    >
+    <section class="mt-10 rounded-3xl bg-SurfaceLowest p-5 sm:p-8">
 
       <h2 class="mb-6">
         تفاصيل المنتج
       </h2>
 
-
-      <div
-        class="grid grid-cols-1 gap-8 md:grid-cols-2"
-      >
-
-        <!-- Description -->
+      <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
 
         <div>
-
           <h3 class="mb-3 font-semibold">
             وصف الجهاز
           </h3>
@@ -687,14 +486,9 @@
             مناسب للألعاب، التصميم، البرمجة والأعمال
             التي تحتاج إلى أداء قوي.
           </p>
-
         </div>
 
-
-        <!-- Additional Information -->
-
         <div>
-
           <h3 class="mb-3 font-semibold">
             معلومات إضافية
           </h3>
@@ -704,66 +498,45 @@
             <li
               class="flex justify-between border-b border-gray-100 pb-2"
             >
-
-              <span>
-                المعالج
-              </span>
+              <span>المعالج</span>
 
               <span class="font-semibold text-gray-800">
                 Intel Core i7
               </span>
-
             </li>
-
 
             <li
               class="flex justify-between border-b border-gray-100 pb-2"
             >
-
-              <span>
-                الذاكرة
-              </span>
+              <span>الذاكرة</span>
 
               <span class="font-semibold text-gray-800">
                 16GB
               </span>
-
             </li>
-
 
             <li
               class="flex justify-between border-b border-gray-100 pb-2"
             >
-
-              <span>
-                التخزين
-              </span>
+              <span>التخزين</span>
 
               <span class="font-semibold text-gray-800">
                 1TB SSD
               </span>
-
             </li>
 
-
             <li class="flex justify-between">
-
-              <span>
-                كرت الشاشة
-              </span>
+              <span>كرت الشاشة</span>
 
               <span class="font-semibold text-gray-800">
                 RTX 4070
               </span>
-
             </li>
 
           </ul>
-
         </div>
 
       </div>
-
     </section>
 
   </main>
@@ -771,11 +544,7 @@
 
   <!-- ================= FOOTER ================= -->
 
-  <footer
-    class="mt-12 bg-SurfaceContainer text-sm sm:mt-16"
-  >
-
-    <!-- Footer Top -->
+  <footer class="mt-12 bg-SurfaceContainer text-sm sm:mt-16">
 
     <div
       class="container grid grid-cols-1 gap-8
@@ -786,10 +555,7 @@
              lg:py-10"
     >
 
-      <!-- Newsletter -->
-
       <div>
-
         <h3>
           نشرتنا الإخبارية
         </h3>
@@ -799,11 +565,7 @@
           في بريدك
         </h5>
 
-
-        <form
-          class="mt-4 flex flex-col gap-3 xl:flex-row"
-        >
-
+        <form class="mt-4 flex flex-col gap-3 xl:flex-row">
           <input
             type="email"
             placeholder="أدخل بريدك الإلكتروني"
@@ -816,174 +578,112 @@
           >
             اشترك الآن
           </button>
-
         </form>
-
       </div>
 
 
-      <!-- Store -->
-
       <div>
-
         <ul class="space-y-2">
-
           <li>
-
             <a href="#">
-
-              <h3>
-                المتجر
-              </h3>
-
+              <h3>المتجر</h3>
             </a>
-
           </li>
 
           <li>
-
             <a href="./AllDevice.html">
               جميع الأجهزة
             </a>
-
           </li>
 
           <li>
-
             <a href="#">
               أجهزة الألعاب
             </a>
-
           </li>
 
           <li>
-
             <a href="#">
               أجهزة الأعمال
             </a>
-
           </li>
-
         </ul>
-
       </div>
 
 
-      <!-- Support -->
-
       <div>
-
         <ul class="space-y-2">
-
           <li>
-
             <a href="#">
-
-              <h3>
-                الدعم
-              </h3>
-
+              <h3>الدعم</h3>
             </a>
-
           </li>
 
           <li>
-
             <a href="#">
               مركز المساعدة
             </a>
-
           </li>
 
           <li>
-
             <a href="./shoppingCart.html">
               تتبع الطلب
             </a>
-
           </li>
 
           <li>
-
             <a href="#">
               الاسترجاع
             </a>
-
           </li>
-
         </ul>
-
       </div>
 
 
-      <!-- Company -->
-
       <div>
-
         <ul class="space-y-2">
-
           <li>
-
-            <h3>
-              الشركة
-            </h3>
-
+            <h3>الشركة</h3>
           </li>
 
           <li>
-
             <a href="./body.html">
               عن لابتوبي
             </a>
-
           </li>
 
           <li>
-
             <a href="#">
               الفروع
             </a>
-
           </li>
 
           <li>
-
             <a href="./body.html">
               اتصل بنا
             </a>
-
           </li>
-
         </ul>
-
       </div>
 
     </div>
 
 
-    <!-- Divider -->
-
     <div class="border-t border-gray-300"></div>
 
-
-    <!-- Footer Bottom -->
 
     <div
       class="container flex flex-col
              items-center justify-between
              gap-3 px-4 py-4
              text-center
-             sm:flex-row
-             sm:text-right"
+             sm:flex-row sm:text-right"
     >
-
       <p>
         جميع الحقوق محفوظة
       </p>
 
-
       <div class="flex items-center gap-3">
-
         <img
           src="./assets/icons/copy.svg"
           alt="Visa"
@@ -998,13 +698,10 @@
           src="./assets/icons/chare.svg"
           alt="Share"
         >
-
       </div>
-
     </div>
 
   </footer>
-
 
 </body>
 
