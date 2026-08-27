@@ -1,73 +1,40 @@
 @import "tailwindcss";
 
-
-/* =========================================================
-   THEME
-   ========================================================= */
+/* ================= THEME ================= */
 
 @theme {
-
-  /* ================= PRIMARY ================= */
-
   --color-PrimaryBlue: #003d9b;
   --color-PrimaryContainer: #0052cc;
 
-
-  /* ================= SECONDARY ================= */
-
   --color-Secondary: #0058be;
   --color-SecondaryContainer: #2170e4;
-
-
-  /* ================= SURFACE ================= */
 
   --color-Surface: #fbf9f8;
   --color-SurfaceLowest: #ffffff;
   --color-SurfaceContainer: #f0eded;
   --color-SurfaceHighest: #e4e2e1;
 
-
-  /* ================= DARK ================= */
-
   --color-DarkNavy: #001848;
-
-
-  /* ================= SUCCESS ================= */
 
   --color-Success: #146c2e;
   --color-CustomSuccess: #146c2e;
 
-
-  /* ================= ERROR ================= */
-
   --color-Error: #ba1a1a;
   --color-ErrorContainer: #ffd6d6;
 
-
-  /* ================= FONTS ================= */
-
   --font-cairo: "Cairo", sans-serif;
   --font-inter: "Inter", sans-serif;
-
-
-  /* ================= BREAKPOINT ================= */
 
   --breakpoint-xs: 400px;
 }
 
 
-/* =========================================================
-   BASE
-   ========================================================= */
+/* ================= BASE ================= */
 
 @layer base {
-
   body {
     font-family: var(--font-cairo);
   }
-
-
-  /* ================= H1 ================= */
 
   h1 {
     font-size: 1.75rem;
@@ -85,9 +52,6 @@
     }
   }
 
-
-  /* ================= H2 ================= */
-
   h2 {
     font-size: 1.2rem;
     line-height: 1.75rem;
@@ -103,9 +67,6 @@
       line-height: 2.375rem;
     }
   }
-
-
-  /* ================= H3 ================= */
 
   h3 {
     font-size: 1.25rem;
@@ -123,9 +84,6 @@
     }
   }
 
-
-  /* ================= H4 ================= */
-
   h4 {
     font-size: 1.125rem;
     line-height: 1.625rem;
@@ -141,9 +99,6 @@
       line-height: 1.75rem;
     }
   }
-
-
-  /* ================= H5 ================= */
 
   h5 {
     font-size: 1rem;
@@ -161,9 +116,6 @@
     }
   }
 
-
-  /* ================= H6 ================= */
-
   h6 {
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -179,9 +131,6 @@
       line-height: 1.5rem;
     }
   }
-
-
-  /* ================= BODY ================= */
 
   .body-lg {
     font-size: 1.125rem;
@@ -201,24 +150,15 @@
     font-weight: 400;
   }
 
-
-  /* ================= PRICE ================= */
-
   .price-lg {
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 700;
   }
-
 }
 
 
-/* =========================================================
-   UTILITIES
-   ========================================================= */
-
-
-/* ================= CONTAINER ================= */
+/* ================= UTILITIES ================= */
 
 @utility container {
   width: 100%;
@@ -242,181 +182,105 @@
   }
 }
 
-
-/* ================= ROW ================= */
-
 @utility row {
   @apply flex flex-wrap items-center;
 }
 
 
-/* =========================================================
-   COMPONENTS
-   ========================================================= */
+/* ================= COMPONENTS ================= */
 
 @layer components {
-
-
-  /* ================= BUTTON ================= */
-
   .button {
     @apply inline-flex items-center justify-center gap-2
-           rounded-md
-           bg-Secondary
-           px-5 py-2
-           text-sm font-semibold text-white
-           transition duration-300
-           hover:bg-SecondaryContainer
-           max-sm:w-full;
-            
+      rounded-md bg-Secondary px-5 py-2
+      text-sm font-semibold text-white
+      transition duration-300
+      hover:bg-SecondaryContainer
+      max-sm:w-full;
   }
-
-
-  /* ================= SEARCH ================= */
 
   .search {
     @apply hidden h-7.5 w-45 items-center
-           rounded-full
-           border border-gray-100
-           bg-gray-50
-           px-3
-           sm:flex
-           md:w-57.5;
+      rounded-full border border-gray-100
+      bg-gray-50 px-3
+      sm:flex md:w-57.5;
   }
-
-
-  /* ================= PRODUCT CARD ================= */
 
   .boxOfCard {
     @apply w-full overflow-hidden rounded-lg bg-Surface;
   }
 
-
-  /* ================= WHITE BOX ================= */
-
   .boxWhite {
     @apply w-full rounded-3xl bg-SurfaceLowest p-4;
   }
-  .minboxs{
-     @apply  rounded-3xl bg-SurfaceLowest px-4 py-2;
 
+  .minboxs {
+    @apply rounded-3xl bg-SurfaceLowest px-4 py-2;
   }
-
-
-  /* ================= PRODUCT SPECIFICATIONS ================= */
 
   .background {
-    @apply max-w-fit
-           rounded-lg
-           bg-SurfaceContainer
-           px-3 py-2
-           text-center
-           text-[10px]
-           leading-3;
+    @apply max-w-fit rounded-lg bg-SurfaceContainer
+      px-3 py-2 text-center text-[10px] leading-3;
   }
-
 
   .background-blue {
-    @apply max-w-fit
-           rounded-lg
-           bg-PrimaryBlue
-           px-3 py-2
-           text-center
-           text-[10px]
-           leading-3;
+    @apply max-w-fit rounded-lg bg-PrimaryBlue
+      px-3 py-2 text-center text-[10px] leading-3;
   }
 
-
-  /* ================= PRODUCT BADGE ================= */
-
   .overlay {
-    @apply max-w-fit
-           rounded-lg
-           px-2 py-1
-           text-center
-           text-[8px]
-           leading-3;
+    @apply max-w-fit rounded-lg px-2 py-1
+      text-center text-[8px] leading-3;
 
     @variant md {
       @apply text-[10px];
     }
   }
 
-
-  /* ================= PRICE ================= */
-
   .price {
-    @apply mt-6 flex
-           items-center
-           justify-between
-           border-t-2
-           border-t-[#C3C6D633]
-           pt-5;
+    @apply mt-6 flex items-center justify-between
+      border-t-2 border-t-[#C3C6D633] pt-5;
 
     @variant md {
       @apply mt-7 pt-7;
     }
   }
 
-
-  /* ================= FAVORITE / CIRCLE ================= */
-
   .cercle {
-    @apply flex
-           h-6 w-6
-           items-center
-           justify-center
-           rounded-full
-           bg-[#F6F3F2];
+    @apply flex h-6 w-6 items-center justify-center
+      rounded-full bg-[#F6F3F2];
 
     @variant md {
       @apply h-8 w-8;
     }
   }
 
-
-  /* ================= PAGINATION ================= */
-
   .sequer {
-    @apply flex
-           h-8 w-8
-           items-center
-           justify-center
-           rounded-lg
-           bg-PrimaryBlue
-           text-sm;
+    @apply flex h-8 w-8 items-center justify-center
+      rounded-lg bg-PrimaryBlue text-sm;
 
     @variant md {
       @apply h-9 w-9;
     }
   }
 
-
-  /* ================= CENTER ICON ================= */
-
   .centers {
     @apply h-full w-full p-2;
   }
 
-
-  /* ================= EMAIL ================= */
-
   .email {
     @apply h-11 w-full rounded-md border border-[#C3C6D6]
-                       bg-Surface px-10 text-center text-sm
-                       outline-none transition
-                       placeholder:text-gray-400
-                       focus:border-PrimaryBlue;
+      bg-Surface px-10 text-center text-sm
+      outline-none transition
+      placeholder:text-gray-400
+      focus:border-PrimaryBlue;
 
     @variant md {
       @apply h-12 px-7 font-bold;
     }
   }
 
-
-  /* ================= CHECKBOX ================= */
-
   .list {
-    @apply h-4 w-4
-           rounded-sm;
-  }}
+    @apply h-4 w-4 rounded-sm;
+  }
+}
