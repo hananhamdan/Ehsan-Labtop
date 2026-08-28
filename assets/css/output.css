@@ -709,6 +709,9 @@
       background-color: color-mix(in oklab, var(--color-Error) 10%, transparent);
     }
   }
+  .bg-PrimaryBlue {
+    background-color: var(--color-PrimaryBlue);
+  }
   .bg-PrimaryContainer {
     background-color: var(--color-PrimaryContainer);
   }
@@ -1081,6 +1084,9 @@
       --tw-scale-y: 105%;
       --tw-scale-z: 105%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+    .hover\:bg-PrimaryContainer:hover {
+      background-color: var(--color-PrimaryContainer);
     }
     .hover\:bg-Secondary:hover {
       background-color: var(--color-Secondary);
