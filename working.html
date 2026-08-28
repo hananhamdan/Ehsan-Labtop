@@ -82,31 +82,30 @@
 
           <li>
 
-            <a href="./AllDevice.html" class="relative flex h-14 items-center font-bold text-blue-700
-                     after:absolute after:bottom-0 after:right-0
-                     after:h-0.5 after:w-full after:bg-blue-700">
+            <a href="./AllDevice.html" class="transition-colors duration-200 hover:text-blue-700">
               اللابتوبات
             </a>
 
           </li>
+            <li>
 
-
-          <li>
-
-            <a href="./uesedDevice.html" class="transition-colors duration-200 hover:text-blue-700">
-أجهزة مستعملة            </a>
-
-          </li>
-
-
-          <li>
-
-            <a href="newDevice.html" class="transition-colors duration-200 hover:text-blue-700">
-             أحهزة جديدة
+            <a href="uesedDevice.html" class="transition-colors duration-200 hover:text-blue-700">
+             أحهزة مستعملة
               </a>
 
           </li>
 
+
+
+          <li>
+
+            <a href="./newDevice.html" class="transition-colors duration-200 hover:text-blue-700">
+أجهزة جديدة            </a>
+
+          </li>
+
+
+        
 
           <li>
 
@@ -149,7 +148,7 @@
 
           <!-- Account -->
 
-          <a href="./profile.html" class="flex items-center justify-center">
+          <a href="./login.html" class="flex items-center justify-center">
 
             <img src="./assets/icons/avatar.svg" alt="الحساب" class="h-[19px] w-[19px]">
 
@@ -165,317 +164,21 @@
 
 
 
-  <!-- =====================================================
-       PAGE HEADER
-  ====================================================== -->
 
   <section class="container my-6 px-4 sm:my-8 lg:my-12">
 
 
-    <!-- Breadcrumb -->
-
-    <div class="mb-4 text-sm">
-
-      <a href="./index.html">
-        الرئيسية
-      </a>
-
-      <span class="mx-1">
-        &gt;
-      </span>
-
-      <a href="#">
-        الأجهزة
-      </a>
-
-    </div>
+   
 
 
     <!-- Page Title -->
 
     <h1>
-      كل أجهزة اللابتوب
-    </h1>
+أجهزة الأعمال    </h1>
 
 
-    <!-- Results + Sort -->
-
-    <div class="mt-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-
-      <!-- Results -->
-
-      <div>
-
-        <h6 class="hidden md:block">
-
-          عرض ٢٤٣ جهاز لابتوب يلبي احتياجاتك
-
-        </h6>
-
-      </div>
-
-
-      <!-- Sort -->
-
-      <div class="flex w-fit items-center gap-2 rounded-3xl
-               bg-SurfaceLowest p-3 sm:p-4">
-
-        <img src="./assets/icons/Container(4).svg" alt="" class="h-5 w-5">
-
-        <h6>
-          الترتيب حسب: الأحدث
-        </h6>
-
-        <img src="./assets/icons/row dowen.svg" alt="" class="h-4 w-4">
-
-      </div>
-
-    </div>
-
-
-
-    <!-- PRODUCTS + FILTERS= -->
-
-    <div class="mt-6 flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-8">
-
-
-      <!-- =========== FILTERS=============================== -->
-
-      <aside class="flex w-full flex-col gap-4 lg:w-60 lg:shrink-0 lg:gap-6">
-
-
-        
-        
-
-        <div class="boxWhite">
-
-          <h3 class="mb-4 text-base font-semibold">
-            الماركة
-          </h3>
-
-
-          <!-- Apple -->
-
-          <div class="grid grid-cols-10 items-center gap-y-3">
-
-
-            <div class="list bg-PrimaryContainer"></div>
-
-            <p class="col-span-2">
-              Apple
-            </p>
-
-            <div class="col-span-7 text-end">
-
-              <p>
-                (456)
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <!-- Lenovo -->
-
-          <div class="mt-3 grid grid-cols-10 items-center">
-
-            <div class="list bg-PrimaryContainer"></div>
-
-            <p class="col-span-2">
-              Lenovo
-            </p>
-
-            <div class="col-span-7 text-end">
-
-              <p>
-                (123)
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <!-- Dell -->
-
-          <div class="mt-3 grid grid-cols-10 items-center">
-
-            <div class="list border border-[#767676] bg-Surface"></div>
-
-            <p class="col-span-2">
-              Dell
-            </p>
-
-            <div class="col-span-7 text-end">
-
-              <p>
-                (456)
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <!-- HP -->
-
-          <div class="mt-3 grid grid-cols-10 items-center">
-
-            <div class="list border border-[#767676] bg-Surface"></div>
-
-            <p class="col-span-2">
-              HP
-            </p>
-
-            <div class="col-span-7 text-end">
-
-              <p>
-                (178)
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <!-- Show More -->
-
-          <div class="mt-4 text-start">
-
-            <a href="#">
-
-              <h3 class="text-base font-semibold text-PrimaryBlue">
-                عرض المزيد
-              </h3>
-
-            </a>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- ================= PRICE FILTER ================= -->
-
-        <div class="boxWhite">
-
-          <h3 class="mb-4">
-            السعر (دينار)
-          </h3>
-
-
-          <img src="./assets/img/filter.webp" alt="فلتر السعر" class="w-full">
-
-
-          <div class="mt-4 flex items-center justify-between gap-3">
-
-            <div class="rounded-2xl bg-SurfaceContainer px-4 py-2 sm:px-5">
-              3000
-            </div>
-
-            <span>
-              -
-            </span>
-
-            <div class="rounded-2xl bg-SurfaceContainer px-4 py-2 sm:px-5">
-              1500
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- ================= PROCESSOR FILTER ================= -->
-
-        <div class="boxWhite">
-
-          <h3 class="mb-4">
-            المعالج
-          </h3>
-
-
-          <div class="grid grid-cols-2 gap-2">
-
-            <div class="background-blue text-white">
-              Intel Core i7
-            </div>
-
-            <div class="background">
-              Intel Core i5
-            </div>
-
-            <div class="background-blue text-white">
-              Intel Core i9
-            </div>
-
-            <div class="background">
-              Intel Core i3
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- ================= RAM FILTER ================= -->
-
-        <div class="boxWhite">
-
-          <h3 class="mb-4">
-            الذاكرة (RAM)
-          </h3>
-
-
-          <ul class="space-y-3">
-
-            <li class="flex items-center gap-2">
-
-              <div class="list bg-[#0075FF]"></div>
-
-              <p>
-                16 جيجابايت
-              </p>
-
-            </li>
-
-
-            <li class="flex items-center gap-2">
-
-              <div class="list border border-[#767676] bg-Surface"></div>
-
-              <p>
-                32 جيجابايت
-              </p>
-
-            </li>
-
-
-            <li class="flex items-center gap-2">
-
-              <div class="list border border-[#767676] bg-Surface"></div>
-
-              <p>
-                8 جيجابايت
-              </p>
-
-            </li>
-
-          </ul>
-
-        </div>
-
-      </aside>
-
-
-
-      <!-- ===================================================
-           PRODUCTS
-      ==================================================== -->
+    
+   
 
       <main class="min-w-0 flex-1">
 
@@ -494,7 +197,7 @@
 
             <div class="relative mx-3 my-3 rounded-3xl bg-SurfaceLowest sm:mx-4 sm:my-4">
 
-              <img src="./assets/img/LENOVO.webp" alt="HP Spectre x360 14" class="aspect-square w-full object-contain">
+              <img src="./assets/img/dell.webp" alt="HP Spectre x360 14" class="aspect-square w-full object-contain">
 
 
               <!-- Status -->
@@ -520,7 +223,7 @@
             <div class="px-4 py-4 sm:py-5">
 
               <h5>
-                HP
+                lenovo
               </h5>
 
               <h4>
@@ -567,6 +270,11 @@
               <!-- Price -->
 
               <div class="price">
+               <a href="./detals.html"
+                  
+                  alt="التفاصيل"
+                  class="button"
+                > عرض التفاصيل</a>
 
                 <h3 class="text-PrimaryBlue">
                   ١٣٩٩ د.أ
@@ -593,7 +301,7 @@
 
             <div class="relative mx-3 my-3 rounded-3xl bg-SurfaceLowest sm:mx-4 sm:my-4">
 
-              <img src="./assets/img/LENOVO.webp" alt="HP Spectre x360 14" class="aspect-square w-full object-contain">
+              <img src="./assets/img/dell.webp" alt="HP Spectre x360 14" class="aspect-square w-full object-contain">
 
               <div class="overlay absolute right-0 top-2 bg-[#BFD1FF] text-[#485980]">
                 جديد
@@ -611,7 +319,7 @@
             <div class="px-4 py-4 sm:py-5">
 
               <h5>
-                HP
+            Dell
               </h5>
 
               <h4>
@@ -652,6 +360,11 @@
 
 
               <div class="price">
+               <a href="./detals.html"
+                  
+                  alt="التفاصيل"
+                  class="button"
+                > عرض التفاصيل</a>
 
                 <h3 class="text-PrimaryBlue">
                   ١٣٩٩ د.أ
@@ -695,7 +408,7 @@
             <div class="px-4 py-4 sm:py-5">
 
               <h5>
-                HP
+                APPLE
               </h5>
 
               <h4>
@@ -736,6 +449,11 @@
 
 
               <div class="price">
+               <a href="./detals.html"
+                  
+                  alt="التفاصيل"
+                  class="button"
+                > عرض التفاصيل</a>
 
                 <h3 class="text-PrimaryBlue">
                   ١٣٩٩ د.أ
@@ -802,13 +520,12 @@
 
       </main>
 
-    </div>
+    
 
   </section>
 
 
 
- 
   <!-- ================= FOOTER ================= -->
 
   <footer class="mt-12 bg-SurfaceContainer text-sm sm:mt-16">
