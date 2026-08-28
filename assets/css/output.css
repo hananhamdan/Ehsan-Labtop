@@ -1121,6 +1121,9 @@
     .max-sm\:mx-2 {
       margin-inline: calc(var(--spacing) * 2);
     }
+    .max-sm\:hidden {
+      display: none;
+    }
   }
   @media (width >= 40rem) {
     .sm\:top-6 {

@@ -198,6 +198,8 @@
       hover:bg-SecondaryContainer
       max-sm:w-full;
   }
+  
+  
 
   .search {
     @apply hidden h-7.5 w-45 items-center
@@ -238,13 +240,16 @@
   }
 
   .price {
-    @apply mt-6 flex items-center justify-between
+    @apply mt-6  items-center justify-between flex
       border-t-2 border-t-[#C3C6D633] pt-5;
 
     @variant md {
       @apply mt-7 pt-7;
     }
+   
+    
   }
+  
 
   .cercle {
     @apply flex h-6 w-6 items-center justify-center
@@ -288,4 +293,5 @@
                      after:absolute after:bottom-0 after:right-0
                      after:h-0.5 after:w-full after:bg-blue-700;
   }
+   
 }
