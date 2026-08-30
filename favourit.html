@@ -111,7 +111,7 @@
 
           <li>
 
-            <a href="./newDevice.html" class="selact">
+            <a href="./newDevice.html" class="transition-colors duration-200 hover:text-blue-700">
 أجهزة جديدة            </a>
 
           </li>
@@ -176,328 +176,26 @@
 
 
 
-  <!-- =====================================================
-       PAGE HEADER
-  ====================================================== -->
 
   <section class="container my-6 px-4 sm:my-8 lg:my-12">
 
 
-    <!-- Breadcrumb -->
-
-    <div class="mb-4 text-sm">
-
-      <a href="./index.html">
-        الرئيسية
-      </a>
-
-      <span class="mx-1">
-        &gt;
-      </span>
-
-      <a href="./AllDevice.html">
-        الأجهزة
-      </a>
-       <span class="mx-1">
-        &gt;
-      </span>
-
-      <a href="./uesedDevice.html" class="text-PrimaryBlue">
-        الأجهزة الجديدة
-      </a>
-
-
-    </div>
+   
 
 
     <!-- Page Title -->
 
     <h1>
-     الأجهزة الجديدة
-    </h1>
+المفضلة    </h1>
 
 
-    <!-- Results + Sort -->
-
-    <div class="mt-5 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-
-      <!-- Results -->
-
-      <div>
-
-        <h6 class="hidden md:block">
-
-          عرض 300 جهاز لابتوب يلبي احتياجاتك
-
-        </h6>
-
-      </div>
-
-
-      <!-- Sort -->
-
-      <div class="flex w-fit items-center gap-2 rounded-3xl
-               bg-SurfaceLowest p-3 sm:p-4">
-
-        <img src="./assets/icons/Container(4).svg" alt="" class="h-5 w-5">
-
-        <h6>
-          الترتيب حسب: الأحدث
-        </h6>
-
-        <img src="./assets/icons/row dowen.svg" alt="" class="h-4 w-4">
-
-      </div>
-
-    </div>
-
-
-
-    <!-- PRODUCTS + FILTERS= -->
-
-    <div class="mt-6 flex flex-col gap-6 lg:flex-row lg:items-start lg:gap-8">
-
-
-      <!-- =========== FILTERS=============================== -->
-
-      <aside class="flex w-full flex-col gap-4 lg:w-60 lg:shrink-0 lg:gap-6">
-
-
-        
-        
-
-        <div class="boxWhite">
-
-          <h3 class="mb-4 text-base font-semibold">
-            الماركة
-          </h3>
-
-
-          <!-- Apple -->
-
-          <div class="grid grid-cols-10 items-center gap-y-3">
-
-
-            <div class="list bg-PrimaryContainer"></div>
-
-            <p class="col-span-2">
-              Apple
-            </p>
-
-            <div class="col-span-7 text-end">
-
-              <p>
-                (456)
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <!-- Lenovo -->
-
-          <div class="mt-3 grid grid-cols-10 items-center">
-
-            <div class="list bg-PrimaryContainer"></div>
-
-            <p class="col-span-2">
-              Lenovo
-            </p>
-
-            <div class="col-span-7 text-end">
-
-              <p>
-                (123)
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <!-- Dell -->
-
-          <div class="mt-3 grid grid-cols-10 items-center">
-
-            <div class="list border border-[#767676] bg-Surface"></div>
-
-            <p class="col-span-2">
-              Dell
-            </p>
-
-            <div class="col-span-7 text-end">
-
-              <p>
-                (456)
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <!-- HP -->
-
-          <div class="mt-3 grid grid-cols-10 items-center">
-
-            <div class="list border border-[#767676] bg-Surface"></div>
-
-            <p class="col-span-2">
-              HP
-            </p>
-
-            <div class="col-span-7 text-end">
-
-              <p>
-                (178)
-              </p>
-
-            </div>
-
-          </div>
-
-
-          <!-- Show More -->
-
-          <div class="mt-4 text-start">
-
-            <a href="#">
-
-              <h3 class="text-base font-semibold text-PrimaryBlue">
-                عرض المزيد
-              </h3>
-
-            </a>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- ================= PRICE FILTER ================= -->
-
-        <div class="boxWhite">
-
-          <h3 class="mb-4">
-            السعر (دينار)
-          </h3>
-
-
-          <img src="./assets/img/filter.webp" alt="فلتر السعر" class="w-full">
-
-
-          <div class="mt-4 flex items-center justify-between gap-3">
-
-            <div class="rounded-2xl bg-SurfaceContainer px-4 py-2 sm:px-5">
-              3000
-            </div>
-
-            <span>
-              -
-            </span>
-
-            <div class="rounded-2xl bg-SurfaceContainer px-4 py-2 sm:px-5">
-              1500
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- ================= PROCESSOR FILTER ================= -->
-
-        <div class="boxWhite">
-
-          <h3 class="mb-4">
-            المعالج
-          </h3>
-
-
-          <div class="grid grid-cols-2 gap-2">
-
-            <div class="background-blue text-white">
-              Intel Core i7
-            </div>
-
-            <div class="background">
-              Intel Core i5
-            </div>
-
-            <div class="background-blue text-white">
-              Intel Core i9
-            </div>
-
-            <div class="background">
-              Intel Core i3
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- ================= RAM FILTER ================= -->
-
-        <div class="boxWhite">
-
-          <h3 class="mb-4">
-            الذاكرة (RAM)
-          </h3>
-
-
-          <ul class="space-y-3">
-
-            <li class="flex items-center gap-2">
-
-              <div class="list bg-[#0075FF]"></div>
-
-              <p>
-                16 جيجابايت
-              </p>
-
-            </li>
-
-
-            <li class="flex items-center gap-2">
-
-              <div class="list border border-[#767676] bg-Surface"></div>
-
-              <p>
-                32 جيجابايت
-              </p>
-
-            </li>
-
-
-            <li class="flex items-center gap-2">
-
-              <div class="list border border-[#767676] bg-Surface"></div>
-
-              <p>
-                8 جيجابايت
-              </p>
-
-            </li>
-
-          </ul>
-
-        </div>
-
-      </aside>
-
-
-
-      <!-- ===============left=====================-->
+    
+   
 
       <main class="min-w-0 flex-1">
 
 
-        <!-- Products Grid -->
+        <!-- Products -->
 
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
 
@@ -525,14 +223,12 @@
 
               <div class="cercle absolute left-2 top-2 z-20">
 
-                <img src="./assets/icons/favourit.svg" alt="إضافة للمفضلة" class="centers">
+                <img src="./assets/icons/redheart.svg" alt="إضافة للمفضلة" class="centers">
 
               </div>
 
             </div>
 
-
-            <!-- Content -->
 
             <div class="px-4 py-4 sm:py-5">
 
@@ -544,8 +240,6 @@
                 Spectre x360 14
               </h4>
 
-
-              <!-- Specifications -->
 
               <div class="mt-3 flex flex-wrap gap-1">
 
@@ -563,9 +257,6 @@
 
               </div>
 
-
-              <!-- Rating -->
-
               <div class="mt-3 flex items-center gap-1">
 
                 <span class="text-[#FFB800]">★</span>
@@ -582,26 +273,23 @@
 
 
               <!-- Price -->
-
+  
+               
               <div class="price">
-               <a href="./detals.html"
-                  
-                  alt="التفاصيل"
-                  class="button"
-                > عرض التفاصيل</a>
-
                 <h5 class="text-PrimaryBlue max-sm:hidden ">
                   ١٣٩٩ د.أ
                 </h5>
+               <a href="./detals.html"
+                  
+                  alt="أضف الى السلة"
+                  class="button"
+                > أضف الى السلة</a>
 
-  <button type="button" class="cercle bg-PrimaryContainer  max-sm:hidden">
 
-
-                  <img src="./assets/icons/shoopingCartWhite.svg" alt="إضافة إلى السلة" class="centers">
-
-                </button>
-
+ 
               </div>
+
+
 
             </div>
 
@@ -623,7 +311,7 @@
 
               <div class="cercle absolute left-2 top-2 z-20">
 
-                <img src="./assets/icons/favourit.svg" alt="إضافة للمفضلة" class="centers">
+                 <img src="./assets/icons/redheart.svg" alt="إضافة للمفضلة" class="centers">
 
               </div>
 
@@ -673,24 +361,19 @@
               </div>
 
 
+                
               <div class="price">
-               <a href="./detals.html"
-                  
-                  alt="التفاصيل"
-                  class="button"
-                > عرض التفاصيل</a>
-
                 <h5 class="text-PrimaryBlue max-sm:hidden ">
                   ١٣٩٩ د.أ
                 </h5>
+               <a href="./detals.html"
+                  
+                  alt="أضف الى السلة"
+                  class="button"
+                > أضف الى السلة</a>
 
-  <button type="button" class="cercle bg-PrimaryContainer  max-sm:hidden">
 
-
-                  <img src="./assets/icons/shoopingCartWhite.svg" alt="إضافة إلى السلة" class="centers">
-
-                </button>
-
+ 
               </div>
 
             </div>
@@ -713,7 +396,7 @@
 
               <div class="cercle absolute left-2 top-2 z-20">
 
-                <img src="./assets/icons/favourit.svg" alt="إضافة للمفضلة" class="centers">
+                 <img src="./assets/icons/redheart.svg" alt="إضافة للمفضلة" class="centers">
 
               </div>
 
@@ -763,25 +446,21 @@
               </div>
 
 
+               
               <div class="price">
-               <a href="./detals.html"
-                  
-                  alt="التفاصيل"
-                  class="button"
-                > عرض التفاصيل</a>
-
                 <h5 class="text-PrimaryBlue max-sm:hidden ">
                   ١٣٩٩ د.أ
                 </h5>
+               <a href="./detals.html"
+                  
+                  alt="أضف الى السلة"
+                  class="button"
+                > أضف الى السلة</a>
 
-  <button type="button" class="cercle bg-PrimaryContainer  max-sm:hidden">
 
-
-                  <img src="./assets/icons/shoopingCartWhite.svg" alt="إضافة إلى السلة" class="centers">
-
-                </button>
-
+ 
               </div>
+
 
             </div>
 
@@ -836,14 +515,15 @@
 
       </main>
 
-    </div>
+    
 
   </section>
 
 
 
   <!-- ================= FOOTER ================= -->
-  <footer class="mt-12 bg-SurfaceContainer text-sm sm:mt-16">
+
+   <footer class="mt-12 bg-SurfaceContainer text-sm sm:mt-16">
 
     <div class="container grid grid-cols-1 gap-8 px-4 py-8
              sm:grid-cols-2
@@ -994,6 +674,6 @@
   </footer>
 
 
-</body>
+<body>
 
 </html>
