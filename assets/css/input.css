@@ -17,7 +17,6 @@
   --color-DarkNavy: #001848;
 
   --color-Success: #146c2e;
-  --color-CustomSuccess: #146c2e;
 
   --color-Error: #ba1a1a;
   --color-ErrorContainer: #ffd6d6;
@@ -198,8 +197,8 @@
       hover:bg-SecondaryContainer
       max-sm:w-full;
   }
-  
-  
+
+
 
   .search {
     @apply hidden h-7.5 w-45 items-center
@@ -246,10 +245,10 @@
     @variant md {
       @apply mt-7 pt-7;
     }
-   
-    
+
+
   }
-  
+
 
   .cercle {
     @apply flex h-6 w-6 items-center justify-center
@@ -275,13 +274,13 @@
 
   .email {
     @apply h-11 w-full rounded-md border border-[#C3C6D6]
-      bg-Surface px-10 text-center text-sm
+      bg-Surface px-10 text-right text-sm
       outline-none transition
       placeholder:text-gray-400
-      focus:border-PrimaryBlue;
+      focus:border-PrimaryBlue focus:ring-2 focus:ring-PrimaryBlue/20;
 
     @variant md {
-      @apply h-12 px-7 font-bold;
+      @apply h-12 px-7;
     }
   }
 
@@ -293,5 +292,5 @@
                      after:absolute after:bottom-0 after:right-0
                      after:h-0.5 after:w-full after:bg-blue-700;
   }
-   
+
 }
