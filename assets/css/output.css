@@ -433,9 +433,6 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
-  .h-14 {
-    height: calc(var(--spacing) * 14);
-  }
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
@@ -976,9 +973,6 @@
   .text-\[\#FFB800\] {
     color: #FFB800;
   }
-  .text-blue-700 {
-    color: var(--color-blue-700);
-  }
   .text-gray-400 {
     color: var(--color-gray-400);
   }
@@ -1053,30 +1047,6 @@
   }
   .placeholder\:text-gray-400::placeholder {
     color: var(--color-gray-400);
-  }
-  .after\:absolute::after {
-    content: var(--tw-content);
-    position: absolute;
-  }
-  .after\:right-0::after {
-    content: var(--tw-content);
-    right: 0px;
-  }
-  .after\:bottom-0::after {
-    content: var(--tw-content);
-    bottom: 0px;
-  }
-  .after\:h-0\.5::after {
-    content: var(--tw-content);
-    height: calc(var(--spacing) * 0.5);
-  }
-  .after\:w-full::after {
-    content: var(--tw-content);
-    width: 100%;
-  }
-  .after\:bg-blue-700::after {
-    content: var(--tw-content);
-    background-color: var(--color-blue-700);
   }
   @media (hover: hover) {
     .hover\:scale-105:hover {
@@ -1982,11 +1952,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-content {
-  syntax: "*";
-  initial-value: "";
-  inherits: false;
-}
 @property --tw-scale-x {
   syntax: "*";
   inherits: false;
@@ -2006,6 +1971,11 @@
   syntax: "*";
   inherits: false;
   initial-value: 0;
+}
+@property --tw-content {
+  syntax: "*";
+  initial-value: "";
+  inherits: false;
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
@@ -2056,11 +2026,11 @@
       --tw-backdrop-saturate: initial;
       --tw-backdrop-sepia: initial;
       --tw-duration: initial;
-      --tw-content: "";
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
       --tw-divide-x-reverse: 0;
+      --tw-content: "";
     }
   }
 }
