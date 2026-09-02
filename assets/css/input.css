@@ -233,7 +233,7 @@
   }
 
   .boxOfCard {
-    @apply w-full overflow-hidden rounded-lg bg-Surface;
+    @apply w-full overflow-hidden rounded-lg bg-Surface  hover:shadow-gray-500 hover:shadow-2xl ;
   }
 
   .boxWhite {
@@ -318,4 +318,7 @@
                      after:h-0.5 after:w-full after:bg-blue-700;
   }
 
+  .ShadowDisappears{
+    @apply aspect-square  shadow-xl w-full object-contain group-hover:scale-110 transition duration-300  h-auto  hover:shadow-none shadow-gray-400 rounded-3xl;
+  }
 }
