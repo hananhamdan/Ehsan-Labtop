@@ -192,7 +192,7 @@
   }
 
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
 
   100% {
@@ -209,7 +209,7 @@
   .button {
     @apply inline-flex items-center justify-center gap-2
      
-      text-md font-semibold text-white
+      text-sm font-semibold text-white
        duration-300
       
       max-sm:w-full rounded-3xl  px-8 py-3  shadow-lg   bg-blue-600 transition hover:bg-blue-700  ;
@@ -220,7 +220,7 @@
   
 
       
-       shadow-lg     items-center justify-center inline-flex  rounded-3xl border    max-sm:w-full  text-md duration-300 border-gray-300 px-8 py-3 font-semibold transition hover:border-blue-700 hover:text-blue-600;
+       shadow-lg     items-center justify-center inline-flex  rounded-3xl border    max-sm:w-full  text-sm duration-300 border-gray-300 px-8 py-3 font-semibold transition hover:border-blue-700 hover:text-blue-600;
   }
 
 
@@ -237,7 +237,7 @@
   }
 
   .boxWhite {
-    @apply w-full rounded-3xl bg-SurfaceLowest p-4;
+    @apply w-full rounded-3xl bg-SurfaceLowest p-4   ;
   }
 
   .minboxs {

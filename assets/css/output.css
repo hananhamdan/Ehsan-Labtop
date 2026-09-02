@@ -471,6 +471,9 @@
   .h-\[19px\] {
     height: 19px;
   }
+  .h-auto {
+    height: auto;
+  }
   .h-full {
     height: 100%;
   }
@@ -1617,7 +1620,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   100% {
     transform: translateY(0);
