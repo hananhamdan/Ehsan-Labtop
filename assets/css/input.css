@@ -209,18 +209,13 @@
   .button {
     @apply inline-flex items-center justify-center gap-2
      
-      text-sm font-semibold text-white
+      text-sm font-semibold text-white 
        duration-300
       
-      max-sm:w-full rounded-3xl  px-8 py-3  shadow-lg   bg-blue-600 transition hover:bg-blue-700  ;
+      max-sm:w-full rounded-3xl  px-8 py-3   bg-blue-600 transition hover:bg-blue-700  shadow-2xl  hover:shadow-none;
   }
   .buttonNoActive{
-    @apply   gap-2
-     
-  
-
-      
-       shadow-lg     items-center justify-center inline-flex  rounded-3xl border    max-sm:w-full  text-sm duration-300 border-gray-300 px-8 py-3 font-semibold transition hover:border-blue-700 hover:text-blue-600;
+    @apply   gap-2    shadow-lg     items-center justify-center inline-flex  rounded-3xl border    max-sm:w-full  text-sm duration-300 border-gray-300 px-8 py-3 font-semibold transition hover:border-blue-700 hover:text-blue-600;
   }
 
 
@@ -319,6 +314,6 @@
   }
 
   .ShadowDisappears{
-    @apply aspect-square  shadow-xl w-full object-contain group-hover:scale-110 transition duration-300  h-auto  hover:shadow-none shadow-gray-400 rounded-3xl;
-  }
+    @apply aspect-square  shadow-xl w-full object-contain group-hover:scale-110 transition duration-300  h-auto  hover:shadow shadow-gray-300 rounded-3xl;
+  }     
 }
