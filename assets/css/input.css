@@ -3,10 +3,10 @@
 /* ================= THEMES ================= */
 
 @theme {
-  --color-PrimaryBlue: #003d9b;
+  --color-PrimaryBlue: #155dfc;
   --color-PrimaryContainer: #0052cc;
 
-  --color-Secondary: #0058be;
+  --color-Secondary: #1447e6;
   --color-SecondaryContainer: #2170e4;
 
   --color-Surface: #fbf9f8;
@@ -25,6 +25,7 @@
   --font-inter: "Inter", sans-serif;
 
   --breakpoint-xs: 400px;
+  --animate-float: float 3s ease-in-out infinite;
 }
 
 
@@ -185,17 +186,36 @@
   @apply flex flex-wrap items-center;
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
 
 /* ================= COMPONENTS ================= */
 
 @layer components {
   .button {
     @apply inline-flex items-center justify-center gap-2
-      rounded-md bg-Secondary px-5 py-2
+     
       text-sm font-semibold text-white
-      transition duration-300
-      hover:bg-SecondaryContainer
-      max-sm:w-full;
+       duration-300
+      
+      max-sm:w-full rounded-3xl  px-8 py-3  shadow-lg   bg-blue-600 transition hover:bg-blue-700  ;
+  }
+  .buttonNoActive{
+    @apply rounded-3xl border   text-sm duration-300 border-gray-300 px-8 py-3 font-semibold transition hover:border-blue-700 hover:text-blue-600
   }
 
 
