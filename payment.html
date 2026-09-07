@@ -24,13 +24,13 @@
 
 </head>
 
-<body class="bg-Surface container max-sm:mx-2">
+<body class="bg-Surface container max-sm:mx-2 ">
 
   <!-- ===================HEADER====================== -->
 
   <header class="mb-8 rounded-2xl bg-SurfaceLowest">
 
-    ```
+
     <div class="container">
 
       <nav class="row min-h-13.75 justify-between gap-3 px-3 md:gap-5">
@@ -148,25 +148,30 @@
       </nav>
 
     </div>
-    ```
+
 
   </header>
 
 
-  <section class="container">
+  <section class="container mx-auto max-md:mx-3">
 
+    <!-- Page Title -->
 
-    <div class="row items-center justify-between py-8">
+    <div class="row items-center justify-between gap-4 py-8">
 
       <div>
 
-        <h4>إتمام الطلب</h4>
+        <h4>
+          إتمام الطلب
+        </h4>
 
-        <p>خطوة واحدة وسريعة لإنهاء عملية الشراء بأمان</p>
+        <p>
+          خطوة واحدة وسريعة لإنهاء عملية الشراء بأمان
+        </p>
 
       </div>
 
-      <div>
+      <div class="shrink-0">
 
         <img src="./assets/icons/safty.svg" alt="دفع آمن" class="inline">
 
@@ -178,81 +183,99 @@
 
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+
+    <div class="mx-3 w-auto max-w-4xl md:mx-auto">
+
+      <div class="mt-12 rounded-3xl bg-SurfaceLowest p-4 sm:p-6">
 
 
 
-      <div class="mt-12 rounded-3xl bg-SurfaceLowest p-6">
+        <div class="mb-6">
 
-        <!-- عنوان التوصيل -->
+          <img src="./assets/icons/delevary.svg" alt="عنوان التوصيل" class="inline">
 
-        <img src="./assets/icons/delevary.svg" alt="عنوان التوصيل" class="inline">
+          <h4 class="inline">
+            عنوان التوصيل
+          </h4>
 
-        <h4 class="inline">
-          عنوان التوصيل
-        </h4>
+        </div>
 
-        <div class="row gap-4">
 
-          <div>
+
+
+        <div class="row flex-col gap-4 md:flex-row">
+
+          <div class="w-full flex-1">
 
             <label for="name">
               الإسم
             </label>
 
-            <input id="name" type="text" class="inputBox">
+            <input id="name" type="text" class="inputBox w-full">
 
           </div>
 
-          <div>
+          <div class="w-full flex-1">
 
             <label for="phone">
               رقم الهاتف
             </label>
 
-            <input id="phone" type="number" class="inputBox">
+            <input id="phone" type="number" class="inputBox w-full">
 
           </div>
 
         </div>
 
-        <div class="row gap-4">
 
-          <div class="md:flex-1">
+
+
+        <div class="row flex-col gap-4 md:flex-row">
+
+          <div class="w-full md:flex-1">
 
             <label for="city">
               المدينة
             </label>
 
-            <input id="city" type="text" class="inputBox">
+            <input id="city" type="text" class="inputBox w-full">
 
           </div>
 
-          <div class="md:flex-2">
+          <div class="w-full md:flex-2">
 
-            <label for="addres">
+            <label for="address">
               اسم الشارع / العنوان
             </label>
 
-            <input id="addres" type="text" class="inputBox">
+            <input id="address" type="text" class="inputBox w-full">
 
           </div>
 
         </div>
 
-        <div class="boxWhite">
+
+
+
+        <div class="boxWhite mt-6">
 
           <label>
             طريقة الاستلام
           </label>
 
-          <div class="row justify-between gap-3">
+          <div class="row flex-col justify-between gap-3 md:flex-row">
 
-            <div class="row inputBox justify-between gap-7 md:flex-1">
+
+
+            <div class="row inputBox w-full justify-between gap-7 md:flex-1">
 
               <span>
+
                 <input type="radio" name="send" value="cash">
+
                 استلام من الفرع
+
               </span>
 
               <span>
@@ -261,11 +284,17 @@
 
             </div>
 
-            <div class="row inputBox justify-between md:flex-1">
+
+            <!-- Delivery -->
+
+            <div class="row inputBox w-full justify-between md:flex-1">
 
               <span>
-                <input type="radio" name="send" value="visa">
+
+                <input type="radio" name="send" value="delivery">
+
                 توصيل سريع
+
               </span>
 
               <span>
@@ -280,84 +309,291 @@
 
       </div>
 
+      <div class="mt-12 rounded-3xl bg-SurfaceLowest p-4 sm:p-6">
 
 
-    <div class="mt-12 rounded-3xl bg-SurfaceLowest p-6">
 
-  <h4 class="mb-6">
-    ملخص الطلب
-  </h4>
+        <div class="py-4">
 
-  <!-- المنتج الأول -->
+          <img src="./assets/icons/visa.svg" alt="عنوان التوصيل" class="inline">
 
- <div class="row w-full min-w-0 justify-between gap-3">
+          <h4 class="inline">
+            طريقة الدفع </h4>
+        </div>
+        <div class="row gap-3">
+          <div class="h-16.5 py-3  flex-1 bg-SurfaceContainer rounded-2xl items-center text-center "><img
+              src="./assets/icons/visa.svg" alt="visa" class=" m-auto align-[center]">
+            <p class="text-sm text-center">بطاقة بنكية / مدى</p>
+          </div>
+          <div class="h-16.5 py-3 flex-1 bg-Surface rounded-2xl items-center text-center "><img
+              src="./assets/icons/applePay.svg" alt="applepay" class=" m-auto align-[center]">
+            <p class="text-sm text-center">Apple Pay</p>
+          </div>
+          <div class="h-16.5  py-3  flex-1 bg-Surface rounded-2xl items-center text-center "><img
+              src="./assets/icons/copy.svg" alt="cash" class=" m-auto align-[center]">
+            <p class="text-sm text-center">عند الاستلام </p>
+          </div>
+        </div>
+        <div class="w-full flex-1 my-4">
 
-  <div class="row min-w-0 flex-1 gap-3">
+          <label for="name">
+            رقم البطاقة </label>
 
-    <img
-      src="./assets/img/Apple.webp"
-      alt="Dell XPS 15 9530"
-      class="h-16 w-16 shrink-0 rounded-xl object-contain">
+          <input id="viza" type="number" class="inputBox w-full">
 
-    <div class="min-w-0 flex-1">
+        </div>
 
-      <p class="truncate font-semibold">
-        لابتوب Dell XPS 15 9530
-      </p>
+        <div class="row my-4 flex-col gap-4 md:flex-row">
 
-      <p class="text-sm text-gray-500">
-        الكمية: 1
-      </p>
+          <div class="w-full flex-1">
 
-    </div>
+            <label for="name">
+              تاريخ الانتهاء
+            </label>
 
-  </div>
+            <input id="experent" type="date" class="inputBox w-full">
 
-  <div class="shrink-0 text-left">
-    <p class="font-semibold whitespace-nowrap">
-      8,799 د.أ
-    </p>
-  </div>
+          </div>
 
-</div>
+          <div class="w-full flex-1">
 
-  <!-- المنتج الثاني -->
-<div class="row w-full min-w-0 justify-between gap-3">
+            <label for="phone">
+              رمز الأمان (CVV) </label>
 
-  <div class="row min-w-0 flex-1 gap-3">
+            <input id="cvv" type="number" class="inputBox w-full">
 
-    <img
-      src="./assets/img/Apple.webp"
-      alt="Dell XPS 15 9530"
-      class="h-16 w-16 shrink-0 rounded-xl object-contain">
+          </div>
 
-    <div class="min-w-0 flex-1">
+        </div>
+        <button class="button w-full mt-6">اتمام الطلب</button>
+        <p class="text-sm  text-gray-500 text-center">ضمان رسمي سنتان • إرجاع مجاني خلال 14 يوماً</p>
 
-      <p class="truncate font-semibold">
-        لابتوب Dell XPS 15 9530
-      </p>
 
-      <p class="text-sm text-gray-500">
-        الكمية: 1
-      </p>
+      </div>
 
-    </div>
 
-  </div>
-
-  <div class="shrink-0 text-left">
-    <p class="font-semibold whitespace-nowrap">
-      8,799 د.أ
-    </p>
-  </div>
-
-</div>
-
-</div>
 
   </section>
 
+
+
+  
+
+
   <!-- ================= FOOTER ================= -->
+    <!-- Footer -->
+  <footer class="mt-12 bg-SurfaceContainer text-sm sm:mt-16">
+
+    <div
+      class="container grid grid-cols-1 gap-8 px-4 py-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10 lg:py-10"
+    >
+
+      <!-- Newsletter -->
+      <div>
+
+        <h3>
+          نشرتنا الإخبارية
+        </h3>
+
+        <h5 class="mt-2">
+          احصل على أحدث العروض والخصومات مباشرة
+          في بريدك
+        </h5>
+
+        <form class="mt-4 flex flex-col gap-3 xl:flex-row">
+
+          <input
+            type="email"
+            placeholder="أدخل بريدك الإلكتروني"
+            class="email w-full sm:w-auto"
+          >
+
+          <button
+            type="submit"
+            class="button mt-0 whitespace-nowrap"
+          >
+            اشترك الآن
+          </button>
+
+        </form>
+
+      </div>
+
+
+      <!-- Store -->
+      <div>
+
+        <ul class="space-y-2">
+
+          <li>
+            <a
+              href="./AllDevice.html"
+              class="transition-colors hover:text-blue-700"
+            >
+              <h3>
+                المتجر
+              </h3>
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./AllDevice.html"
+              class="transition-colors hover:text-blue-700"
+            >
+              جميع الأجهزة
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./newDevice.html"
+              class="transition-colors hover:text-blue-700"
+            >
+              أجهزة جديدة
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./uesedDevice.html"
+              class="transition-colors hover:text-blue-700"
+            >
+              أجهزة مستعملة
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- Categories -->
+      <div>
+
+        <ul class="space-y-2">
+
+          <li>
+            <a
+              href="./gaming.html"
+              class="transition-colors hover:text-blue-700"
+            >
+              أجهزة الألعاب
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./working.html"
+              class="transition-colors hover:text-blue-700"
+            >
+              أجهزة الأعمال
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./student.html"
+              class="transition-colors hover:text-blue-700"
+            >
+              أجهزة الطلاب
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./MacBook.html"
+              class="transition-colors hover:text-blue-700"
+            >
+              أجهزة الماك بوك
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- Company -->
+      <div>
+
+        <ul class="space-y-2">
+
+          <li>
+            <h3>
+              الشركة
+            </h3>
+          </li>
+
+          <li>
+            <a
+              href="./aboutUs.html"
+              class="transition-colors hover:text-blue-700"
+            >
+              عن إحسان لابتوب
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="transition-colors hover:text-blue-700"
+            >
+              الفروع
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="./aboutUs.html"
+              class="transition-colors hover:text-blue-700"
+            >
+              اتصل بنا
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="border-t border-gray-300"></div>
+
+
+    <!-- Footer Bottom -->
+    <div
+      class="container flex flex-col items-center justify-between gap-3 px-4 py-4 text-center sm:flex-row sm:text-right"
+    >
+
+      <p>
+        جميع الحقوق محفوظة
+      </p>
+
+      <div class="flex items-center gap-3">
+
+        <img
+          src="./assets/icons/copy.svg"
+          alt="حقوق النشر"
+        >
+
+        <img
+          src="./assets/icons/earth.svg"
+          alt="العالم"
+        >
+
+        <img
+          src="./assets/icons/chare.svg"
+          alt="مشاركة"
+        >
+
+      </div>
+
+    </div>
+
+  </footer>
+
 
 </body>
 
