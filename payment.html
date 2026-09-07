@@ -1,0 +1,364 @@
+<!doctype html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ================= GOOGLE FONT ================= -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- ================= TAILWIND ================= -->
+
+  <link href="./assets/css/output.css" rel="stylesheet">
+
+  <title>إحسان لابتوب</title>
+
+</head>
+
+<body class="bg-Surface container max-sm:mx-2">
+
+  <!-- ===================HEADER====================== -->
+
+  <header class="mb-8 rounded-2xl bg-SurfaceLowest">
+
+    ```
+    <div class="container">
+
+      <nav class="row min-h-13.75 justify-between gap-3 px-3 md:gap-5">
+
+        <!-- menu -->
+
+        <div class="shrink-0 lg:hidden">
+
+          <a href="#">
+
+            <img src="./assets/icons/menu.svg" alt="إحسان لابتوب" class="h-8 w-auto object-contain sm:h-10">
+
+          </a>
+
+        </div>
+
+        <!-- ================= LOGO ================= -->
+
+        <div class="shrink-0">
+
+          <a href="./index.html">
+
+            <img src="./assets/img/brand.webp" alt="إحسان لابتوب" class="h-8 w-auto object-contain sm:h-9 md:h-10">
+
+          </a>
+
+        </div>
+
+        <!-- ================= SEARCH ================= -->
+
+        <div class="search">
+
+          <input type="text" placeholder="ابحث عن منتجاتنا..."
+            class="w-full bg-transparent text-sm text-gray-700 outline-none placeholder:text-gray-400">
+
+          <button type="button" class="shrink-0">
+
+            <img src="./assets/icons/search.svg" alt="بحث" class="h-3.75 w-3.75">
+
+          </button>
+
+        </div>
+
+        <!-- ================= NAVIGATION ================= -->
+
+        <ul class="hidden items-center gap-5 text-gray-600 md:flex">
+
+          <li>
+            <a href="./index.html" class="transition-colors duration-200 hover:text-blue-700">
+              الرئيسية
+            </a>
+          </li>
+
+          <li>
+            <a href="./AllDevice.html" class="transition-colors duration-200 hover:text-blue-700">
+              اللابتوبات
+            </a>
+          </li>
+
+          <li>
+            <a href="./uesedDevice.html" class="transition-colors duration-200 hover:text-blue-700">
+              أجهزة مستعملة
+            </a>
+          </li>
+
+          <li>
+            <a href="./newDevice.html" class="transition-colors duration-200 hover:text-blue-700">
+              أجهزة جديدة
+            </a>
+          </li>
+
+          <li>
+            <a href="./aboutUs.html" class="transition-colors duration-200 hover:text-blue-700">
+              من نحن
+            </a>
+          </li>
+
+        </ul>
+
+        <!-- ================= ACTIONS ================= -->
+
+        <div class="row shrink-0 gap-3 sm:gap-4">
+
+          <!-- Cart -->
+
+          <a href="./shoppingCart.html" class="relative flex items-center justify-center">
+
+            <img src="./assets/icons/shoppingCart.svg" alt="السلة" class="h-4 w-4 sm:h-5 sm:w-5">
+
+            <span
+              class="absolute -right-2 -top-2 row h-3.5 w-3.5 justify-center rounded-full bg-Secondary text-[8px] text-white">
+              0
+            </span>
+
+          </a>
+
+          <!-- Favorites -->
+
+          <a href="./shoppingCart.html" class="flex items-center justify-center">
+
+            <img src="./assets/icons/favourit.svg" alt="المفضلة" class="h-4 w-4 sm:h-4.25 sm:w-4.25">
+
+          </a>
+
+          <!-- Account -->
+
+          <a href="./login.html" class="flex items-center justify-center">
+
+            <img src="./assets/icons/avatar.svg" alt="الحساب" class="h-4 w-4 sm:h-4.75 sm:w-4.75">
+
+          </a>
+
+        </div>
+
+      </nav>
+
+    </div>
+    ```
+
+  </header>
+
+
+  <section class="container">
+
+
+    <div class="row items-center justify-between py-8">
+
+      <div>
+
+        <h4>إتمام الطلب</h4>
+
+        <p>خطوة واحدة وسريعة لإنهاء عملية الشراء بأمان</p>
+
+      </div>
+
+      <div>
+
+        <img src="./assets/icons/safty.svg" alt="دفع آمن" class="inline">
+
+        <p class="inline text-PrimaryBlue">
+          دفع آمن 100%
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+
+
+      <div class="mt-12 rounded-3xl bg-SurfaceLowest p-6">
+
+        <!-- عنوان التوصيل -->
+
+        <img src="./assets/icons/delevary.svg" alt="عنوان التوصيل" class="inline">
+
+        <h4 class="inline">
+          عنوان التوصيل
+        </h4>
+
+        <div class="row gap-4">
+
+          <div>
+
+            <label for="name">
+              الإسم
+            </label>
+
+            <input id="name" type="text" class="inputBox">
+
+          </div>
+
+          <div>
+
+            <label for="phone">
+              رقم الهاتف
+            </label>
+
+            <input id="phone" type="number" class="inputBox">
+
+          </div>
+
+        </div>
+
+        <div class="row gap-4">
+
+          <div class="md:flex-1">
+
+            <label for="city">
+              المدينة
+            </label>
+
+            <input id="city" type="text" class="inputBox">
+
+          </div>
+
+          <div class="md:flex-2">
+
+            <label for="addres">
+              اسم الشارع / العنوان
+            </label>
+
+            <input id="addres" type="text" class="inputBox">
+
+          </div>
+
+        </div>
+
+        <div class="boxWhite">
+
+          <label>
+            طريقة الاستلام
+          </label>
+
+          <div class="row justify-between gap-3">
+
+            <div class="row inputBox justify-between gap-7 md:flex-1">
+
+              <span>
+                <input type="radio" name="send" value="cash">
+                استلام من الفرع
+              </span>
+
+              <span>
+                مجانا
+              </span>
+
+            </div>
+
+            <div class="row inputBox justify-between md:flex-1">
+
+              <span>
+                <input type="radio" name="send" value="visa">
+                توصيل سريع
+              </span>
+
+              <span>
+                مجانا
+              </span>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    <div class="mt-12 rounded-3xl bg-SurfaceLowest p-6">
+
+  <h4 class="mb-6">
+    ملخص الطلب
+  </h4>
+
+  <!-- المنتج الأول -->
+
+ <div class="row w-full min-w-0 justify-between gap-3">
+
+  <div class="row min-w-0 flex-1 gap-3">
+
+    <img
+      src="./assets/img/Apple.webp"
+      alt="Dell XPS 15 9530"
+      class="h-16 w-16 shrink-0 rounded-xl object-contain">
+
+    <div class="min-w-0 flex-1">
+
+      <p class="truncate font-semibold">
+        لابتوب Dell XPS 15 9530
+      </p>
+
+      <p class="text-sm text-gray-500">
+        الكمية: 1
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="shrink-0 text-left">
+    <p class="font-semibold whitespace-nowrap">
+      8,799 د.أ
+    </p>
+  </div>
+
+</div>
+
+  <!-- المنتج الثاني -->
+<div class="row w-full min-w-0 justify-between gap-3">
+
+  <div class="row min-w-0 flex-1 gap-3">
+
+    <img
+      src="./assets/img/Apple.webp"
+      alt="Dell XPS 15 9530"
+      class="h-16 w-16 shrink-0 rounded-xl object-contain">
+
+    <div class="min-w-0 flex-1">
+
+      <p class="truncate font-semibold">
+        لابتوب Dell XPS 15 9530
+      </p>
+
+      <p class="text-sm text-gray-500">
+        الكمية: 1
+      </p>
+
+    </div>
+
+  </div>
+
+  <div class="shrink-0 text-left">
+    <p class="font-semibold whitespace-nowrap">
+      8,799 د.أ
+    </p>
+  </div>
+
+</div>
+
+</div>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+
+</body>
+
+</html>

@@ -1,66 +1,53 @@
+```html
 <!doctype html>
-
 <html lang="ar" dir="rtl">
 
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- ================= GOOGLE FONT ================= -->
-
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet"
   >
 
-  <!-- ================= TAILWIND ================= -->
-
-  <link
-    href="./assets/css/output.css"
-    rel="stylesheet"
-  >
+  <!-- Tailwind -->
+  <link href="./assets/css/output.css" rel="stylesheet">
 
   <title>إحسان لابتوب</title>
-
 </head>
 
 
-<body class="bg-Surface container max-sm:mx-2">
+<body class="bg-Surface">
 
-
-  <!-- ===================HEADER====================== -->
-
+  <!-- Header -->
   <header class="mb-8 rounded-2xl bg-SurfaceLowest md:mb-12">
 
     <div class="container">
 
-      <nav
-        class="row min-h-13.75 justify-between gap-3 px-3 md:gap-5"
-      >
-       <!--menu-->
-         <div class="shrink-0 lg:hidden">
+      <nav class="row min-h-13.75 justify-between gap-3 px-3 md:gap-5">
+
+        <!-- Menu -->
+        <div class="shrink-0 lg:hidden">
 
           <a href="#">
 
-            <img src="./assets/icons/menu.svg" alt="إحسان لابتوب" class="h-8 w-auto object-contain sm:h-10  ">
+            <img
+              src="./assets/icons/menu.svg"
+              alt="إحسان لابتوب"
+              class="h-8 w-auto object-contain sm:h-10"
+            >
 
           </a>
 
         </div>
 
+
         <!-- Logo -->
-
-
-        <!-- ================= LOGO ================= -->
-
         <div class="shrink-0">
 
           <a href="./index.html">
@@ -76,15 +63,13 @@
         </div>
 
 
-        <!-- ================= SEARCH ================= -->
-
+        <!-- Search -->
         <div class="search">
 
           <input
             type="text"
             placeholder="ابحث عن منتجاتنا..."
-            class="w-full bg-transparent text-sm text-gray-700
-                   outline-none placeholder:text-gray-400"
+            class="w-full bg-transparent text-sm text-gray-700 outline-none placeholder:text-gray-400"
           >
 
           <button
@@ -103,11 +88,8 @@
         </div>
 
 
-        <!-- ================= NAVIGATION ================= -->
-
-        <ul
-          class="hidden items-center gap-5 text-gray-600 md:flex"
-        >
+        <!-- Navigation -->
+        <ul class="hidden items-center gap-5 text-gray-600 md:flex">
 
           <li>
             <a
@@ -132,7 +114,7 @@
               href="./uesedDevice.html"
               class="transition-colors duration-200 hover:text-blue-700"
             >
-              أجهزة مستعملة 
+              أجهزة مستعملة
             </a>
           </li>
 
@@ -141,7 +123,8 @@
               href="./newDevice.html"
               class="transition-colors duration-200 hover:text-blue-700"
             >
-أجهزة جديدة            </a>
+              أجهزة جديدة
+            </a>
           </li>
 
           <li>
@@ -156,12 +139,10 @@
         </ul>
 
 
-        <!-- ================= ACTIONS ================= -->
-
+        <!-- Actions -->
         <div class="row shrink-0 gap-3 sm:gap-4">
 
           <!-- Cart -->
-
           <a
             href="./shoppingCart.html"
             class="relative flex items-center justify-center"
@@ -174,13 +155,7 @@
             >
 
             <span
-              class="absolute -right-2 -top-2 row
-                     h-3.5 w-3.5
-                     justify-center
-                     rounded-full
-                     bg-Secondary
-                     text-[8px]
-                     text-white"
+              class="absolute -right-2 -top-2 row h-3.5 w-3.5 justify-center rounded-full bg-Secondary text-[8px] text-white"
             >
               0
             </span>
@@ -189,7 +164,6 @@
 
 
           <!-- Favorites -->
-
           <a
             href="./shoppingCart.html"
             class="flex items-center justify-center"
@@ -205,7 +179,6 @@
 
 
           <!-- Account -->
-
           <a
             href="./login.html"
             class="flex items-center justify-center"
@@ -228,45 +201,39 @@
   </header>
 
 
+  <!-- Cart -->
+  <main class="container px-2">
 
-  <section class=" max-sm:mx-2 container ">
+    <!-- Title -->
+    <div class="mb-8">
 
-    <!-- ================= PAGE TITLE ================= -->
+      <h1>
+        عربة التسوق
+      </h1>
 
-    <h1>
-      عربة التسوق
-    </h1>
+      <h6 class="mt-2">
+        لديك 2 منتجات في سلتك.
+      </h6>
 
-    <h6>
-      لديك 2 منتجات في سلتك.
-    </h6>
+    </div>
 
 
-    <!-- ================= CART CONTENT ================= -->
-
+    <!-- Cart Content -->
     <div class="gap-10 md:row">
 
 
-      <!-- =================================================
-           ORDER SUMMARY
-      ================================================== -->
-
-      <div
-        class="boxWhite flex flex-col gap-4 md:flex-1"
-      >
+      <!-- Order Summary -->
+      <div class="boxWhite mb-6 flex flex-col gap-4 md:mb-0 md:flex-1">
 
         <h4>
           ملخص الطلب
         </h4>
 
 
-        <!-- ================= SUMMARY DETAILS ================= -->
+        <!-- Summary -->
+        <div class="flex flex-col gap-3">
 
-        <div>
-
-          <!-- Subtotal -->
-
-          <div class="row justify-between">
+          <div class="row justify-between gap-3">
 
             <p>
               المجموع الفرعي
@@ -279,9 +246,7 @@
           </div>
 
 
-          <!-- Delivery -->
-
-          <div class="row justify-between">
+          <div class="row justify-between gap-3">
 
             <p>
               رسوم التوصيل
@@ -294,9 +259,7 @@
           </div>
 
 
-          <!-- Discount -->
-
-          <div class="row justify-between">
+          <div class="row justify-between gap-3">
 
             <h6>
               الخصم
@@ -311,13 +274,11 @@
         </div>
 
 
-        <!-- ================= DIVIDER ================= -->
+        <!-- Divider -->
+        <div class="w-full border-t border-gray-300"></div>
 
-        <div class="w-full border border-gray-500"></div>
 
-
-        <!-- ================= TOTAL ================= -->
-
+        <!-- Total -->
         <div class="row justify-between">
 
           <p>
@@ -337,8 +298,7 @@
         </div>
 
 
-        <!-- ================= COUPON ================= -->
-
+        <!-- Coupon -->
         <div>
 
           <p class="text-[14px]">
@@ -350,11 +310,11 @@
             <input
               type="text"
               placeholder="أدخل كود الخصم"
-              class="email w-full border border-gray-500 sm:w-auto"
+              class="email w-full border border-gray-500"
             >
 
             <button
-              type="submit"
+              type="button"
               class="button mt-0 whitespace-nowrap"
             >
               تطبيق
@@ -365,108 +325,89 @@
         </div>
 
 
-        <!-- ================= CHECKOUT ================= -->
-
-        <button
-          type="submit"
-          class="button mt-0 whitespace-nowrap"
+        <!-- Checkout -->
+        <a
+          href="./payment.html"
+          class="button w-full whitespace-nowrap"
         >
           إتمام الشراء
-        </button>
+        </a>
 
       </div>
 
 
-
-      <!-- =================================================
-           PRODUCTS
-      ================================================== -->
-
-      <div class="gap-4 md:flex-2">
+      <!-- Products -->
+      <div class="flex w-full flex-col gap-4 md:flex-2">
 
 
-        <!-- =================================================
-             PRODUCT 1
-        ================================================== -->
-
+        <!-- Product 1 -->
         <div
-          class="row mb-4 w-full rounded-3xl bg-SurfaceLowest p-2"
+          class="flex w-full flex-col gap-4 rounded-3xl bg-SurfaceLowest p-4 sm:flex-row sm:items-center"
         >
 
-          <!-- ================= PRICE + QUANTITY ================= -->
+          <!-- Price + Quantity -->
+          <div class="shrink-0 sm:flex-1">
 
-          <div class="md:flex-1">
+            <h4 class="text-PrimaryBlue">
 
-            <div>
+              <span class="text-sm text-[#1B1C1C]">
+                jd
+              </span>
 
-              <h4 class="align-middle text-PrimaryBlue">
+              285
 
-                <span class="text-sm text-[#1B1C1C]">
-                  jd
-                </span>
-
-                285
-
-              </h4>
+            </h4>
 
 
-              <!-- Quantity -->
+            <div class="mt-2 flex">
 
-              <div class="flex">
+              <button
+                type="button"
+                class="sequer rounded-l-none bg-Surface"
+              >
+                -
+              </button>
 
-                <a
-                  href="#"
-                  class="sequer rounded-l-none bg-Surface"
-                >
-                  -
-                </a>
+              <span class="sequer rounded-none bg-Surface">
+                1
+              </span>
 
-                <a
-                  href="#"
-                  class="sequer rounded-none bg-Surface"
-                >
-                  1
-                </a>
-
-                <a
-                  href="#"
-                  class="sequer rounded-r-none bg-Surface"
-                >
-                  +
-                </a>
-
-              </div>
+              <button
+                type="button"
+                class="sequer rounded-r-none bg-Surface"
+              >
+                +
+              </button>
 
             </div>
 
           </div>
 
 
-          <!-- ================= PRODUCT DETAILS ================= -->
-
-          <div
-            class="px-4 py-4 sm:py-5 md:flex-2"
-          >
+          <!-- Product Details -->
+          <div class="px-2 py-2 sm:flex-2">
 
             <h4>
               Lenovo ThinkPad T14 Gen 2
             </h4>
 
-            <h6>
+            <h6 class="mt-1">
               Ryzen 5 PRO 5650U, 16GB RAM, 256GB SSD, 14" IPS
             </h6>
 
 
-            <!-- Specifications -->
-
             <div class="mt-3 flex flex-wrap gap-1">
 
               <div class="background">
-                R5 PRO
+                Ryzen 5 PRO
               </div>
 
               <div class="background">
-                i7-1185G7
+                16GB RAM
+              </div>
+
+              <div class="background">
+                256GB SSD
               </div>
 
             </div>
@@ -474,20 +415,17 @@
           </div>
 
 
-          <!-- ================= PRODUCT IMAGE ================= -->
-
-          <div class="relative hidden md:block">
+          <!-- Product Image -->
+          <div class="relative hidden shrink-0 md:block">
 
             <img
               src="./assets/img/dellIcon.svg"
               alt="Lenovo ThinkPad T14 Gen 2"
-              class="h-20 w-20"
+              class="h-20 w-20 object-contain"
             >
 
             <div
-              class="absolute right-2 top-2 z-10
-                     rounded-2xl bg-[#f185a0]
-                     px-2 text-xs"
+              class="absolute right-0 top-0 z-10 rounded-2xl bg-[#f185a0] px-2 py-1 text-xs"
             >
               شبه جديد
             </div>
@@ -497,89 +435,74 @@
         </div>
 
 
-
-        <!-- =================================================
-             PRODUCT 2
-        ================================================== -->
-
+        <!-- Product 2 -->
         <div
-          class="row w-full rounded-3xl bg-SurfaceLowest p-2"
+          class="flex w-full flex-col gap-4 rounded-3xl bg-SurfaceLowest p-4 sm:flex-row sm:items-center"
         >
 
-          <!-- ================= PRICE + QUANTITY ================= -->
+          <!-- Price + Quantity -->
+          <div class="shrink-0 sm:flex-1">
 
-          <div class="md:flex-1">
+            <h4 class="text-PrimaryBlue">
 
-            <div>
+              <span class="text-sm text-[#1B1C1C]">
+                jd
+              </span>
 
-              <h4 class="align-middle text-PrimaryBlue">
+              320
 
-                <span class="text-sm text-[#1B1C1C]">
-                  jd
-                </span>
-
-                320
-
-              </h4>
+            </h4>
 
 
-              <!-- Quantity -->
+            <div class="mt-2 flex">
 
-              <div class="flex">
+              <button
+                type="button"
+                class="sequer rounded-l-none bg-Surface"
+              >
+                -
+              </button>
 
-                <a
-                  href="#"
-                  class="sequer rounded-l-none bg-Surface"
-                >
-                  -
-                </a>
+              <span class="sequer rounded-none bg-Surface">
+                1
+              </span>
 
-                <a
-                  href="#"
-                  class="sequer rounded-none bg-Surface"
-                >
-                  1
-                </a>
-
-                <a
-                  href="#"
-                  class="sequer rounded-r-none bg-Surface"
-                >
-                  +
-                </a>
-
-              </div>
+              <button
+                type="button"
+                class="sequer rounded-r-none bg-Surface"
+              >
+                +
+              </button>
 
             </div>
 
           </div>
 
 
-          <!-- ================= PRODUCT DETAILS ================= -->
-
-          <div
-            class="px-4 py-4 sm:py-5 md:flex-2"
-          >
+          <!-- Product Details -->
+          <div class="px-2 py-2 sm:flex-2">
 
             <h4>
               Dell Latitude 7420
             </h4>
 
-            <h6>
+            <h6 class="mt-1">
               Core i7 11th Gen, 16GB RAM, 512GB SSD NVMe, 14" FHD
             </h6>
 
 
-            <!-- Specifications -->
-
             <div class="mt-3 flex flex-wrap gap-1">
 
               <div class="background">
-                R5 PRO
+                Core i7
               </div>
 
               <div class="background">
-                i7-1185G7
+                16GB RAM
+              </div>
+
+              <div class="background">
+                512GB SSD
               </div>
 
             </div>
@@ -587,20 +510,17 @@
           </div>
 
 
-          <!-- ================= PRODUCT IMAGE ================= -->
-
-          <div class="relative hidden md:block">
+          <!-- Product Image -->
+          <div class="relative hidden shrink-0 md:block">
 
             <img
               src="./assets/img/dellIcon.svg"
               alt="Dell Latitude 7420"
-              class="h-20 w-20"
+              class="h-20 w-20 object-contain"
             >
 
             <div
-              class="absolute right-2 top-2 z-10
-                     rounded-2xl bg-[#D1FAE5]
-                     px-2 text-xs"
+              class="absolute right-0 top-0 z-10 rounded-2xl bg-[#D1FAE5] px-2 py-1 text-xs"
             >
               ممتاز
             </div>
@@ -613,17 +533,17 @@
 
     </div>
 
-  </section>
+  </main>
 
 
-
-  <!-- ================= FOOTER ================= -->
+  <!-- Footer -->
   <footer class="mt-12 bg-SurfaceContainer text-sm sm:mt-16">
 
-    <div class="container grid grid-cols-1 gap-8 px-4 py-8
-             sm:grid-cols-2
-             lg:grid-cols-4 lg:gap-10 lg:py-10">
+    <div
+      class="container grid grid-cols-1 gap-8 px-4 py-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10 lg:py-10"
+    >
 
+      <!-- Newsletter -->
       <div>
 
         <h3>
@@ -637,78 +557,119 @@
 
         <form class="mt-4 flex flex-col gap-3 xl:flex-row">
 
-          <input type="email" placeholder="أدخل بريدك الإلكتروني" class="email w-full sm:w-auto">
+          <input
+            type="email"
+            placeholder="أدخل بريدك الإلكتروني"
+            class="email w-full sm:w-auto"
+          >
 
-          <button type="submit" class="button mt-0 whitespace-nowrap">
+          <button
+            type="submit"
+            class="button mt-0 whitespace-nowrap"
+          >
             اشترك الآن
           </button>
 
         </form>
+
       </div>
 
 
+      <!-- Store -->
       <div>
 
         <ul class="space-y-2">
 
           <li>
-            <a href="./AllDevice.html">
-              <h3>المتجر</h3>
+            <a
+              href="./AllDevice.html"
+              class="transition-colors hover:text-blue-700"
+            >
+              <h3>
+                المتجر
+              </h3>
             </a>
           </li>
 
           <li>
-            <a href="./AllDevice.html">
+            <a
+              href="./AllDevice.html"
+              class="transition-colors hover:text-blue-700"
+            >
               جميع الأجهزة
             </a>
           </li>
 
           <li>
-            <a href="./newDevice.html">
+            <a
+              href="./newDevice.html"
+              class="transition-colors hover:text-blue-700"
+            >
               أجهزة جديدة
             </a>
           </li>
 
           <li>
-            <a href="./uesedDevice.html">
+            <a
+              href="./uesedDevice.html"
+              class="transition-colors hover:text-blue-700"
+            >
               أجهزة مستعملة
             </a>
           </li>
 
         </ul>
+
       </div>
 
 
+      <!-- Categories -->
       <div>
 
         <ul class="space-y-2">
 
-       <li>
-            <a href="./gaming.html">
+          <li>
+            <a
+              href="./gaming.html"
+              class="transition-colors hover:text-blue-700"
+            >
               أجهزة الألعاب
             </a>
           </li>
-           <li>
-            <a href="./working.html">
+
+          <li>
+            <a
+              href="./working.html"
+              class="transition-colors hover:text-blue-700"
+            >
               أجهزة الأعمال
             </a>
           </li>
-           <li>
-            <a href="./student.html">
-            أجهزة الطلاب
-            </a>
-          </li>
-           <li>
-            <a href="./MacBook.html">
-             أجهزة الماك بوك
+
+          <li>
+            <a
+              href="./student.html"
+              class="transition-colors hover:text-blue-700"
+            >
+              أجهزة الطلاب
             </a>
           </li>
 
+          <li>
+            <a
+              href="./MacBook.html"
+              class="transition-colors hover:text-blue-700"
+            >
+              أجهزة الماك بوك
+            </a>
+          </li>
 
         </ul>
+
       </div>
 
 
+      <!-- Company -->
       <div>
 
         <ul class="space-y-2">
@@ -720,24 +681,34 @@
           </li>
 
           <li>
-            <a href="./aboutUs.html">
+            <a
+              href="./aboutUs.html"
+              class="transition-colors hover:text-blue-700"
+            >
               عن إحسان لابتوب
             </a>
           </li>
 
           <li>
-            <a href="#">
+            <a
+              href="#"
+              class="transition-colors hover:text-blue-700"
+            >
               الفروع
             </a>
           </li>
 
           <li>
-            <a href="./aboutUs.html">
+            <a
+              href="./aboutUs.html"
+              class="transition-colors hover:text-blue-700"
+            >
               اتصل بنا
             </a>
           </li>
 
         </ul>
+
       </div>
 
     </div>
@@ -746,10 +717,10 @@
     <div class="border-t border-gray-300"></div>
 
 
-    <div class="container flex flex-col
-             items-center justify-between
-             gap-3 px-4 py-4 text-center
-             sm:flex-row sm:text-right">
+    <!-- Footer Bottom -->
+    <div
+      class="container flex flex-col items-center justify-between gap-3 px-4 py-4 text-center sm:flex-row sm:text-right"
+    >
 
       <p>
         جميع الحقوق محفوظة
@@ -757,18 +728,28 @@
 
       <div class="flex items-center gap-3">
 
-        <img src="./assets/icons/copy.svg" alt="viza">
+        <img
+          src="./assets/icons/copy.svg"
+          alt="حقوق النشر"
+        >
 
-        <img src="./assets/icons/earth.svg" alt="global">
+        <img
+          src="./assets/icons/earth.svg"
+          alt="العالم"
+        >
 
-        <img src="./assets/icons/chare.svg" alt="share">
+        <img
+          src="./assets/icons/chare.svg"
+          alt="مشاركة"
+        >
 
       </div>
+
     </div>
 
   </footer>
 
-
-<body>
+</body>
 
 </html>
+```
