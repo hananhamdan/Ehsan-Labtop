@@ -250,6 +250,9 @@
   .absolute {
     position: absolute;
   }
+  .fixed {
+    position: fixed;
+  }
   .relative {
     position: relative;
   }
@@ -280,8 +283,38 @@
   .right-0 {
     right: 0px;
   }
+  .right-1 {
+    right: var(--spacing);
+  }
   .right-3 {
     right: calc(var(--spacing) * 3);
+  }
+  .right-16 {
+    right: calc(var(--spacing) * 16);
+  }
+  .right-40 {
+    right: calc(var(--spacing) * 40);
+  }
+  .right-\[10\%\] {
+    right: 10%;
+  }
+  .right-\[10\] {
+    right: 10;
+  }
+  .right-\[30\%\] {
+    right: 30%;
+  }
+  .right-\[30\] {
+    right: 30;
+  }
+  .bottom-1 {
+    bottom: var(--spacing);
+  }
+  .bottom-2 {
+    bottom: calc(var(--spacing) * 2);
+  }
+  .bottom-16 {
+    bottom: calc(var(--spacing) * 16);
   }
   .left-2 {
     left: calc(var(--spacing) * 2);
@@ -291,6 +324,21 @@
   }
   .left-4 {
     left: calc(var(--spacing) * 4);
+  }
+  .left-\[\%\] {
+    left: %;
+  }
+  .left-\[10\%\] {
+    left: 10%;
+  }
+  .left-\[15\%\] {
+    left: 15%;
+  }
+  .left-\[50\%\%\] {
+    left: 50%%;
+  }
+  .left-\[50\%\] {
+    left: 50%;
   }
   .z-10 {
     z-index: 10;
@@ -311,7 +359,6 @@
     grid-column: span 7 / span 7;
   }
   .container {
-    width: 100%;
     @media (width >= 400px) {
       max-width: 400px;
     }
@@ -330,11 +377,6 @@
     @media (width >= 96rem) {
       max-width: 96rem;
     }
-  }
-  .m-auto {
-    margin: auto;
-  }
-  .container {
     width: 100%;
     max-width: 1280px;
     margin-inline: auto;
@@ -356,9 +398,6 @@
   }
   .mx-3 {
     margin-inline: calc(var(--spacing) * 3);
-  }
-  .mx-88 {
-    margin-inline: calc(var(--spacing) * 88);
   }
   .mx-auto {
     margin-inline: auto;
@@ -503,14 +542,11 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
-  .h-16\.5 {
-    height: calc(var(--spacing) * 16.5);
-  }
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
-  .h-90 {
-    height: calc(var(--spacing) * 90);
+  .h-24 {
+    height: calc(var(--spacing) * 24);
   }
   .h-\[14px\] {
     height: 14px;
@@ -599,11 +635,26 @@
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
+  .w-24 {
+    width: calc(var(--spacing) * 24);
+  }
+  .w-\[1\] {
+    width: 1;
+  }
   .w-\[14px\] {
     width: 14px;
   }
   .w-\[15px\] {
     width: 15px;
+  }
+  .w-\[16\] {
+    width: 16;
+  }
+  .w-\[16p\] {
+    width: 16p;
+  }
+  .w-\[16px\] {
+    width: 16px;
   }
   .w-\[17px\] {
     width: 17px;
@@ -628,9 +679,6 @@
   }
   .max-w-4xl {
     max-width: var(--container-4xl);
-  }
-  .max-w-130 {
-    max-width: calc(var(--spacing) * 130);
   }
   .max-w-md {
     max-width: var(--container-md);
@@ -697,9 +745,6 @@
   .items-center {
     align-items: center;
   }
-  .items-start {
-    align-items: flex-start;
-  }
   .justify-between {
     justify-content: space-between;
   }
@@ -723,9 +768,6 @@
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
-  }
-  .gap-7 {
-    gap: calc(var(--spacing) * 7);
   }
   .gap-8 {
     gap: calc(var(--spacing) * 8);
@@ -836,15 +878,6 @@
   .border-gray-500 {
     border-color: var(--color-gray-500);
   }
-  .border-white {
-    border-color: var(--color-white);
-  }
-  .border-white\/50 {
-    border-color: color-mix(in srgb, #fff 50%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-color: color-mix(in oklab, var(--color-white) 50%, transparent);
-    }
-  }
   .bg-DarkNavy {
     background-color: var(--color-DarkNavy);
   }
@@ -856,9 +889,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-Error) 10%, transparent);
     }
-  }
-  .bg-PrimaryBlue {
-    background-color: var(--color-PrimaryBlue);
   }
   .bg-PrimaryContainer {
     background-color: var(--color-PrimaryContainer);
@@ -905,12 +935,6 @@
       background-color: color-mix(in oklab, var(--color-black) 30%, transparent);
     }
   }
-  .bg-black\/40 {
-    background-color: color-mix(in srgb, #000 40%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-black) 40%, transparent);
-    }
-  }
   .bg-blue-50 {
     background-color: var(--color-blue-50);
   }
@@ -922,12 +946,6 @@
   }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .bg-white\/20 {
-    background-color: color-mix(in srgb, #fff 20%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 20%, transparent);
-    }
   }
   .bg-white\/90 {
     background-color: color-mix(in srgb, #fff 90%, transparent);
@@ -968,9 +986,6 @@
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
-  .px-5 {
-    padding-inline: calc(var(--spacing) * 5);
-  }
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
@@ -988,9 +1003,6 @@
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
-  }
-  .py-2\.5 {
-    padding-block: calc(var(--spacing) * 2.5);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
@@ -1036,9 +1048,6 @@
   }
   .text-start {
     text-align: start;
-  }
-  .align-\[center\] {
-    vertical-align: center;
   }
   .align-middle {
     vertical-align: middle;
@@ -1193,10 +1202,6 @@
   .opacity-60 {
     opacity: 60%;
   }
-  .shadow-2xl {
-    --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
   .shadow-\[0_1px_2px_0_rgba\(0\,0\,0\,0\.05\)\] {
     --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, rgba(0,0,0,0.05));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -1236,11 +1241,6 @@
   }
   .backdrop-blur-3xl {
     --tw-backdrop-blur: blur(var(--blur-3xl));
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  }
-  .backdrop-blur-sm {
-    --tw-backdrop-blur: blur(var(--blur-sm));
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
@@ -1294,9 +1294,6 @@
     color: var(--color-gray-400);
   }
   @media (hover: hover) {
-    .hover\:bg-PrimaryContainer:hover {
-      background-color: var(--color-PrimaryContainer);
-    }
     .hover\:bg-SurfaceContainer:hover {
       background-color: var(--color-SurfaceContainer);
     }
@@ -1305,14 +1302,6 @@
     }
     .hover\:bg-gray-200:hover {
       background-color: var(--color-gray-200);
-    }
-    .hover\:bg-white\/30:hover {
-      background-color: color-mix(in srgb, #fff 30%, transparent);
-    }
-    @supports (color: color-mix(in lab, red, red)) {
-      .hover\:bg-white\/30:hover {
-        background-color: color-mix(in oklab, var(--color-white) 30%, transparent);
-      }
     }
     .hover\:text-PrimaryBlue:hover {
       color: var(--color-PrimaryBlue);
@@ -1347,11 +1336,6 @@
       padding-inline: calc(var(--spacing) * 2);
     }
   }
-  @media (width < 48rem) {
-    .max-md\:mx-3 {
-      margin-inline: calc(var(--spacing) * 3);
-    }
-  }
   @media (width < 40rem) {
     .max-sm\:mx-2 {
       margin-inline: calc(var(--spacing) * 2);
@@ -1375,9 +1359,6 @@
     }
     .sm\:my-8 {
       margin-block: calc(var(--spacing) * 8);
-    }
-    .sm\:mt-6 {
-      margin-top: calc(var(--spacing) * 6);
     }
     .sm\:mt-16 {
       margin-top: calc(var(--spacing) * 16);
@@ -1408,9 +1389,6 @@
     }
     .sm\:h-20 {
       height: calc(var(--spacing) * 20);
-    }
-    .sm\:h-112\.5 {
-      height: calc(var(--spacing) * 112.5);
     }
     .sm\:h-\[17px\] {
       height: 17px;
@@ -1494,23 +1472,8 @@
     .sm\:p-8 {
       padding: calc(var(--spacing) * 8);
     }
-    .sm\:p-10 {
-      padding: calc(var(--spacing) * 10);
-    }
-    .sm\:px-4 {
-      padding-inline: calc(var(--spacing) * 4);
-    }
     .sm\:px-5 {
       padding-inline: calc(var(--spacing) * 5);
-    }
-    .sm\:px-7 {
-      padding-inline: calc(var(--spacing) * 7);
-    }
-    .sm\:px-8 {
-      padding-inline: calc(var(--spacing) * 8);
-    }
-    .sm\:py-3 {
-      padding-block: calc(var(--spacing) * 3);
     }
     .sm\:py-5 {
       padding-block: calc(var(--spacing) * 5);
@@ -1523,10 +1486,6 @@
     }
     .sm\:text-right {
       text-align: right;
-    }
-    .sm\:text-4xl {
-      font-size: var(--text-4xl);
-      line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
     .sm\:text-base {
       font-size: var(--text-base);
@@ -1544,17 +1503,10 @@
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
-    .sm\:leading-7 {
-      --tw-leading: calc(var(--spacing) * 7);
-      line-height: calc(var(--spacing) * 7);
-    }
   }
   @media (width >= 48rem) {
     .md\:order-2 {
       order: 2;
-    }
-    .md\:mx-auto {
-      margin-inline: auto;
     }
     .md\:my-8 {
       margin-block: calc(var(--spacing) * 8);
@@ -1641,9 +1593,6 @@
     .lg\:h-82\.5 {
       height: calc(var(--spacing) * 82.5);
     }
-    .lg\:h-125 {
-      height: calc(var(--spacing) * 125);
-    }
     .lg\:w-60 {
       width: calc(var(--spacing) * 60);
     }
@@ -1695,26 +1644,15 @@
     .lg\:px-4 {
       padding-inline: calc(var(--spacing) * 4);
     }
-    .lg\:px-10 {
-      padding-inline: calc(var(--spacing) * 10);
-    }
     .lg\:py-4 {
       padding-block: calc(var(--spacing) * 4);
     }
     .lg\:py-10 {
       padding-block: calc(var(--spacing) * 10);
     }
-    .lg\:text-5xl {
-      font-size: var(--text-5xl);
-      line-height: var(--tw-leading, var(--text-5xl--line-height));
-    }
     .lg\:text-6xl {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
-    }
-    .lg\:text-base {
-      font-size: var(--text-base);
-      line-height: var(--tw-leading, var(--text-base--line-height));
     }
   }
   @media (width >= 80rem) {
