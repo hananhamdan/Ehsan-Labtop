@@ -1,3 +1,4 @@
+ html
 <!doctype html>
 
 <html lang="ar" dir="rtl">
@@ -5,128 +6,361 @@
 <head>
 
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- ================= GOOGLE FONT ================= -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"
+  >
 
   <!-- ================= TAILWIND ================= -->
 
   <link href="./assets/css/output.css" rel="stylesheet">
 
-  <title>إحسان لابتوب</title>
+  <title>إحسان لابتوب | تسجيل مستخدم جديد</title>
 
 </head>
 
-<body class="bg-Surface container max-sm:mx-2 ">
 
-  <!-- ===================HEADER====================== -->
+<body class="min-h-screen bg-Surface">
+
+  <!-- ================= HEADER ================= -->
 
   <header class="mb-8 rounded-2xl bg-SurfaceLowest">
 
-
     <div class="container">
 
-      <nav class="row min-h-13.75 justify-between gap-3 px-3 md:gap-5">   
+      <nav
+        class="row min-h-13.75 justify-between gap-3 px-3 md:gap-5"
+      >
+
+        <!-- Logo -->
+
         <div class="shrink-0">
 
           <a href="./index.html">
 
-            <img src="./assets/img/brand.webp" alt="إحسان لابتوب" class="h-8 w-auto object-contain sm:h-9 md:h-10">
+            <img
+              src="./assets/img/brand.webp"
+              alt="إحسان لابتوب"
+              class="h-8 w-auto object-contain sm:h-9 md:h-10"
+            >
 
           </a>
 
         </div>
-        <div><a href="./login.html" ><span >العودة</span>  <span>←</span></a></div>
 
 
-      
+        <!-- Back -->
+
+        <a
+          href="./login.html"
+          class="flex items-center gap-2 text-sm font-semibold text-DarkNavy transition hover:text-PrimaryBlue"
+        >
+
+          <span>العودة</span>
+
+          <span aria-hidden="true">←</span>
+
+        </a>
+
+      </nav>
 
     </div>
 
-
-</heade>
-  <section class="container" >
-    
-      <div class="rounded-xl border border-[#C3C6D6] bg-SurfaceLowest p-5 shadow-sm sm:p-10 mx-88 items-center">
-        <img  src="./assets/icons/newUser.svg" class="m-auto"
+  </header>
 
 
-        <!-- ==============Title====================================== -->
+  <!-- ================= REGISTER SECTION ================= -->
 
-        <h3 class="py-7 text-center ">        تسجيل مستخدم جديد  </h3>
+  <main class="container px-3 pb-10 sm:px-5">
+
+    <section
+      class="mx-auto w-full max-w-3xl rounded-xl border border-[#C3C6D6] bg-SurfaceLowest p-5 shadow-sm sm:p-8 md:p-10"
+    >
+
+      <!-- Icon -->
+
+      <div class="flex justify-center">
+
+        <img
+          src="./assets/icons/newUser.svg"
+          alt="تسجيل مستخدم جديد"
+          class="h-16 w-16 object-contain sm:h-20 sm:w-20"
+        >
+
+      </div>
 
 
-       
-        <div class="row flex-col gap-4 md:flex-row">
+      <!-- Title -->
+
+      <h3 class="py-7 text-center">
+
+        تسجيل مستخدم جديد
+
+      </h3>
+
+
+      <!-- ================= FORM ================= -->
+
+      <form action="#" method="post" class="space-y-5">
+
+
+        <!-- ================= NAME + EMAIL ================= -->
+
+        <div class="row flex-col gap-5 md:flex-row">
+
+          <!-- Full Name -->
 
           <div class="w-full flex-1">
 
-            <label for="nameFull">
-            الاسم الكامل<span class="text-Error">*</span>
+            <label
+              for="fullName"
+              class="mb-2 block text-sm font-medium text-DarkNavy"
+            >
+
+              الاسم الكامل
+
+              <span class="text-Error">*</span>
+
             </label>
 
-            <input id="nameFull" type="text" class="inputBox w-full">
+            <input
+              id="fullName"
+              name="fullName"
+              type="text"
+              autocomplete="name"
+              required
+              class="inputBox w-full"
+            >
 
           </div>
 
+
+          <!-- Email -->
+
           <div class="w-full flex-1">
 
-            <label for="email">
-              البريد الالكتروني<span class="text-Error">*</span>
+            <label
+              for="email"
+              class="mb-2 block text-sm font-medium text-DarkNavy"
+            >
+
+              البريد الإلكتروني
+
+              <span class="text-Error">*</span>
+
             </label>
 
-            <input name="email" type="email" class="inputBox w-full">
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+              class="inputBox w-full"
+            >
 
           </div>
 
         </div>
 
-        
 
-          <div class="w-full ">
+        <!-- ================= PHONE ================= -->
 
-            <label for="name">
-              رقم الجوال<span class="text-Error">*</span></label>
+        <div class="w-full">
 
-            <input id="name" type="text" class="inputBox w-full">
+          <label
+            for="phone"
+            class="mb-2 block text-sm font-medium text-DarkNavy"
+          >
 
-          </div>
+            رقم الجوال
 
-         
+            <span class="text-Error">*</span>
 
-        <div class="row flex-col gap-4 md:flex-row">
+          </label>
+
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            autocomplete="tel"
+            inputmode="tel"
+            required
+            class="inputBox w-full"
+          >
+
+        </div>
+
+
+        <!-- ================= PASSWORDS ================= -->
+
+        <div class="row flex-col gap-5 md:flex-row">
+
+          <!-- Password -->
 
           <div class="w-full flex-1">
 
-            <label for="name">
-              كلمة المرور<span class="text-Error">*</span>
+            <label
+              for="password"
+              class="mb-2 block text-sm font-medium text-DarkNavy"
+            >
+
+              كلمة المرور
+
+              <span class="text-Error">*</span>
+
             </label>
 
-            <input id="name" type="text" class="inputBox w-full">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="new-password"
+              required
+              class="inputBox w-full"
+            >
 
           </div>
 
+
+          <!-- Confirm Password -->
+
           <div class="w-full flex-1">
 
-            <label for="phone">
-تأكيد كلمة المرور<span class="text-Error">*</span>            </label>
+            <label
+              for="confirmPassword"
+              class="mb-2 block text-sm font-medium text-DarkNavy"
+            >
 
-            <input id="phone" type="number" class="inputBox w-full">
+              تأكيد كلمة المرور
+
+              <span class="text-Error">*</span>
+
+            </label>
+
+            <input
+              id="confirmPassword"
+              name="confirmPassword"
+              type="password"
+              autocomplete="new-password"
+              required
+              class="inputBox w-full"
+            >
 
           </div>
 
         </div>
 
 
+        <!-- ================= REGISTER BUTTON ================= -->
 
-        
-    </div>
-  </section>
+        <button
+          type="submit"
+          class="button mt-2 w-full"
+        >
 
+          <span>إنشاء حساب</span>
+
+          <span aria-hidden="true">←</span>
+
+        </button>
+
+
+        <!-- ================= DIVIDER ================= -->
+
+        <div class="my-7 flex items-center gap-3">
+
+          <span class="h-px flex-1 bg-[#C3C6D6]"></span>
+
+          <span class="shrink-0 text-sm text-gray-500">
+            أو
+          </span>
+
+          <span class="h-px flex-1 bg-[#C3C6D6]"></span>
+
+        </div>
+
+
+        <!-- ================= SOCIAL LOGIN ================= -->
+
+        <div class="row flex-col gap-3 sm:flex-row">
+
+          <!-- Google -->
+
+          <a
+            href="#"
+            class="button flex-1 bg-SurfaceContainer text-DarkNavy hover:bg-gray-200"
+          >
+
+            <img
+              src="./assets/icons/google.webp"
+              alt="Google"
+              class="h-5 w-5 object-contain"
+            >
+
+            <span>
+              التسجيل عبر Google
+            </span>
+
+          </a>
+
+
+          <!-- Apple -->
+
+          <a
+            href="#"
+            class="button flex-1 bg-DarkNavy text-Surface hover:bg-[#00245f]"
+          >
+
+            <img
+              src="./assets/icons/appleWhite.svg"
+              alt="Apple"
+              class="h-5 w-5 object-contain"
+            >
+
+            <span>
+              التسجيل عبر Apple
+            </span>
+
+          </a>
+
+        </div>
+
+
+        <!-- ================= LOGIN ================= -->
+
+        <p class="mt-6 text-center text-sm text-gray-600">
+
+          لديك حساب بالفعل؟
+
+          <a
+            href="./login.html"
+            class="font-semibold text-PrimaryBlue transition hover:underline"
+          >
+
+            تسجيل الدخول
+
+          </a>
+
+        </p>
+
+
+      </form>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>
+ 

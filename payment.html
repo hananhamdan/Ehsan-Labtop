@@ -1,3 +1,4 @@
+```html
 <!doctype html>
 
 <html lang="ar" dir="rtl">
@@ -5,47 +6,58 @@
 <head>
 
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- ================= GOOGLE FONT ================= -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
     href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"
+  >
 
   <!-- ================= TAILWIND ================= -->
 
   <link href="./assets/css/output.css" rel="stylesheet">
 
-  <title>إحسان لابتوب</title>
+  <title>إحسان لابتوب | إتمام الطلب</title>
 
 </head>
 
-<body class="bg-Surface container max-sm:mx-2 ">
 
-  <!-- ===================HEADER====================== -->
+<body class="bg-Surface">
+
+
+  <!-- ================= HEADER ================= -->
 
   <header class="mb-8 rounded-2xl bg-SurfaceLowest">
 
-
     <div class="container">
 
-      <nav class="row min-h-13.75 justify-between gap-3 px-3 md:gap-5">
+      <nav
+        class="row min-h-13.75 justify-between gap-3 px-3 md:gap-5"
+      >
 
-        <!-- menu -->
+        <!-- ================= MENU ================= -->
 
         <div class="shrink-0 lg:hidden">
 
           <a href="#">
 
-            <img src="./assets/icons/menu.svg" alt="إحسان لابتوب" class="h-8 w-auto object-contain sm:h-10">
+            <img
+              src="./assets/icons/menu.svg"
+              alt="القائمة"
+              class="h-8 w-auto object-contain sm:h-10"
+            >
 
           </a>
 
         </div>
+
 
         <!-- ================= LOGO ================= -->
 
@@ -53,93 +65,161 @@
 
           <a href="./index.html">
 
-            <img src="./assets/img/brand.webp" alt="إحسان لابتوب" class="h-8 w-auto object-contain sm:h-9 md:h-10">
+            <img
+              src="./assets/img/brand.webp"
+              alt="إحسان لابتوب"
+              class="h-8 w-auto object-contain sm:h-9 md:h-10"
+            >
 
           </a>
 
         </div>
 
+
         <!-- ================= SEARCH ================= -->
 
         <div class="search">
 
-          <input type="text" placeholder="ابحث عن منتجاتنا..."
-            class="w-full bg-transparent text-sm text-gray-700 outline-none placeholder:text-gray-400">
+          <input
+            type="text"
+            placeholder="ابحث عن منتجاتنا..."
+            class="w-full bg-transparent text-sm text-gray-700 outline-none placeholder:text-gray-400"
+          >
 
           <button type="button" class="shrink-0">
 
-            <img src="./assets/icons/search.svg" alt="بحث" class="h-3.75 w-3.75">
+            <img
+              src="./assets/icons/search.svg"
+              alt="بحث"
+              class="h-3.75 w-3.75"
+            >
 
           </button>
 
         </div>
+
 
         <!-- ================= NAVIGATION ================= -->
 
         <ul class="hidden items-center gap-5 text-gray-600 md:flex">
 
           <li>
-            <a href="./index.html" class="transition-colors duration-200 hover:text-blue-700">
+
+            <a
+              href="./index.html"
+              class="transition-colors duration-200 hover:text-blue-700"
+            >
               الرئيسية
             </a>
+
           </li>
 
+
           <li>
-            <a href="./AllDevice.html" class="transition-colors duration-200 hover:text-blue-700">
+
+            <a
+              href="./AllDevice.html"
+              class="transition-colors duration-200 hover:text-blue-700"
+            >
               اللابتوبات
             </a>
+
           </li>
 
+
           <li>
-            <a href="./uesedDevice.html" class="transition-colors duration-200 hover:text-blue-700">
+
+            <a
+              href="./uesedDevice.html"
+              class="transition-colors duration-200 hover:text-blue-700"
+            >
               أجهزة مستعملة
             </a>
+
           </li>
 
+
           <li>
-            <a href="./newDevice.html" class="transition-colors duration-200 hover:text-blue-700">
+
+            <a
+              href="./newDevice.html"
+              class="transition-colors duration-200 hover:text-blue-700"
+            >
               أجهزة جديدة
             </a>
+
           </li>
 
+
           <li>
-            <a href="./aboutUs.html" class="transition-colors duration-200 hover:text-blue-700">
+
+            <a
+              href="./aboutUs.html"
+              class="transition-colors duration-200 hover:text-blue-700"
+            >
               من نحن
             </a>
+
           </li>
 
         </ul>
+
 
         <!-- ================= ACTIONS ================= -->
 
         <div class="row shrink-0 gap-3 sm:gap-4">
 
+
           <!-- Cart -->
 
-          <a href="./shoppingCart.html" class="relative flex items-center justify-center">
+          <a
+            href="./shoppingCart.html"
+            class="relative flex items-center justify-center"
+          >
 
-            <img src="./assets/icons/shoppingCart.svg" alt="السلة" class="h-4 w-4 sm:h-5 sm:w-5">
+            <img
+              src="./assets/icons/shoppingCart.svg"
+              alt="السلة"
+              class="h-4 w-4 sm:h-5 sm:w-5"
+            >
 
             <span
-              class="absolute -right-2 -top-2 row h-3.5 w-3.5 justify-center rounded-full bg-Secondary text-[8px] text-white">
+              class="absolute -right-2 -top-2 row h-3.5 w-3.5 justify-center rounded-full bg-Secondary text-[8px] text-white"
+            >
               0
             </span>
 
           </a>
 
+
           <!-- Favorites -->
 
-          <a href="./shoppingCart.html" class="flex items-center justify-center">
+          <a
+            href="./shoppingCart.html"
+            class="flex items-center justify-center"
+          >
 
-            <img src="./assets/icons/favourit.svg" alt="المفضلة" class="h-4 w-4 sm:h-4.25 sm:w-4.25">
+            <img
+              src="./assets/icons/favourit.svg"
+              alt="المفضلة"
+              class="h-4 w-4 sm:h-4.25 sm:w-4.25"
+            >
 
           </a>
 
+
           <!-- Account -->
 
-          <a href="./login.html" class="flex items-center justify-center">
+          <a
+            href="./login.html"
+            class="flex items-center justify-center"
+          >
 
-            <img src="./assets/icons/avatar.svg" alt="الحساب" class="h-4 w-4 sm:h-4.75 sm:w-4.75">
+            <img
+              src="./assets/icons/avatar.svg"
+              alt="الحساب"
+              class="h-4 w-4 sm:h-4.75 sm:w-4.75"
+            >
 
           </a>
 
@@ -149,15 +229,19 @@
 
     </div>
 
-
   </header>
 
 
-  <section class="container mx-auto max-md:mx-3">
+  <!-- ================= MAIN ================= -->
 
-    <!-- Page Title -->
+  <main class="container px-3 pb-10">
 
-    <div class="row items-center justify-between gap-4 py-8">
+
+    <!-- ================= PAGE TITLE ================= -->
+
+    <div
+      class="row items-center justify-between gap-4 py-8"
+    >
 
       <div>
 
@@ -165,17 +249,24 @@
           إتمام الطلب
         </h4>
 
-        <p>
+        <p class="mt-1 text-sm text-gray-500">
           خطوة واحدة وسريعة لإنهاء عملية الشراء بأمان
         </p>
 
       </div>
 
+
+      <!-- Secure Payment -->
+
       <div class="shrink-0">
 
-        <img src="./assets/icons/safty.svg" alt="دفع آمن" class="inline">
+        <img
+          src="./assets/icons/safty.svg"
+          alt="دفع آمن"
+          class="inline h-5 w-5 align-middle"
+        >
 
-        <p class="inline text-PrimaryBlue">
+        <p class="inline text-sm text-PrimaryBlue">
           دفع آمن 100%
         </p>
 
@@ -184,211 +275,434 @@
     </div>
 
 
+    <!-- ================= CHECKOUT ================= -->
 
-    <div class="mx-3 w-auto max-w-4xl md:mx-auto">
-
-      <div class="mt-12 rounded-3xl bg-SurfaceLowest p-4 sm:p-6">
-
+    <div class="mx-auto w-full max-w-4xl">
 
 
-        <div class="mb-6">
+      <!-- ================= DELIVERY ADDRESS ================= -->
 
-          <img src="./assets/icons/delevary.svg" alt="عنوان التوصيل" class="inline">
+      <section
+        class="rounded-3xl bg-SurfaceLowest p-4 sm:p-6"
+      >
 
-          <h4 class="inline">
+
+        <!-- Section Title -->
+
+        <div class="mb-6 flex items-center gap-2">
+
+          <img
+            src="./assets/icons/delevary.svg"
+            alt="عنوان التوصيل"
+            class="h-6 w-6"
+          >
+
+          <h4>
             عنوان التوصيل
           </h4>
 
         </div>
 
 
-
+        <!-- ================= NAME + PHONE ================= -->
 
         <div class="row flex-col gap-4 md:flex-row">
 
+
+          <!-- Name -->
+
           <div class="w-full flex-1">
 
-            <label for="name">
-              الإسم
+            <label
+              for="name"
+              class="mb-2 block text-sm"
+            >
+              الاسم
             </label>
 
-            <input id="name" type="text" class="inputBox w-full">
+            <input
+              id="name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              class="inputBox w-full"
+            >
 
           </div>
 
+
+          <!-- Phone -->
+
           <div class="w-full flex-1">
 
-            <label for="phone">
+            <label
+              for="phone"
+              class="mb-2 block text-sm"
+            >
               رقم الهاتف
             </label>
 
-            <input id="phone" type="number" class="inputBox w-full">
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              autocomplete="tel"
+              inputmode="tel"
+              class="inputBox w-full"
+            >
 
           </div>
 
         </div>
 
 
+        <!-- ================= CITY + ADDRESS ================= -->
+
+        <div class="row mt-4 flex-col gap-4 md:flex-row">
 
 
-        <div class="row flex-col gap-4 md:flex-row">
+          <!-- City -->
 
-          <div class="w-full md:flex-1">
+          <div class="w-full flex-1">
 
-            <label for="city">
+            <label
+              for="city"
+              class="mb-2 block text-sm"
+            >
               المدينة
             </label>
 
-            <input id="city" type="text" class="inputBox w-full">
+            <input
+              id="city"
+              name="city"
+              type="text"
+              autocomplete="address-level2"
+              class="inputBox w-full"
+            >
 
           </div>
 
-          <div class="w-full md:flex-2">
 
-            <label for="address">
+          <!-- Address -->
+
+          <div class="w-full flex-1">
+
+            <label
+              for="address"
+              class="mb-2 block text-sm"
+            >
               اسم الشارع / العنوان
             </label>
 
-            <input id="address" type="text" class="inputBox w-full">
+            <input
+              id="address"
+              name="address"
+              type="text"
+              autocomplete="street-address"
+              class="inputBox w-full"
+            >
 
           </div>
 
         </div>
 
 
-
+        <!-- ================= DELIVERY METHOD ================= -->
 
         <div class="boxWhite mt-6">
 
-          <label>
+
+          <label class="mb-3 block text-sm font-semibold">
             طريقة الاستلام
           </label>
 
-          <div class="row flex-col justify-between gap-3 md:flex-row">
+
+          <div class="row flex-col gap-3 md:flex-row">
 
 
+            <!-- Branch -->
 
-            <div class="row inputBox w-full justify-between gap-7 md:flex-1">
+            <label
+              class="row inputBox w-full cursor-pointer justify-between gap-4 md:flex-1"
+            >
 
-              <span>
+              <span class="row gap-2">
 
-                <input type="radio" name="send" value="cash">
+                <input
+                  type="radio"
+                  name="deliveryMethod"
+                  value="branch"
+                >
 
-                استلام من الفرع
+                <span>
+                  استلام من الفرع
+                </span>
 
               </span>
 
-              <span>
+
+              <span class="text-sm text-Success">
                 مجانا
               </span>
 
-            </div>
+            </label>
 
 
             <!-- Delivery -->
 
-            <div class="row inputBox w-full justify-between md:flex-1">
+            <label
+              class="row inputBox w-full cursor-pointer justify-between gap-4 md:flex-1"
+            >
 
-              <span>
+              <span class="row gap-2">
 
-                <input type="radio" name="send" value="delivery">
+                <input
+                  type="radio"
+                  name="deliveryMethod"
+                  value="delivery"
+                >
 
-                توصيل سريع
+                <span>
+                  توصيل سريع
+                </span>
 
               </span>
 
-              <span>
+
+              <span class="text-sm text-Success">
                 مجانا
               </span>
 
-            </div>
+            </label>
 
           </div>
 
         </div>
 
-      </div>
-
-      <div class="mt-12 rounded-3xl bg-SurfaceLowest p-4 sm:p-6">
+      </section>
 
 
+      <!-- ================= PAYMENT ================= -->
 
-        <div class="py-4">
+      <section
+        class="mt-8 rounded-3xl bg-SurfaceLowest p-4 sm:p-6"
+      >
 
-          <img src="./assets/icons/visa.svg" alt="عنوان التوصيل" class="inline">
 
-          <h4 class="inline">
-            طريقة الدفع </h4>
-        </div>
-        <div class="row gap-3">
-          <div class="h-16.5 py-3  flex-1 bg-SurfaceContainer rounded-2xl items-center text-center "><img
-              src="./assets/icons/visa.svg" alt="visa" class=" m-auto align-[center]">
-            <p class="text-sm text-center">بطاقة بنكية / مدى</p>
-          </div>
-          <div class="h-16.5 py-3 flex-1 bg-Surface rounded-2xl items-center text-center "><img
-              src="./assets/icons/applePay.svg" alt="applepay" class=" m-auto align-[center]">
-            <p class="text-sm text-center">Apple Pay</p>
-          </div>
-          <div class="h-16.5  py-3  flex-1 bg-Surface rounded-2xl items-center text-center "><img
-              src="./assets/icons/copy.svg" alt="cash" class=" m-auto align-[center]">
-            <p class="text-sm text-center">عند الاستلام </p>
-          </div>
-        </div>
-        <div class="w-full flex-1 my-4">
+        <!-- Section Title -->
 
-          <label for="name">
-            رقم البطاقة </label>
+        <div class="flex items-center gap-2 py-4">
 
-          <input id="viza" type="number" class="inputBox w-full">
+          <img
+            src="./assets/icons/visa.svg"
+            alt="طريقة الدفع"
+            class="h-6 w-6"
+          >
+
+          <h4>
+            طريقة الدفع
+          </h4>
 
         </div>
+
+
+        <!-- ================= PAYMENT METHODS ================= -->
+
+        <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+
+
+          <!-- Bank Card -->
+
+          <label
+            class="flex min-h-20 cursor-pointer flex-col items-center justify-center rounded-2xl bg-SurfaceContainer px-3 py-3 text-center transition hover:shadow-sm"
+          >
+
+            <input
+              type="radio"
+              name="paymentMethod"
+              value="card"
+              class="sr-only"
+            >
+
+            <img
+              src="./assets/icons/visa.svg"
+              alt="Visa"
+              class="mb-1 h-6 object-contain"
+            >
+
+            <span class="text-sm">
+              بطاقة بنكية / مدى
+            </span>
+
+          </label>
+
+
+          <!-- Apple Pay -->
+
+          <label
+            class="flex min-h-20 cursor-pointer flex-col items-center justify-center rounded-2xl bg-SurfaceContainer px-3 py-3 text-center transition hover:shadow-sm"
+          >
+
+            <input
+              type="radio"
+              name="paymentMethod"
+              value="applePay"
+              class="sr-only"
+            >
+
+            <img
+              src="./assets/icons/applePay.svg"
+              alt="Apple Pay"
+              class="mb-1 h-6 object-contain"
+            >
+
+            <span class="text-sm">
+              Apple Pay
+            </span>
+
+          </label>
+
+
+          <!-- Cash -->
+
+          <label
+            class="flex min-h-20 cursor-pointer flex-col items-center justify-center rounded-2xl bg-SurfaceContainer px-3 py-3 text-center transition hover:shadow-sm"
+          >
+
+            <input
+              type="radio"
+              name="paymentMethod"
+              value="cash"
+              class="sr-only"
+            >
+
+            <img
+              src="./assets/icons/copy.svg"
+              alt="الدفع عند الاستلام"
+              class="mb-1 h-6 object-contain"
+            >
+
+            <span class="text-sm">
+              عند الاستلام
+            </span>
+
+          </label>
+
+        </div>
+
+
+        <!-- ================= CARD NUMBER ================= -->
+
+        <div class="my-4 w-full">
+
+          <label
+            for="cardNumber"
+            class="mb-2 block text-sm"
+          >
+            رقم البطاقة
+          </label>
+
+          <input
+            id="cardNumber"
+            name="cardNumber"
+            type="text"
+            inputmode="numeric"
+            autocomplete="cc-number"
+            maxlength="19"
+            class="inputBox w-full"
+          >
+
+        </div>
+
+
+        <!-- ================= EXPIRY + CVV ================= -->
 
         <div class="row my-4 flex-col gap-4 md:flex-row">
 
+
+          <!-- Expiry -->
+
           <div class="w-full flex-1">
 
-            <label for="name">
+            <label
+              for="expiry"
+              class="mb-2 block text-sm"
+            >
               تاريخ الانتهاء
             </label>
 
-            <input id="experent" type="date" class="inputBox w-full">
+            <input
+              id="expiry"
+              name="expiry"
+              type="month"
+              autocomplete="cc-exp"
+              class="inputBox w-full"
+            >
 
           </div>
 
+
+          <!-- CVV -->
+
           <div class="w-full flex-1">
 
-            <label for="phone">
-              رمز الأمان (CVV) </label>
+            <label
+              for="cvv"
+              class="mb-2 block text-sm"
+            >
+              رمز الأمان (CVV)
+            </label>
 
-            <input id="cvv" type="number" class="inputBox w-full">
+            <input
+              id="cvv"
+              name="cvv"
+              type="text"
+              inputmode="numeric"
+              autocomplete="cc-csc"
+              maxlength="4"
+              class="inputBox w-full"
+            >
 
           </div>
 
         </div>
-        <button class="button w-full mt-6">اتمام الطلب</button>
-        <p class="text-sm  text-gray-500 text-center">ضمان رسمي سنتان • إرجاع مجاني خلال 14 يوماً</p>
 
 
-      </div>
+        <!-- ================= COMPLETE ORDER ================= -->
+
+        <button
+          type="submit"
+          class="button mt-6 w-full"
+        >
+          إتمام الطلب
+        </button>
 
 
+        <!-- ================= GUARANTEE ================= -->
 
-  </section>
+        <p class="mt-4 text-center text-sm text-gray-500">
+          ضمان رسمي سنتان • إرجاع مجاني خلال 14 يوماً
+        </p>
 
+      </section>
 
+    </div>
 
-  
+  </main>
 
 
   <!-- ================= FOOTER ================= -->
-    <!-- Footer -->
+
   <footer class="mt-12 bg-SurfaceContainer text-sm sm:mt-16">
+
 
     <div
       class="container grid grid-cols-1 gap-8 px-4 py-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10 lg:py-10"
     >
 
-      <!-- Newsletter -->
+
+      <!-- ================= NEWSLETTER ================= -->
+
       <div>
 
         <h3>
@@ -399,6 +713,7 @@
           احصل على أحدث العروض والخصومات مباشرة
           في بريدك
         </h5>
+
 
         <form class="mt-4 flex flex-col gap-3 xl:flex-row">
 
@@ -420,47 +735,61 @@
       </div>
 
 
-      <!-- Store -->
+      <!-- ================= STORE ================= -->
+
       <div>
 
         <ul class="space-y-2">
 
           <li>
+
             <a
               href="./AllDevice.html"
               class="transition-colors hover:text-blue-700"
             >
+
               <h3>
                 المتجر
               </h3>
+
             </a>
+
           </li>
 
+
           <li>
+
             <a
               href="./AllDevice.html"
               class="transition-colors hover:text-blue-700"
             >
               جميع الأجهزة
             </a>
+
           </li>
 
+
           <li>
+
             <a
               href="./newDevice.html"
               class="transition-colors hover:text-blue-700"
             >
               أجهزة جديدة
             </a>
+
           </li>
 
+
           <li>
+
             <a
               href="./uesedDevice.html"
               class="transition-colors hover:text-blue-700"
             >
               أجهزة مستعملة
             </a>
+
           </li>
 
         </ul>
@@ -468,45 +797,57 @@
       </div>
 
 
-      <!-- Categories -->
+      <!-- ================= CATEGORIES ================= -->
+
       <div>
 
         <ul class="space-y-2">
 
           <li>
+
             <a
               href="./gaming.html"
               class="transition-colors hover:text-blue-700"
             >
               أجهزة الألعاب
             </a>
+
           </li>
 
+
           <li>
+
             <a
               href="./working.html"
               class="transition-colors hover:text-blue-700"
             >
               أجهزة الأعمال
             </a>
+
           </li>
 
+
           <li>
+
             <a
               href="./student.html"
               class="transition-colors hover:text-blue-700"
             >
               أجهزة الطلاب
             </a>
+
           </li>
 
+
           <li>
+
             <a
               href="./MacBook.html"
               class="transition-colors hover:text-blue-700"
             >
               أجهزة الماك بوك
             </a>
+
           </li>
 
         </ul>
@@ -514,42 +855,54 @@
       </div>
 
 
-      <!-- Company -->
+      <!-- ================= COMPANY ================= -->
+
       <div>
 
         <ul class="space-y-2">
 
           <li>
+
             <h3>
               الشركة
             </h3>
+
           </li>
 
+
           <li>
+
             <a
               href="./aboutUs.html"
               class="transition-colors hover:text-blue-700"
             >
               عن إحسان لابتوب
             </a>
+
           </li>
 
+
           <li>
+
             <a
               href="#"
               class="transition-colors hover:text-blue-700"
             >
               الفروع
             </a>
+
           </li>
 
+
           <li>
+
             <a
               href="./aboutUs.html"
               class="transition-colors hover:text-blue-700"
             >
               اتصل بنا
             </a>
+
           </li>
 
         </ul>
@@ -559,10 +912,13 @@
     </div>
 
 
+    <!-- ================= FOOTER LINE ================= -->
+
     <div class="border-t border-gray-300"></div>
 
 
-    <!-- Footer Bottom -->
+    <!-- ================= FOOTER BOTTOM ================= -->
+
     <div
       class="container flex flex-col items-center justify-between gap-3 px-4 py-4 text-center sm:flex-row sm:text-right"
     >
@@ -570,6 +926,7 @@
       <p>
         جميع الحقوق محفوظة
       </p>
+
 
       <div class="flex items-center gap-3">
 
@@ -598,3 +955,4 @@
 </body>
 
 </html>
+```
