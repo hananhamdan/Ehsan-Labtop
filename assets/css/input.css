@@ -329,5 +329,8 @@
 
   .ShadowDisappears{
     @apply aspect-square  w-full object-contain  group-hover:scale-110 transition duration-300  h-auto  ;
-  }     
+  }  
+  .styleOfHeader{
+    @apply mb-6 rounded-2xl bg-SurfaceLowest sm:mb-8 lg:mb-12
+  }   
 }
