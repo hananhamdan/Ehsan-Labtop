@@ -454,6 +454,9 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-1 {
+    height: var(--spacing);
+  }
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
@@ -540,6 +543,9 @@
   }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-1 {
+    width: var(--spacing);
   }
   .w-3 {
     width: calc(var(--spacing) * 3);
