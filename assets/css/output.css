@@ -9,6 +9,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(63.7% 0.237 25.331);
+    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-blue-50: oklch(97% 0.014 254.604);
     --color-blue-100: oklch(93.2% 0.032 255.585);
     --color-blue-300: oklch(80.9% 0.105 251.813);
@@ -61,6 +62,7 @@
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --drop-shadow-2xl: 0 25px 25px rgb(0 0 0 / 0.15);
+    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --blur-3xl: 64px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -277,11 +279,11 @@
   .right-3 {
     right: calc(var(--spacing) * 3);
   }
-  .right-10 {
-    right: calc(var(--spacing) * 10);
+  .bottom-0 {
+    bottom: 0px;
   }
-  .bottom-5 {
-    bottom: calc(var(--spacing) * 5);
+  .left-0 {
+    left: 0px;
   }
   .left-2 {
     left: calc(var(--spacing) * 2);
@@ -491,8 +493,8 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
-  .h-35 {
-    height: calc(var(--spacing) * 35);
+  .h-25 {
+    height: calc(var(--spacing) * 25);
   }
   .h-\[14px\] {
     height: 14px;
@@ -569,8 +571,8 @@
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
-  .w-35 {
-    width: calc(var(--spacing) * 35);
+  .w-25 {
+    width: calc(var(--spacing) * 25);
   }
   .w-\[14px\] {
     width: 14px;
@@ -1175,6 +1177,59 @@
   .placeholder\:text-gray-400::placeholder {
     color: var(--color-gray-400);
   }
+  .before\:absolute::before {
+    content: var(--tw-content);
+    position: absolute;
+  }
+  .before\:-top-2::before {
+    content: var(--tw-content);
+    top: calc(var(--spacing) * -2);
+  }
+  .before\:-right-2::before {
+    content: var(--tw-content);
+    right: calc(var(--spacing) * -2);
+  }
+  .before\:flex::before {
+    content: var(--tw-content);
+    display: flex;
+  }
+  .before\:h-5::before {
+    content: var(--tw-content);
+    height: calc(var(--spacing) * 5);
+  }
+  .before\:w-5::before {
+    content: var(--tw-content);
+    width: calc(var(--spacing) * 5);
+  }
+  .before\:items-center::before {
+    content: var(--tw-content);
+    align-items: center;
+  }
+  .before\:justify-center::before {
+    content: var(--tw-content);
+    justify-content: center;
+  }
+  .before\:rounded-full::before {
+    content: var(--tw-content);
+    border-radius: calc(infinity * 1px);
+  }
+  .before\:bg-red-600::before {
+    content: var(--tw-content);
+    background-color: var(--color-red-600);
+  }
+  .before\:text-xs::before {
+    content: var(--tw-content);
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  .before\:text-white::before {
+    content: var(--tw-content);
+    color: var(--color-white);
+  }
+  .before\:content-\[\'0\'\]::before {
+    --tw-content: '0';
+    content: var(--tw-content);
+  }
   @media (hover: hover) {
     .hover\:bg-SurfaceContainer:hover {
       background-color: var(--color-SurfaceContainer);
@@ -1454,6 +1509,12 @@
     }
   }
   @media (width >= 64rem) {
+    .lg\:right-10 {
+      right: calc(var(--spacing) * 10);
+    }
+    .lg\:bottom-5 {
+      bottom: calc(var(--spacing) * 5);
+    }
     .lg\:order-1 {
       order: 1;
     }
@@ -1472,8 +1533,14 @@
     .lg\:hidden {
       display: none;
     }
+    .lg\:h-35 {
+      height: calc(var(--spacing) * 35);
+    }
     .lg\:h-82\.5 {
       height: calc(var(--spacing) * 82.5);
+    }
+    .lg\:w-35 {
+      width: calc(var(--spacing) * 35);
     }
     .lg\:w-60 {
       width: calc(var(--spacing) * 60);
@@ -2252,15 +2319,15 @@
   inherits: false;
   initial-value: 1;
 }
-@property --tw-divide-x-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
 @property --tw-content {
   syntax: "*";
   initial-value: "";
   inherits: false;
+}
+@property --tw-divide-x-reverse {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
@@ -2318,8 +2385,8 @@
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
-      --tw-divide-x-reverse: 0;
       --tw-content: "";
+      --tw-divide-x-reverse: 0;
     }
   }
 }
