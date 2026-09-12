@@ -62,7 +62,6 @@
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --drop-shadow-2xl: 0 25px 25px rgb(0 0 0 / 0.15);
-    --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --blur-3xl: 64px;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -255,9 +254,6 @@
   .inset-0 {
     inset: 0px;
   }
-  .-top-2 {
-    top: calc(var(--spacing) * -2);
-  }
   .top-0 {
     top: 0px;
   }
@@ -269,9 +265,6 @@
   }
   .top-4 {
     top: calc(var(--spacing) * 4);
-  }
-  .-right-2 {
-    right: calc(var(--spacing) * -2);
   }
   .right-0 {
     right: 0px;
@@ -457,9 +450,6 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .h-3\.5 {
-    height: calc(var(--spacing) * 3.5);
-  }
   .h-3\.75 {
     height: calc(var(--spacing) * 3.75);
   }
@@ -495,9 +485,6 @@
   }
   .h-25 {
     height: calc(var(--spacing) * 25);
-  }
-  .h-\[14px\] {
-    height: 14px;
   }
   .h-\[15px\] {
     height: 15px;
@@ -535,9 +522,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-3\.5 {
-    width: calc(var(--spacing) * 3.5);
-  }
   .w-3\.75 {
     width: calc(var(--spacing) * 3.75);
   }
@@ -573,9 +557,6 @@
   }
   .w-25 {
     width: calc(var(--spacing) * 25);
-  }
-  .w-\[14px\] {
-    width: 14px;
   }
   .w-\[15px\] {
     width: 15px;
@@ -803,9 +784,6 @@
   }
   .bg-PrimaryContainer {
     background-color: var(--color-PrimaryContainer);
-  }
-  .bg-Secondary {
-    background-color: var(--color-Secondary);
   }
   .bg-Surface {
     background-color: var(--color-Surface);
