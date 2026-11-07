@@ -27,22 +27,34 @@
 
   <!-- ================= HEADER ================= -->
 
-  <header class="mb-6 rounded-2xl bg-SurfaceLowest sm:mb-8 lg:mb-12">
+  <header data-scroll class="mb-6 rounded-2xl bg-SurfaceLowest sm:mb-8 lg:mb-12 data-scroll:py-2 data-scroll:bg-Surface  data-scroll:shadow-2xl data-scroll:backdrop:backdrop-blur-2xl sticky top-0 z-40">
 
     <div class="container px-3">
 
       <nav class="flex min-h-14 items-center justify-between gap-3 sm:gap-5">
 
         <!--menu-->
-        <div class="shrink-0 lg:hidden">
+        <button type="button" class="shrink-0  cursor-pointer">
 
-          <a href="#">
+          
 
-            <img src="./assets/icons/menu.svg" alt="إحسان لابتوب" class="h-8 w-auto object-contain sm:h-10  ">
+           
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="24" height="24"
+     viewBox="0 0 24 24"
+     fill="none"
+     stroke="currentColor"
+     stroke-width="2"
+     stroke-linecap="round">
+  <path d="M4 6h16"/>
+  <path d="M4 12h16"/>
+  <path d="M4 18h16"/>
+</svg>
 
-          </a>
 
-        </div>
+          
+
+        </button>
 
         <!-- Logo -->
 
@@ -76,7 +88,7 @@
 
         <!-- Navigation -->
 
-        <ul class="hidden items-center gap-4 text-gray-600 lg:flex lg:gap-5">
+        <ul class="  items-center gap-4 text-gray-600 md:flex md:gap-5 max-md:flex-col max-md:absolute   ">
 
           <li>
 
@@ -133,7 +145,7 @@
 
             <img src="./assets/icons/shoppingCart.svg" alt="السلة" class="h-5 w-5">
 
-            <span class="absolute -right-2 -top-2 flex h-[14px] w-[14px]
+            <span class="absolute -right-2 -top-2 flex h-3.5 w-3.5
                      items-center justify-center rounded-full bg-Secondary
                      text-[8px] text-white">
               0
@@ -163,7 +175,7 @@
     </div>
 
   </header>
-  <section class="container  py-6 grid md:grid-cols-2 gap-12 ">
+  <section  data-section class="container  py-6 grid md:grid-cols-2 gap-12 ">
     <div class="order-2 lg:order-1">
 
       <div
@@ -986,7 +998,7 @@
     </div>
 
   </footer>
-
+<script src="./assets/js/main,js"></script>
 
 </body>
 

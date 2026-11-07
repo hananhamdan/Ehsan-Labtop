@@ -1,0 +1,7 @@
+const headerscroll=document.querySelector("[data-scroll]");
+const datasection =document.querySelector("[data-section]");
+window.addEventListener('scroll',()=>{
+    if (window.scrollY >= datasection.offsetTop)
+    {headerscroll.setAttribute('data-scroll'," ")}
+    else {headerscroll.removeAttribute('data-scroll')}
+})
