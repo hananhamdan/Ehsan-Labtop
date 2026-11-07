@@ -34,7 +34,7 @@
       <nav class="flex min-h-14 items-center justify-between gap-3 sm:gap-5">
 
         <!--menu-->
-        <button type="button" class="shrink-0  cursor-pointer">
+       <!-- <button type="button" class="shrink-0  cursor-pointer">
 
           
 
@@ -54,7 +54,24 @@
 
           
 
-        </button>
+        </button>-->
+        <div class="relative flex items-center justify-between">
+
+    <button data-menu-toggle id="menuBtn" type="button" class="lg:hidden cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="24" height="24"
+             viewBox="0 0 24 24"
+             fill="none"
+             stroke="currentColor"
+             stroke-width="2">
+            <path d="M4 6h16"/>
+            <path d="M4 12h16"/>
+            <path d="M4 18h16"/>
+        </svg>
+    </button>
+
+
+</div>
 
         <!-- Logo -->
 
@@ -88,9 +105,10 @@
 
         <!-- Navigation -->
 
-        <ul class="  items-center gap-4 text-gray-600 md:flex md:gap-5 max-md:flex-col max-md:absolute   ">
+        <ul  data-nav data-open class="menuStyle">
 
-          <li>
+
+          <li> 
 
             <a href="./index.html" class="selact">
               الرئيسية
@@ -134,7 +152,6 @@
           </li>
 
         </ul>
-
 
 
         <div class="flex shrink-0 items-center gap-3 sm:gap-4">
@@ -998,7 +1015,7 @@
     </div>
 
   </footer>
-<script src="./assets/js/main,js"></script>
+<script src="./assets/js/main.js"></script>
 
 </body>
 

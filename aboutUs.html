@@ -12,8 +12,7 @@
 
   <link
     href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet"
-  >
+    rel="stylesheet">
 
   <!-- ================= TAILWIND ================= -->
 
@@ -28,14 +27,15 @@
 
   <!-- ================= HEADER ================= -->
 
-  <header data-scroll class="mb-6 rounded-2xl bg-SurfaceLowest sm:mb-8 lg:mb-12 data-scroll:py-2 data-scroll:bg-Surface  data-scroll:shadow-2xl data-scroll:backdrop:backdrop-blur-2xl sticky top-0 z-40">
+  <header data-scroll
+    class="mb-6 rounded-2xl bg-SurfaceLowest sm:mb-8 lg:mb-12 data-scroll:py-2 data-scroll:bg-Surface  data-scroll:shadow-2xl data-scroll:backdrop:backdrop-blur-2xl sticky top-0 z-40">
 
 
     <div class="container px-3">
 
       <nav class="flex min-h-14 items-center justify-between gap-3 sm:gap-5">
         <!--menu-->
-         <div class="shrink-0 lg:hidden">
+        <div class="shrink-0 lg:hidden">
 
           <a href="#">
 
@@ -58,7 +58,7 @@
         </div>
 
 
-       
+
 
         <div class="search">
 
@@ -74,9 +74,10 @@
         </div>
 
 
-      
 
-        <ul class="hidden items-center gap-4 text-gray-600 lg:flex lg:gap-5">
+
+        <ul data-nav data-open class="menuStyle">
+
 
           <li>
 
@@ -142,7 +143,7 @@
           </a>
 
 
-         
+
 
           <a href="#" class="flex items-center justify-center">
 
@@ -151,7 +152,7 @@
           </a>
 
 
-          
+
 
           <a href="./profile.html" class="flex items-center justify-center">
 
@@ -168,70 +169,73 @@
   </header>
 
 
-  <section  data-section class="container">
-  <div class=" text-center  md:my-8 my-4 boxWhite">
-    <h2 class="text-PrimaryBlue  ">قصة إحسان لابتوب</h2>
-    <p>نحن أكثر من مجرد متجر لبيع أجهزة الكمبيوتر المحمولة. نحن وجهتك الأولى للتقنية المتقدمة، نهدف إلى تمكين الأفراد والشركات
-من خلال توفير أفضل الحلول التقنية المصممة خصيصًا لتلبية احتياجاتهم.</p>
-  </div>
-  <div class="row md:my-8 my-4 gap-4">
-    <div class="md:flex-1 boxWhite">
+  <section data-section class="container">
+    <div class=" text-center  md:my-8 my-4 boxWhite">
+      <h2 class="text-PrimaryBlue  ">قصة إحسان لابتوب</h2>
+      <p>نحن أكثر من مجرد متجر لبيع أجهزة الكمبيوتر المحمولة. نحن وجهتك الأولى للتقنية المتقدمة، نهدف إلى تمكين الأفراد
+        والشركات
+        من خلال توفير أفضل الحلول التقنية المصممة خصيصًا لتلبية احتياجاتهم.</p>
+    </div>
+    <div class="row md:my-8 my-4 gap-4">
+      <div class="md:flex-1 boxWhite">
         <h2>
-رحلتنا نحو الابتكار
+          رحلتنا نحو الابتكار
         </h2>
         <h6>تأسست إحسان لابتوب برؤية واضحة: جعل التكنولوجيا عالية الجودة في متناول الجميع. بدأنا كمتجر صغير، ومع مرور
-الوقت، وبفضل ثقة عملائنا، نمونا لنصبح أحد أبرز مزودي الأجهزة التقنية في المنطقة..
+          الوقت، وبفضل ثقة عملائنا، نمونا لنصبح أحد أبرز مزودي الأجهزة التقنية في المنطقة..
         </h6>
         <h6>
-           نحن نؤمن بأن التكنولوجيا يجب أن تسهل الحياة وتزيد من الإنتاجية. لذلك، نحرص على اختيار كل جهاز نعرضه
-بعناية فائقة، لضمان أعلى مستويات الأداء والموثوقية لعملائنا، سواء كانوا طلابًا، محترفين، أو عشاق للألعاب.       </h6>
-    </div>
-    <div class="md:flex-1">
+          نحن نؤمن بأن التكنولوجيا يجب أن تسهل الحياة وتزيد من الإنتاجية. لذلك، نحرص على اختيار كل جهاز نعرضه
+          بعناية فائقة، لضمان أعلى مستويات الأداء والموثوقية لعملائنا، سواء كانوا طلابًا، محترفين، أو عشاق للألعاب.
+        </h6>
+      </div>
+      <div class="md:flex-1">
         <img src="./assets/img/aboutUs.webp" alt="فريق إحسان لابتوب في مقر الشركة">
+      </div>
     </div>
-  </div>
-  <div class=" my-4 row gap-4 md:my-8 ">
-    <div class=" md:flex-1 boxWhite">
+    <div class=" my-4 row gap-4 md:my-8 ">
+      <div class=" md:flex-1 boxWhite">
         <img src="./assets/img/flag.webp" class="block" alt="أيقونة المهمة">
         <h4>مهمتنا</h4>
         <h6>توفير أحدث التقنيات وأفضل الأجهزة بأسعار تنافسية، مع التركيز التام على تقديم خدمة عملاء استثنائية
-تجعل تجربة التسوق لدينا لا تُنسى.</h6>
-    </div>
-     <div  class="md:flex-1 boxWhite">
+          تجعل تجربة التسوق لدينا لا تُنسى.</h6>
+      </div>
+      <div class="md:flex-1 boxWhite">
         <img src="./assets/img/ayes.webp" class="block" alt="أيقونة الرؤية">
         <h4>رؤيتنا</h4>
-<h6>أن نكون الوجهة الأولى والموثوقة لكل ما يتعلق بأجهزة الكمبيوتر المحمولة وملحقاتها، وقيادة التحول
-الرقمي من خلال توفير أدوات التمكين التقني.</h6>
+        <h6>أن نكون الوجهة الأولى والموثوقة لكل ما يتعلق بأجهزة الكمبيوتر المحمولة وملحقاتها، وقيادة التحول
+          الرقمي من خلال توفير أدوات التمكين التقني.</h6>
+      </div>
     </div>
-  </div>
 
 
   </section>
   <section class="container">
-     <div class=" text-center  boxWhite">
-    <h2 class="text-PrimaryBlue  ">تواصل معنا</h2></div>
+    <div class=" text-center  boxWhite">
+      <h2 class="text-PrimaryBlue  ">تواصل معنا</h2>
+    </div>
     <div class="row gap-4 md:my-8 my-4 ">
-        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="flex-1 boxWhite">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="flex-1 boxWhite">
         <img src="./assets/icons/earth.svg" class="block" alt="أيقونة فيسبوك">
         <h4>facebook</h4>
-<h6>www.facebook.com</h6>
-    </a>
-     <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="flex-1 boxWhite">
+        <h6>www.facebook.com</h6>
+      </a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="flex-1 boxWhite">
         <img src="./assets/icons/copy.svg" class="block" alt="أيقونة لينكدإن">
         <h4>linkedin</h4>
-<h6>www.linkedin.com</h6>
-    </a>
-     <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer" class="flex-1 boxWhite">
+        <h6>www.linkedin.com</h6>
+      </a>
+      <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer" class="flex-1 boxWhite">
         <img src="./assets/icons/chare.svg" class="block" alt="أيقونة واتساب">
         <h4>whatsapp</h4>
-<h6>www.whatsapp.com</h6>
-    </a>
+        <h6>www.whatsapp.com</h6>
+      </a>
     </div>
   </section>
- 
+
   <!-- ================= FOOTER ================= -->
 
-    <footer class="mt-12 bg-SurfaceContainer text-sm sm:mt-16">
+  <footer class="mt-12 bg-SurfaceContainer text-sm sm:mt-16">
 
     <div class="container grid grid-cols-1 gap-8 px-4 py-8
              sm:grid-cols-2
@@ -296,24 +300,24 @@
 
         <ul class="space-y-2">
 
-       <li>
+          <li>
             <a href="./gaming.html">
               أجهزة الألعاب
             </a>
           </li>
-           <li>
+          <li>
             <a href="./working.html">
               أجهزة الأعمال
             </a>
           </li>
-           <li>
+          <li>
             <a href="./student.html">
-            أجهزة الطلاب
+              أجهزة الطلاب
             </a>
           </li>
-           <li>
+          <li>
             <a href="./MacBook.html">
-             أجهزة الماك بوك
+              أجهزة الماك بوك
             </a>
           </li>
 
@@ -383,7 +387,8 @@
 
 
 
-<script src="./assets/js/main,js"></script>
+  <script src="./assets/js/main,js"></script>
 
 </body>
+
 </html>

@@ -329,5 +329,12 @@
 
   .ShadowDisappears{
     @apply aspect-square  w-full object-contain  group-hover:scale-110 transition duration-300  h-auto  ;
-  }     
+  }   
+  .menuStyle {
+    @apply hidden data-open:flex items-center gap-4 text-gray-600
+    lg:flex lg:gap-5
+    max-lg:absolute max-lg:top-full max-lg:right-0
+    max-lg:w-full max-lg:flex-col max-lg:items-end
+    max-lg:bg-white max-lg:p-5 max-lg:shadow-xl
+  }  
 }

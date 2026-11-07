@@ -1225,14 +1225,6 @@
       padding-inline: calc(var(--spacing) * 2);
     }
   }
-  @media (width < 48rem) {
-    .max-md\:absolute {
-      position: absolute;
-    }
-    .max-md\:flex-col {
-      flex-direction: column;
-    }
-  }
   @media (width < 40rem) {
     .max-sm\:mx-2 {
       margin-inline: calc(var(--spacing) * 2);
@@ -2019,6 +2011,49 @@
         --tw-scale-z: 110%;
         scale: var(--tw-scale-x) var(--tw-scale-y);
       }
+    }
+  }
+  .menuStyle {
+    display: none;
+    align-items: center;
+    gap: calc(var(--spacing) * 4);
+    color: var(--color-gray-600);
+    &[data-open] {
+      display: flex;
+    }
+    @media (width < 64rem) {
+      position: absolute;
+    }
+    @media (width < 64rem) {
+      top: 100%;
+    }
+    @media (width < 64rem) {
+      right: 0px;
+    }
+    @media (width < 64rem) {
+      width: 100%;
+    }
+    @media (width < 64rem) {
+      flex-direction: column;
+    }
+    @media (width < 64rem) {
+      align-items: flex-end;
+    }
+    @media (width < 64rem) {
+      background-color: var(--color-white);
+    }
+    @media (width < 64rem) {
+      padding: calc(var(--spacing) * 5);
+    }
+    @media (width < 64rem) {
+      --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 8px 10px -6px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+    @media (width >= 64rem) {
+      display: flex;
+    }
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 5);
     }
   }
 }
